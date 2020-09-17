@@ -1,0 +1,60 @@
+\ProvidesPackage{portadaposgradoMCM}
+\RequirePackage{graphicx}
+\@ifpackageloaded{geometry}{}{\RequirePackage[pass]{geometry}}
+\newcommand*{\institucion}[1]{\gdef\@institucion{#1}}
+\newcommand*{\@institucion}{\texttt{\string\institucion} Faculty or Institute. Please fix this.}%Texto por defecto.
+\newcommand*{\departamento}[1]{\gdef\@departamento{#1}}
+\newcommand*{\@departamento}{\texttt{\string\departamento}degree currently not set. Please fix this.}%Texto por defecto
+\newcommand*{\programa}[1]{\gdef\@programa{#1}}
+\newcommand*{\@programa}{\texttt{\string\programa}degree currently not set. Please fix this.}%Texto por defecto
+\newcommand*{\grado}[1]{\gdef\@grado{#1}}
+\newcommand*{\@grado}{\texttt{\string\grado}degree currently not set. Please fix this.}%Texto por defecto
+\newcommand*{\asesor}[1]{\gdef\@asesor{#1}}
+\newcommand*{\@asesor}{\texttt{\string\asesor} supervisor currently not set. Please fix this.}%Texto por defecto.
+\newcommand*{\coasesor}[1]{\gdef\@coasesor{#1}}
+\newcommand*{\@coasesor}{\texttt{\string\coasesor} supervisor currently not set. Please fix this.}%Texto por defecto.
+\newcommand{\direccion}[1] {MÉRIDA, YUCATÁN, MÉXICO}%Lugar donde se realiza el documento
+\newcommand{\fecha} {\thismonth}%Fecha
+\newcommand{\monthname}{%
+\ifcase \month \or ENERO\or FEBRERO\or MARZO\or ABRIL\or MAYO\or JUNIO\or JULIO\or AGOSTO\or SEPTIEMBRE\or OCTUBRE\or NOVIEMBRE\or DICIEMBRE
+\fi
+}%
+\newcommand{\thismonth}{\monthname\ \the\year}
+\renewcommand\maketitle{%
+\begin{titlepage}
+\fontfamily{helvet}\selectfont  		\newgeometry{left=2.5cm,right=3cm,bottom=2.5cm,top=2cm}
+\noindent
+  \begin{minipage}[c][0.99\textheight][c]{0.05\textwidth}%
+	\begin{minipage}[c][0.66\textheight][c]{\textwidth}
+		\begin{center}
+		\hbox{\vrule depth550pt width3pt \quad
+		      \vrule depth530pt width3pt \quad
+		      \vrule depth510pt width3pt}
+		\end{center}
+	\end{minipage}%
+  \end{minipage}
+\hfill
+  \begin{minipage}[c][0.99\textheight][t]{0.850\textwidth}
+    \hfill\vspace{.1\textwidth}    
+    \begin{center}
+    \hrule height3pt
+    \ThisCenterWallPaper{1}{Adjuntos/logos2019.pdf}
+      \vspace{5mm}\textbf{\Large \href{http://itmorelia.edu.mx}{\MakeUppercase{\textsf{\@institucion}}}} \\
+      \vspace{1mm}\textsf{\normalsize \MakeUppercase{\@departamento}} \\
+      \vspace{3mm}\textsf{\normalsize \MakeUppercase{\@programa}} \\
+	  \vspace{5mm}\textsf{\normalsize TESIS}\\
+      \vspace{5mm}\textbf{\textsf{\large \MakeUppercase{\@title}}} \\
+      \vspace{10mm}\textsf{\normalsize QUE PARA OBTENER EL TÍTULO DE:}\\
+      \vspace{3mm}\textbf{\textsf{\large \MakeUppercase{\@grado}}}\\
+      \vspace{10mm}\textsf{\normalsize PRESENTA:}\\
+      \vspace{1mm}\textbf{\textsf{\normalsize \MakeUppercase{\@author}}}\\
+	  \vspace{20mm}\textsf{ASESOR:}\\
+      \vspace{1mm}\textbf{\textsf{\normalsize \MakeUppercase{\@asesor}}}\\    
+      \vspace*{5mm}\textsf{CO-ASESOR:}\\    
+      \vspace{1mm}\textbf{\textsf{\normalsize \MakeUppercase{\@coasesor}}}\\
+      \vspace{12mm}\vfill\textsf{\direccion}. \hfill \textsf{\fecha}
+	\end{center}
+	  \end{minipage}
+  \end{titlepage} 
+}%
+\endinput
