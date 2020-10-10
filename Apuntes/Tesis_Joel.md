@@ -32,6 +32,8 @@ csl: D:/Files/Documents/source/Tesis/mendeley/apa.csl
 + El flujo se define para el caso de control de tráfico urbano, como el número de vehículos que pasan por algún punto @Antonio2006a p.3
 + La densidad se define como el número de vehículos en un tramo de la calle dividida entre la longitud de la calle @Antonio2006a p.4
 + Ciclo de semáforo
++ Estado: El estado del sistema de tráfico urbano índica la situación en la que se encuentra el sistema en un instante de tiempo dado @Antonio2006a p.3
++ Tráfico
 
 
 La arquitectura de control tendrá:
@@ -40,6 +42,7 @@ La arquitectura de control tendrá:
 - Calle: una extensión de terreno donde los vehiculos ocupan una sección de la misma. Puede tener:
   - Carriles
   - Cola de espera
+  - Área aproximada
 - Tipos de vehículos especiales y comportamientos especiales asociados.
 - Estructura de la intersección:
   - Todas las posibles conexiones entre carriles
@@ -52,7 +55,7 @@ La arquitectura de control tendrá:
 + Parámetro de salida del controlador de fases.
   - Cambiar la decisión de la próxima fase. {No change, change}. Hemos
 
-### Estado (El estado del sistema de tráfico urbano índica la situación en la que se encuentra el sistema en un instante de tiempo dado @Antonio2006a p.3):
+### Estado:
 + Datos recopilados en tiempo real y por ciclo: 
   - número de vehículos en las calles
   - número de accidentes
@@ -72,6 +75,7 @@ La arquitectura de control tendrá:
 Parametros inspirados en trabajo visto en @Antonio2006a [pp 2-4, 22-23] 
 
 
-
+# Cosas sueltas
+incluir o eliminar vueltas a la izquierda, incrementar o disminuir el numero de calles que tienen derecho de paso simultáneamente, entre otras. @Antonio2006a pp. 38 y 39
 
 # Referencias
