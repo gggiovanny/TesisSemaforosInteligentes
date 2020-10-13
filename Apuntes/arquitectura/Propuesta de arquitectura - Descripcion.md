@@ -13,6 +13,7 @@ Los vehículos que se mueven en los carriles de la intersección y cruzan de un 
 
 ## Propiedades de la intersección
 Son las propiedades intrínsecas de la intersección que no suelen cambiar con el paso del tiempo:
+
 + Número de calles.
 + Carriles en cada calle.
 + Extensión aproximada de cada carril.
@@ -80,7 +81,7 @@ Se encarga de categorizar la influencia de los parámetro predichos entre sí mi
 Categoriza intervalos de tiempo que presentan una serie de condiciones a términos abstractos, como: "hora pico", "hora sin actividad" o "tráfico esporádico", para así poder usar esas categorías como condiciones para las reglas y restricciones vistas anteriormente.
 Categoriza como ventajoso o perjudicial el incremento o decremento de un parámetro respecto a parámetros que se busquen incrementar o decrementar (como el tiempo de espera, la generación de colas, etc). De ser necesario, infiere una función de como su variación afecta a estos parámetros.
 
-Ejemplo verbal: si se hacen ciclos en verde un un carril *mayores a* 45 segundos durante *horas pico*, se genera una *cola de espera perjudicial a la fluidez* del carril perpendicular, entonces se infiere una regla que impida que se rebase ese tiempo de ciclo dadas esas condiciones, y en caso de que se tenga que se rebase, se tenga la función que indica que tanto perjudica ese aumento para calcular los tiempos de ciclo que produzcan el mejor costo-beneficio (pues se tienen que tomar en cuenta el resto de los parámetros).
+Ejemplo verbal: si se hacen ciclos en verde un un carril **mayores a** 45 segundos durante **horas pico**, se genera una **cola de espera perjudicial a la fluidez** del carril perpendicular, entonces se infiere una regla que impida que se rebase ese tiempo de ciclo dadas esas condiciones, y en caso de que se tenga que se rebase, se tenga la función que indica que tanto perjudica ese aumento para calcular los tiempos de ciclo que produzcan el mejor costo-beneficio (pues se tienen que tomar en cuenta el resto de los parámetros).
 
 Este módulo analiza constantemente los reportes almacenados en la base de datos para realizar el proceso mencionado anteriormente y todo lo inferido se guarda de manera centralizada como una base de conocimientos central como registros en la base de datos.
 
@@ -115,3 +116,5 @@ Tiene las funciones para necesarias para leer la red de Petri temporizada que re
 
 ## Luces de semáforo
 Son la manera en la que se plasman los intervalos de luces generados y son lo que físicamente indica a los conductores cuando deben circular o detenerse.
+
+# Referencias
