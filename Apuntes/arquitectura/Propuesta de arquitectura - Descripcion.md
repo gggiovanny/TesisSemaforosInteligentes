@@ -101,17 +101,17 @@ Usa los valores generados por el *Motor de priorización* para generar una propo
 Posteriormente usa como base las reglas y restricciones generados por el *Categorizador de parámetros* para generar varias propuestas de la duración total del ciclo de fases de luces.
 Se obtiene como salida varios juegos de propuestas de duraciones de fases que pueden haber tomado en cuenta diferentes reglas.
 
-
 ## Constructor de redes de Petri
-Como se pueden configurar las redes de petri para lograr mejores ciclos de semáforos? Hay alguna técnica de acomodo? Que ventaja tiene vs usar solo tiempos.
-A partir de los tiempos generados por el motor de priorización, construye una propuesta de red de Petri temporizada.
+A partir de las propuestas de intervalos generadas por el *Generador de intervalos*, se encarga de construir una red de Petri temporizada para cada una de ellas.
+<!-- Como se pueden configurar las redes de petri para lograr mejores ciclos de semáforos? Hay alguna técnica de acomodo? Que ventaja tiene vs usar solo tiempos? (creo que la respuesta es la coordinacion cuando son muchos carriles). -->
 
 ## Optimizador
-El optimizador tiene que recibir varias propuestas de estas proporciones que circulen a partir de un tiempo total de ciclo central que se presupone que es el óptimo, o bien usando una función generadora, o bien diferentes tiempos totales de ciclos inferidos a partir de diversas estrategias que usen diferentes parametros.
-A través de metaheurísticas (como algoritmos genéticos), optimiza el comportamiento de la red de Petri para minimizar los tiempos de espera y maximizar el flujo.
+Recibe múltiples propuestas de redes de Petri y a través de algoritmos genéticos, cruza los genes de las diferentes propuestas (que tomaron en cuenta diferente reglas para construirse) buscando maximizar los parámetros considerados como ventajosos (como el flujo) y minimizar los considerados como perjudiciales (como las cosas y los tiempos de espera).
+La información de cuáles son estos parámetros se obtiene del *Categorizador de parámetros*.
+Al final da como salida una red de Petri optimizada.
 
 ## Controlador
-Tiene las funciones para necesarias para leer la red de Petri que recibe y realizar los cambios de luces.según lo indique la red.
+Tiene las funciones para necesarias para leer la red de Petri temporizada que recibe y controlar los cambios de luces según lo indique la red.
 
 ## Luces de semáforo
-Indica como se deben alternar los flujos de trafico y son lo que físicamente ven los vehículos.
+Son la manera en la que se plasman los intervalos de luces generados y son lo que físicamente indica a los conductores cuando deben circular o detenerse.
