@@ -1,7 +1,14 @@
-Se creó la red usando osmWebWizard. Especificar como este usa [netconvert](https://sumo.dlr.de/docs/netconvert.html) para importar datos de OpenStreetMap.
+[Guía de creación de escenarios.](https://sumo.dlr.de/docs/Tutorials/ScenarioGuide.html)
+
+Se creó la red usando [osmWebWizard](https://sumo.dlr.de/docs/Tutorials/OSMWebWizard.html). Especificar como este usa [netconvert](https://sumo.dlr.de/docs/netconvert.html) para importar datos de OpenStreetMap.
+Explicar como osmWebWizard [obtiene datos de OpenStreetMaps](https://sumo.dlr.de/docs/Tutorials/PT_from_OpenStreetMap.html) (OSM).
+
 Se hizo en una intersección de Mérida que yo conozco bastante bien, para poder simular flujos a partir de lugares conocidos, y en dado caso de ser necesario recolectar datos reales, literalmente puedo ir a contar y medir.
+
 La intersección está ubicada en circuito colonias, cerca de super aki (especificar).
+
 Se comparó la generación de la intersección con imágenes reales de google maps, y hubo que ajustar el ancho del carril que corresponde a la calle 50 de 1 a dos carriles (realmente tiene como 4, pero siempre hay coches estacionados a ambos costados, y al final se pueden aprovechar solo 2). Desconozco si las calles adyacentes tienen el ancho correcto, pero considero que solo ésta afectan al objetivo de la simulación.
+
 Los datos recuperados por osmWebWizard, a excepción al numero de carriles de la calle 50, fueron bastante certeros. La intersección que me interesa contiene tiene correctamente los derechos de paso del semáforo.
 
 Ahora quiero saber como SUMO maneja las luces de trafico (info [aqui](https://sumo.dlr.de/docs/Simulation/Traffic_Lights.html)). Necesito saber esto para luego poder controlar las intersecciones programáticamente desde TraCI y para poder dejar lista la red para luego enfocarme solo en la programación de los modulos de la arquitectura.
@@ -9,3 +16,9 @@ Ahora quiero saber como SUMO maneja las luces de trafico (info [aqui](https://su
 Sumo no maneja las señales de trafico por calle, si no por conexion entre carriles (para ilustrar los derechos de paso y giros permitidos).
 En el netedit es posible agruparlos, pero decidí dejarlos sin agrupar para tener absoluto control de manera programática de cada conexión, y así me será posible agrupar las conexiones de la manera más lógica que se asemeje a la vida real.
 Descubri el orden de como maneja SUMO los indices de cada enlace: en orden de las manecillas del reloj, en teoría empezando por arriba, pero en este caso empieza por la derecha. Toma en cuenta para numerar los carriles que tienen tráfico entranto, los que solo reciben tráfico no se numeran (tiene sentido que sea así).
+
+# Cosas que agregar como introducción antes:
++ ¿Qué es SUMO?
++ ¿Qué es TraCI?
++ ¿Qué es OpenStreetMaps? Usar citas como las vistas [aquí](https://sumo.dlr.de/docs/Networks/Import/OpenStreetMapDownload.html).
++ ¿Qué es Python? (preguntar al doc si vale la pena)
