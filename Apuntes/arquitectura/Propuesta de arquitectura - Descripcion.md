@@ -23,7 +23,7 @@ Son las propiedades intrínsecas de la intersección que no suelen cambiar con e
 + Existencia de cruces y puentes peatonales, y si tienen algún botón que permita detener el tráfico.
 
 ## Observador de eventos
-Su única tarea es ser el sentido de la vista del agente de control. 
+Su única tarea es ser el sentido de la vista del agente de control.
 Tiene funciones para observar eventos de interés que suceden con regularidad en el mundo real en un momento dado y sus propiedades, tales como:
 
 + El paso de los vehículos, con propiedades como:
@@ -41,14 +41,14 @@ Y también notifica eventos emergentes y sus propiedades, como:
 Todo lo observado lo comunica  al *Registrador de eventos* indicando el tiempo exacto en el que sucedió (*timestamp*).
 
 ## Registrador de eventos
-Es el encargado de guardar un caché de los datos crudos enviados por el *Observador de eventos* e interpretarlos, para cada hora generar reportes con datos derivados que se almacenan en la base de datos. 
+Es el encargado de guardar un caché de los datos crudos enviados por el *Observador de eventos* e interpretarlos, para cada hora generar reportes con datos derivados que se almacenan en la base de datos.
 El reporte generado agrupa los datos por ciclo de semáforo, siendo éstos los siguientes:
 
 - Flujo por carril, es decir, el número de vehículos que pasan por cada carril cada determinado tiempo.
 - Tiempo de espera promedio por carril.
 - Densidad de cada carril.
-- Cola más larga en la señal roja. 
-- Número de vehículos que pasan en señal verde. 
+- Cola más larga en la señal roja.
+- Número de vehículos que pasan en señal verde.
 - Tiempo ocioso de la señal verde.
 - Cola más larga próxima fase.
 - Tiempo de cambio de la cola más larga en señal roja.
@@ -75,7 +75,7 @@ Ya que el proceso de hacer una predicción y su posterior optimización es un pr
 **(Incluir aquí gráfica de encolamiento de hilos)**
 
 <!-- Predice que cantidad de trafico relativo habrá en determinada hora (a definir si será de manera numérica o con expresiones relativas de lógica difusa, como *poco*, *mucho* o *normal*). -->
- 
+
 ## Categorizador de parámetros
 Se encarga de categorizar la influencia de los parámetro predichos entre sí mismos y como finalmente influyen sobre el comportamiento global del tráfico, para así obtener conclusiones en forma de restricciones y reglas aplicadas para al temporizado de los ciclos del semáforo.
 Categoriza intervalos de tiempo que presentan una serie de condiciones a términos abstractos, como: "hora pico", "hora sin actividad" o "tráfico esporádico", para así poder usar esas categorías como condiciones para las reglas y restricciones vistas anteriormente.
