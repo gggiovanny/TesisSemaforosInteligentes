@@ -34,3 +34,10 @@ Las calles se agrupan en intersecciones que tienen conexiones entre ellas y posi
 + edges_list: lista de todas las calles en la intersección. Útil si se quiere recorrer todas una por una.
 + conections_list: lista de todas las conexiones entre calles.
 + associated_traffic_light_name: el nombre del semáforo asociado a la interseccion.
+
+Ahora lo que sigue es modelar el EventObserver
+
+# Notas
++ Tomar inspiracion de los docs de [Edges value retrieval](https://sumo.dlr.de/docs/TraCI/Edge_Value_Retrieval.html#extended_retrieval_messages) para los calculos derivados de parametros para los reportes
+  + Tambien de vehiculos
++ 
