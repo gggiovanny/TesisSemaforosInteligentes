@@ -12,6 +12,9 @@ geometry: margin=20mm
 **Asesor externo:** Dr. Joel Antonio Trejo Sánchez
 
 # Introducción
+Los países en vías de desarrollo en innumerables ocasiones han tenido que afrontar problemas a los que otros países ya se han enfrentado antes. Algo positivo de esta situación es que a estas alturas, ya se cuenta con una gran base de conocimientos y poderosas herramientas tecnológicas que permiten resolver las problemáticas de manera innovadora.
+
+Uno de esos problemas es el tráfico urbano. Las que antes eran pequeñas urbes, se están sometiendo a un proceso de imparable crecimiento que hace que día con día se asemejen cada vez más a las grandes metrópolis comunes en los países más desarrollados. No es posible detener la rueda, el conocer en que se convertirán, es una excelente oportunidad para aprovechar el conocimiento acumulado de otros lugares para hacer que el crecimiento de éstas urbes sea óptimo.
 
 En las ciudades, el correcto manejo de los grandes volúmenes de tráfico siempre
 ha sido un problema. Por ello, a lo largo de la historia han existido diversos
@@ -32,7 +35,7 @@ Una cantidad significativa de la actividad en un área urbana tiene que ver con
 el movimiento de personas y bienes entre diferentes lugares usando la
 infraestructura de transporte, y un eficiente y fluido sistema de transporte es
 esencial para la salud económica y la calidad de vida dentro de las regiones
-urbanas. (Patriksson, 1994, p. 3)
+urbanas. [@Patriksson2012, p. 3]
 
 Conforme crecen las ciudades y se arraiga cada vez más la idea de la necesidad
 de tener trasporte personal, inevitablemente crece la demanda del sistema de
@@ -48,7 +51,7 @@ transporte. Este aumento trae consigo problemas serios, como:
 
 -   Contaminación sonora
 
-(Patriksson, 1994)
+[@Patriksson2012]
 
 > La congestión de tráfico urbano causa considerables costos debido a pérdidas de
 > tiempo, incrementa la posibilidad de accidentes, y los problemas de
@@ -113,7 +116,7 @@ que contamos con la información que este algoritmo nos brindará y en base a el
 desarrollar las estrategias inteligentes de control a usar por los semáforos.
 
 # Antecedentes
-_Poner aquí otros acercamientos con redes de Petri y trabajos similares._
+*Poner aquí otros acercamientos con redes de Petri y trabajos similares.*
 
 # Propuesta de Arquitectura
 
@@ -232,6 +235,8 @@ Son la manera en la que se plasman los intervalos de luces generados y son lo qu
 # Creación de simulación
 
 ## Red de tráfico
+Para probar y desarrollar a detalle la arquitectura se usará el simulador de tráfico urbano SUMO,
+
 [Guía de creación de escenarios.](https://sumo.dlr.de/docs/Tutorials/ScenarioGuide.html)
 
 Se creó la red usando [osmWebWizard](https://sumo.dlr.de/docs/Tutorials/OSMWebWizard.html). Especificar como este usa [netconvert](https://sumo.dlr.de/docs/netconvert.html) para importar datos de OpenStreetMap.
