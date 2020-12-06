@@ -12,9 +12,11 @@ geometry: margin=20mm
 **Asesor externo:** Dr. Joel Antonio Trejo Sánchez
 
 # Introducción
-Los países en vías de desarrollo en innumerables ocasiones han tenido que afrontar problemas a los que otros países ya se han enfrentado antes. Algo positivo de esta situación es que a estas alturas, ya se cuenta con una gran base de conocimientos y poderosas herramientas tecnológicas que permiten resolver las problemáticas de manera innovadora.
+Los países en vías de desarrollo en innumerables ocasiones han tenido que afrontar problemas a los que otros países ya se han enfrentado antes. Las que antes eran pequeñas urbes, se están sometiendo a un proceso de imparable crecimiento que hace que día con día se asemejen cada vez más a las grandes metrópolis comunes en los países más desarrollados. 
 
-Uno de esos problemas es el tráfico urbano. Las que antes eran pequeñas urbes, se están sometiendo a un proceso de imparable crecimiento que hace que día con día se asemejen cada vez más a las grandes metrópolis comunes en los países más desarrollados. No es posible detener la rueda, el conocer en que se convertirán, es una excelente oportunidad para aprovechar el conocimiento acumulado de otros lugares para hacer que el crecimiento de éstas urbes sea óptimo.
+No es posible detener la rueda, pero es es una excelente oportunidad para aprovechar la gran base de conocimientos acumulados por otras ciudades y las poderosas herramientas tecnológicas de la modernidad para resolver las problemáticas emergentes de manera innovadora y óptima.
+
+Uno de esos problemas es el tráfico urbano. 
 
 En las ciudades, el correcto manejo de los grandes volúmenes de tráfico siempre
 ha sido un problema. Por ello, a lo largo de la historia han existido diversos
