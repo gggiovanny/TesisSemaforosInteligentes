@@ -255,58 +255,62 @@ Los datos recuperados por osmWebWizard, a excepción al numero de carriles de la
 
 Una vez montada la simulación, fue necesario prepararla para manipularse programáticamente, por lo que el semáforo a controlar se renombró a *semaforo_circuito_colonias* y se modificó el comportamiento de los semáforos para que sean estáticos y solo cambien cuando se les indique manualmente usando código.
 
-<!-- Ahora quiero saber como SUMO maneja las luces de trafico (info [aqui](https://sumo.dlr.de/docs/Simulation/Traffic_Lights.html)). Necesito saber esto para luego poder controlar las intersecciones programáticamente desde TraCI y para poder dejar lista la red para luego enfocarme solo en la programación de los modulos de la arquitectura.
+<!-- Ahora quiero saber como SUMO maneja las luces de trafico (info [aqui](https://sumo.dlr.de/docs/Simulation/Traffic_Lights.html)). Necesito saber esto para luego poder controlar las intersecciones programáticamente desde TraCI y para poder dejar lista la red para luego enfocarme solo en la programación de los módulos de la arquitectura.
 
-Sumo no maneja las señales de trafico por calle, si no por conexion entre carriles (para ilustrar los derechos de paso y giros permitidos).
+Sumo no maneja las señales de trafico por calle, si no por conexión entre carriles (para ilustrar los derechos de paso y giros permitidos).
 En el netedit es posible agruparlos, pero decidí dejarlos sin agrupar para tener absoluto control de manera programática de cada conexión, y así me será posible agrupar las conexiones de la manera más lógica que se asemeje a la vida real.
 Descubri el orden de como maneja SUMO los indices de cada enlace: en orden de las manecillas del reloj, en teoría empezando por arriba, pero en este caso empieza por la derecha. Toma en cuenta para numerar los carriles que tienen tráfico entranto, los que solo reciben tráfico no se numeran (tiene sentido que sea así). -->
 
-### Cosas que agregar como introducción antes:
+
+<!-- ### Cosas que agregar como introducción antes:
 + ¿Qué es SUMO?
 + ¿Qué es TraCI?
 + ¿Qué es OpenStreetMaps? Usar citas como las vistas [aquí](https://sumo.dlr.de/docs/Networks/Import/OpenStreetMapDownload.html).
-+ ¿Qué es Python? (preguntar al doc si vale la pena)
++ ¿Qué es Python? (preguntar al doc si vale la pena) -->
 
-## Módulo observador de eventos
-Ahora voy a proceder a controlar la simulación previamente construida usando una interfaz para controlar SUMO
-llamada TraCI.
-TraCI viene incluída en la instalación por defecto de SUMO.
-Previamente ya la había utilizado y ya tengo mi manera de consumirlo, y me guié de la [guía oficial](https://sumo.dlr.de/docs/TraCI/Interfacing_TraCI_from_Python.html).
+## Modelado de la arquitectura
+Con la red de tráfico lista, el objetivo es programar la arquitectura previamente propuesta, y para ello se utilizará una interfaz para manipular la simulación en tiempo real
+llamada TraCI. Dicha interfaz ya viene incluído en la instalación por defecto de SUMO.
+<!-- Previamente ya la había utilizado y ya tengo mi manera de consumirlo, y me guié de la [guía oficial](https://sumo.dlr.de/docs/TraCI/Interfacing_TraCI_from_Python.html). -->
 
-Se modelaron las propiedades de una intersección en clases que se relacionan entre si.
+Los primeros módulos de la arquitectura a programar son el *Observador de eventos* y el *Registrador de eventos*, y para ello se modelaron las propiedades de una intersección en clases que se relacionan entre si.
 
 La más básica es Edge, que es lo equivalente a una calle y contiene sus propiedades asociadas:
 
++ conection_uses_from: relaciona el Edge con una Conection.
++ conection_uses_to: relaciona el Edge con una Conection.
++ name: nombre o apodo para la calle.
++ num_lanes: numero de carriles.
 + is_traffic_input: indica si el trafico entra por esta calle.
 + associated_detector_name: nombre del detector de trafico asociado a esta calle.
-+ num_lanes: numero de carriles.
++ street_name: nombre real de la calle.
 + aprox_length: largo aproximado de la calle.
 + aprox_total_width: ancho aproximado de la calle completa que incluye a todos los carriles.
-+ aprox_area: aprox_total_width # area calculada.
-+ from_direction: desde que direccion viene el la calle.
-+ to_direction: a que direccion va la calle.
+
 
 Las calles están conectadas entre si, y esta relación se representa a través de la clase Conection, que indica una conexión simple entre Edges (calles):
 
++ intersection:  relaciona que una Intersection puede tener varias Conections.
 + from_edge: desde que calle viene el trafico.
 + to_edge: hacia que calle viene el trafico.
-+ validate: si se deben validar que los parámetros recibidos representen una conexión válida. Por defecto es False, para evitar realizar esta operación cuando no sea necesario para ahorrar procesamiento
+
 
 Las calles se agrupan en intersecciones que tienen conexiones entre ellas y posiblemente un semáforo. Esto se representa en la clase Intersection:
 
-+ edges_list: lista de todas las calles en la intersección. Útil si se quiere recorrer todas una por una.
-+ conections_list: lista de todas las conexiones entre calles.
-+ associated_traffic_light_name: el nombre del semáforo asociado a la interseccion.
++ name: nombre o apodo para la intersección.
++ associated_traffic_light_name: el nombre del semáforo asociado a la intersección.
++ conections: lista de todas las conexiones entre calles.
 
-Ahora lo que sigue es modelar el EventObserver
 
-### Notas
+
+
+<!-- ### Notas
 + Tomar inspiracion de los docs de [Edges value retrieval](https://sumo.dlr.de/docs/TraCI/Edge_Value_Retrieval.html#extended_retrieval_messages) para los calculos derivados de parametros para los reportes
-  + Tambien de vehiculos
+  + Tambien de vehiculos -->
 
 
 
-
+<!-- 
 # Definiciones
 + Calle
 + Una intersección consiste de un conjunto de calles relacionadas entre sí y en el área de cruce. @Antonio2006a p.2
@@ -320,6 +324,6 @@ Ahora lo que sigue es modelar el EventObserver
 + TraCI:
 + Edge(arista/calle): A single-directed street connection between two points (junctions/nodes). An edge contains at least one lane.
 + Lane (carril):
-Sacar definiciones de [aqui](https://sumo.dlr.de/docs/Other/Glossary.html). Investigar como citarlo.
+Sacar definiciones de [aqui](https://sumo.dlr.de/docs/Other/Glossary.html). Investigar como citarlo. -->
 
 # Referencias
