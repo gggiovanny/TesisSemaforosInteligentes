@@ -237,26 +237,29 @@ Son la manera en la que se plasman los intervalos de luces generados y son lo qu
 # Creación de simulación
 
 ## Red de tráfico
-Para probar y desarrollar a detalle la arquitectura se usará el simulador de tráfico urbano SUMO,
+Para probar y desarrollar a detalle la arquitectura se usará el simulador de tráfico urbano SUMO, que incluye prácticamente todas las herramientas necesarias.
 
-[Guía de creación de escenarios.](https://sumo.dlr.de/docs/Tutorials/ScenarioGuide.html)
+<!-- [Guía de creación de escenarios.](https://sumo.dlr.de/docs/Tutorials/ScenarioGuide.html) -->
 
-Se creó la red usando [osmWebWizard](https://sumo.dlr.de/docs/Tutorials/OSMWebWizard.html). Especificar como este usa [netconvert](https://sumo.dlr.de/docs/netconvert.html) para importar datos de OpenStreetMap.
-Explicar como osmWebWizard [obtiene datos de OpenStreetMaps](https://sumo.dlr.de/docs/Tutorials/PT_from_OpenStreetMap.html) (OSM).
+Se creó la red de tráfico usando un script llamado [osmWebWizard](https://sumo.dlr.de/docs/Tutorials/OSMWebWizard.html), que permite seleccionar un área geográfica real desde OpenStreetMaps y convertirla en el tipo de archivo que utiliza el simulador.
+<!-- 
+ Especificar como este usa [netconvert](https://sumo.dlr.de/docs/netconvert.html) para importar datos de OpenStreetMap.
+Explicar como osmWebWizard [obtiene datos de OpenStreetMaps](https://sumo.dlr.de/docs/Tutorials/PT_from_OpenStreetMap.html) (OSM). -->
 
-Se hizo en una intersección de Mérida que yo conozco bastante bien, para poder simular flujos a partir de lugares conocidos, y en dado caso de ser necesario recolectar datos reales, literalmente puedo ir a contar y medir.
+Para motivos de prueba, se usó una intersección de Mérida conocida, para poder simular flujos a partir de lugares familiares, y en dado caso de ser necesario recolectar datos reales.
+La intersección en cuestión está ubicada en el sur de la ciudad, donde Circuito Colonias se cruza con la calle 50.
 
-La intersección está ubicada en circuito colonias, cerca de super aki (especificar).
+Para corroborar que los datos generados por el script sean certeros, se comparó la generación de la intersección con imágenes reales de Google Maps, y hubo que ajustar el ancho del carril que corresponde a la calle 50 de uno a dos carriles (realmente tiene como 4, pero siempre hay coches estacionados a ambos costados, al final se pueden aprovechar solo 2). Desconozco si las calles adyacentes tienen el ancho correcto, pero considero que solo ésta afectan al objetivo de la simulación.
 
-Se comparó la generación de la intersección con imágenes reales de google maps, y hubo que ajustar el ancho del carril que corresponde a la calle 50 de 1 a dos carriles (realmente tiene como 4, pero siempre hay coches estacionados a ambos costados, y al final se pueden aprovechar solo 2). Desconozco si las calles adyacentes tienen el ancho correcto, pero considero que solo ésta afectan al objetivo de la simulación.
+Los datos recuperados por osmWebWizard, a excepción al numero de carriles de la calle 50, fueron bastante certeros, y la intersección de interés tiene correctamente los derechos de paso del semáforo.
 
-Los datos recuperados por osmWebWizard, a excepción al numero de carriles de la calle 50, fueron bastante certeros. La intersección que me interesa contiene tiene correctamente los derechos de paso del semáforo.
+Una vez montada la simulación, fue necesario prepararla para manipularse programáticamente, por lo que el semáforo a controlar se renombró a *semaforo_circuito_colonias* y se modificó el comportamiento de los semáforos para que sean estáticos y solo cambien cuando se les indique manualmente usando código.
 
-Ahora quiero saber como SUMO maneja las luces de trafico (info [aqui](https://sumo.dlr.de/docs/Simulation/Traffic_Lights.html)). Necesito saber esto para luego poder controlar las intersecciones programáticamente desde TraCI y para poder dejar lista la red para luego enfocarme solo en la programación de los modulos de la arquitectura.
+<!-- Ahora quiero saber como SUMO maneja las luces de trafico (info [aqui](https://sumo.dlr.de/docs/Simulation/Traffic_Lights.html)). Necesito saber esto para luego poder controlar las intersecciones programáticamente desde TraCI y para poder dejar lista la red para luego enfocarme solo en la programación de los modulos de la arquitectura.
 
 Sumo no maneja las señales de trafico por calle, si no por conexion entre carriles (para ilustrar los derechos de paso y giros permitidos).
 En el netedit es posible agruparlos, pero decidí dejarlos sin agrupar para tener absoluto control de manera programática de cada conexión, y así me será posible agrupar las conexiones de la manera más lógica que se asemeje a la vida real.
-Descubri el orden de como maneja SUMO los indices de cada enlace: en orden de las manecillas del reloj, en teoría empezando por arriba, pero en este caso empieza por la derecha. Toma en cuenta para numerar los carriles que tienen tráfico entranto, los que solo reciben tráfico no se numeran (tiene sentido que sea así).
+Descubri el orden de como maneja SUMO los indices de cada enlace: en orden de las manecillas del reloj, en teoría empezando por arriba, pero en este caso empieza por la derecha. Toma en cuenta para numerar los carriles que tienen tráfico entranto, los que solo reciben tráfico no se numeran (tiene sentido que sea así). -->
 
 ### Cosas que agregar como introducción antes:
 + ¿Qué es SUMO?
