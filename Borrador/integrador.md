@@ -117,8 +117,8 @@ realizada por otros colegas en el CIMAT. Lo que nos ocupa a nosotros es suponer
 que contamos con la información que este algoritmo nos brindará y en base a ello
 desarrollar las estrategias inteligentes de control a usar por los semáforos.
 
-# Antecedentes
-*Poner aquí otros acercamientos con redes de Petri y trabajos similares.*
+<!-- # Antecedentes
+*Poner aquí otros acercamientos con redes de Petri y trabajos similares.* -->
 
 # Propuesta de Arquitectura
 
@@ -269,7 +269,7 @@ Descubri el orden de como maneja SUMO los indices de cada enlace: en orden de la
 + ¿Qué es Python? (preguntar al doc si vale la pena) -->
 
 ## Modelado de la arquitectura
-Con la red de tráfico lista, el objetivo es programar la arquitectura previamente propuesta, y para ello se utilizará una interfaz para manipular la simulación en tiempo real
+Con la red de tráfico lista, el objetivo es programar la arquitectura previamente propuesta en Python, y para ello se utilizará una interfaz para manipular la simulación en tiempo real
 llamada TraCI. Dicha interfaz ya viene incluído en la instalación por defecto de SUMO.
 <!-- Previamente ya la había utilizado y ya tengo mi manera de consumirlo, y me guié de la [guía oficial](https://sumo.dlr.de/docs/TraCI/Interfacing_TraCI_from_Python.html). -->
 
@@ -301,7 +301,9 @@ Las calles se agrupan en intersecciones que tienen conexiones entre ellas y posi
 + associated_traffic_light_name: el nombre del semáforo asociado a la intersección.
 + conections: lista de todas las conexiones entre calles.
 
+Siguiendo la arquitectura, los datos de cada intersección y del estado de la simulación deben almacenarse en algún lugar para posteriormente realizar un reporte que se guardará para su análisis. Se escogió medio de almacenamiento temporal una base de datos en sqlite, y se utilizó la librería Pony ORM para convertir el modelado en clases a tablas de una base de datos.
 
+Actualmente se está trabajando en la implementación del framework Flow, que permite manipular conectar fácilmente SUMO con librerías de Reinforcement Learning, así como incluye métodos para generar tráfico de manera más realista.
 
 
 <!-- ### Notas
