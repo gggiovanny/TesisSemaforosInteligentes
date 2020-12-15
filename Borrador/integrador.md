@@ -216,6 +216,123 @@ Tiene las funciones para necesarias para leer la red de Petri temporizada que re
 ## Luces de semáforo
 Son la manera en la que se plasman los intervalos de luces generados y son lo que físicamente indica a los conductores cuando deben circular o detenerse.
 
+# Recursos: SUMO
+Para probar y desarrollar a detalle la arquitectura, es necesario contar con un entorno de simulación versátil y altamente configurable donde probar los algoritmos creados en base a nuestras hipótesis. 
+El primer acercamiento para resolver reste problema fue desarrollar desde cero un simulador de tráfico, pero ya que esto tiene su propia complejidad y no el objetivo final al que pretendemos llegar, buscamos otras alternativas. De entre todas, la que parece ser la solución definitiva es el simulador de tráfico urbano SUMO.
+"**S**imulation of **U**rban **MO**bility" (Eclipse SUMO) es un paquete de simulación de tráfico vial de código abierto, altamente portátil, microscópico y continúo diseñado para manejar grandes redes viales. Permite simular cómo una determinada demanda de tráfico que consiste en vehículos individuales se mueve a través de una red de carreteras determinada. La simulación permite abordar un amplio conjunto de temas de gestión del tráfico. Es puramente microscópico: cada vehículo está modelado explícitamente, tiene una ruta propia y se mueve individualmente a través de la red. Las simulaciones son deterministas por defecto, pero hay varias opciones para introducir la aleatoriedad.
+
+Al tratarse de un paquete, la instalación por defecto incluye varias aplicaciones, scripts e interfaces aparte de SUMO. Estas aplicaciones se utilizan para importar y preparar redes de carreteras, así como para procesar datos para su uso en SUMO.
+
+## Características relevantes de SUMO para la investigación de técnicas de control de semáforos.
+-   Incluye todas las aplicaciones necesarias para preparar y realizar una
+    simulación de tráfico
+-   Permite simular desde una solo intersección hasta ciudades enteras
+-   Altamente configurable a través de archivos XML
+-   Documentación completa y actualizada de todas las características,
+    interfaces y librerías que incluye, así como guías, tutoriales y ejemplos de
+    configuración de gran cantidad tópicos.
+-   Gran cantidad de tipos de vehículos disponibles, entre ellos de emergencia
+    (ambulancias) y de autoridad (patrullas).
+-   Calles de varios carriles con cambio de carril, carriles configurables para
+    permitir solo el tipo de tráfico especificado.
+-   Diferentes reglas de derecho de paso, semáforos
+-   Incluye interfaces en Python para obtener datos de la simulación en tiempo
+    real, así como para controlar aspectos de esta, como los semáforos.
+-   Incluye editor gráfico de rutas y GUI para el simulador.
+-   Velocidad de ejecución rápida (hasta 100.000 actualizaciones de vehículo por
+    segundo en una máquina de 1 GHz)
+-   Código abierto (EPL)
+
+## Vista general
+Editor gráfico NETEDIT mostrando una inserción y el menú de edición de semáforos.
+![](../imagenes/sumo/1cb8aa292f0be15b402ccd4f098f53e0.png)
+
+Simulando la intersección anterior de manera gráfica en SumoGui.
+![](../imagenes/sumo/f06ad63e2235a639007f9748f2326f91.png)
+
+Controlando los semáforos desde Python con TraCI (Traffic Control Interface).
+![](../imagenes/sumo/8a185a540ef5e98b250d7c70216cddfc.png)
+
+Los diversos tipos de vehículos disponibles.
+![](../imagenes/sumo/d600ef6ce1de01e90d10a436d7b6bb75.png)
+
+## Simulación de semáforos
+
+Los semáforos (llamados en el simulador TLS - *Traffic Light System*) se pueden
+crear de manera gráfica en NETDIT y automáticamente generan un programa de
+control.
+
+![](../imagenes/sumo/d53e12f08f94d08fd7e31f214786b43e.png)
+
+![](../imagenes/sumo/e760085ba60c72e71c15ed1d0d5ab9aa.png)
+
+
+## Definición de nuevos programas TLS
+
+Se puede cargar nuevas definiciones para semáforos como parte de un archivo
+adicional. La definición de un programa de semáforo dentro de un archivo
+adicional se ve así:
+
+```xml
+<additional>
+    <tlLogic id="semaforo_principal" type="static" programID="principal" offset="0">
+        <phase duration="40" state="GrGr"/>
+        <phase duration="6" state="yryr"/>
+        <phase duration="40" state="rGrG"/>
+        <phase duration="6" state="ryry"/>
+    </tlLogic>
+</additional>
+```
+Cada programa está compuesto de varias fases de cierta duración. En cada una, el atributo *state* define con una cadena de caracteres los colores de todos los semáforos en esa fase. El significado de los caracteres principales se puede ver en la siguiente tabla:
+
+| Caracter | Color    | Descripción                                                                                          |
+|----------|----------|------------------------------------------------------------------------------------------------------|
+| r        | rojo     | Luz roja: los vehículos deben detenerse.                                                             |
+| y        | amarillo | Luz amarilla:los vehículos desacelerarán si están lejos de la insersección, de lo contrario pasarán. |
+| G        | verde    | Luz verde de prioridad: los vehículos pasarán.
+
+La posiciónde cada caracter en la cadena se corresponde con las conexiones de la insercción controlada empezando desde arriba en el orden de las manecillas del reloj. Por ejemplo, la siguiente imagen se corresponde con la cadena `state = "GrGr"`.
+![](../imagenes/sumo/tls_light_order.png)
+
+## Control de los semáforos con Python
+Más importante aún, también es posible controlar los estados de los semáforos programáticamente a través de una interfaz incluida en el paquete de instalación llamada TraCI.
+
+TraCI es la abreviatura de " **Tra**fic **C**ontrol **I**nterface". Al dar
+acceso a una simulación de tráfico en ejecución, permite recuperar valores de
+objetos simulados y manipular su comportamiento "en línea".
+
+TraCI utiliza una arquitectura cliente / servidor basada en TCP para
+proporcionar acceso a SUMO. De este modo, SUMO actúa como servidor y el código Python con TraCI como cliente.
+
+A continuación, se muestra el código de ejemplo que controla la lógica del
+semáforo para que se controle de la siguiente manera:
+
+![](../imagenes/sumo/3a9d001be95c93c93c1c13ed9aeb7b26.gif)
+
+El ejemplo muestra una simple intersección de cuatro vías. Hay tráfico normal en
+el eje horizontal y vehículos importantes (ambulancias, patrullas, camiones de
+bomberos, etc.) en el eje vertical de norte a sur. En la vía que viene desde el
+norte hay un detector para reconocer a los vehículos que van entrando. Mientras
+que ningún vehículo ingresa desde el norte, siempre damos color verde en el eje
+horizontal, pero cuando un vehículo ingresa al circuito del detector, cambiamos
+la señal de inmediato para que el vehículo pueda cruzar la intersección sin
+detenerse.
+
+```python
+step = 0
+traci.trafficlight.setPhase("0", 2)
+while traci.simulation.getMinExpectedNumber() > 0:
+    traci.simulationStep()
+    if traci.trafficlight.getPhase("0") == 2:
+        if traci.inductionloop.getLastStepVehicleNumber("0") > 0:
+            traci.trafficlight.setPhase("0", 3)
+        else:
+            traci.trafficlight.setPhase("0", 2)
+    step += 1
+traci.close()
+```
+
+
 # Creación de simulación
 
 ## Red de tráfico
