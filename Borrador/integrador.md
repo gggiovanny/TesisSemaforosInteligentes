@@ -219,7 +219,7 @@ Son la manera en la que se plasman los intervalos de luces generados y son lo qu
 # Recursos: SUMO
 Para probar y desarrollar a detalle la arquitectura, es necesario contar con un entorno de simulación versátil y altamente configurable donde probar los algoritmos creados en base a nuestras hipótesis. 
 El primer acercamiento para resolver reste problema fue desarrollar desde cero un simulador de tráfico, pero ya que esto tiene su propia complejidad y no el objetivo final al que pretendemos llegar, buscamos otras alternativas. De entre todas, la que parece ser la solución definitiva es el simulador de tráfico urbano SUMO.
-"**S**imulation of **U**rban **MO**bility" (Eclipse SUMO) es un paquete de simulación de tráfico vial de código abierto, altamente portátil, microscópico y continúo diseñado para manejar grandes redes viales. Permite simular cómo una determinada demanda de tráfico que consiste en vehículos individuales se mueve a través de una red de carreteras determinada. La simulación permite abordar un amplio conjunto de temas de gestión del tráfico. Es puramente microscópico: cada vehículo está modelado explícitamente, tiene una ruta propia y se mueve individualmente a través de la red. Las simulaciones son deterministas por defecto, pero hay varias opciones para introducir la aleatoriedad.
+"**S**imulation of **U**rban **MO**bility" (Eclipse SUMO) es un paquete de simulación de tráfico vial de código abierto, altamente portátil, microscópico y continúo diseñado para manejar grandes redes viales [@SUMO2018]. Permite simular cómo una determinada demanda de tráfico que consiste en vehículos individuales se mueve a través de una red de carreteras determinada. La simulación permite abordar un amplio conjunto de temas de gestión del tráfico. Es puramente microscópico: cada vehículo está modelado explícitamente, tiene una ruta propia y se mueve individualmente a través de la red. Las simulaciones son deterministas por defecto, pero hay varias opciones para introducir la aleatoriedad.
 
 Al tratarse de un paquete, la instalación por defecto incluye varias aplicaciones, scripts e interfaces aparte de SUMO. Estas aplicaciones se utilizan para importar y preparar redes de carreteras, así como para procesar datos para su uso en SUMO.
 
@@ -334,14 +334,23 @@ traci.close()
 
 
 # Creación de simulación
-
-## Red de tráfico
 Para probar y desarrollar a detalle la arquitectura se usará el simulador de tráfico urbano SUMO, que incluye prácticamente todas las herramientas necesarias.
+
+## Red de carreteras
+
+El primer paso para crear una simulación en SUMO consiste en crear una red de carreteras.
+Dichas redes deben estar definidas en un archivo con extensión .net.xml que puede ser creado de múltiples maneras.
+Una de ellas es utilizando la aplicación netconvert (incluida en la instalación base), que se encarga de importar redes de carreteras de diferentes fuentes que pueden ser usadas por otras herramientas del paquete incluído en SUMO. 
+También es posible utilizar la aplicación gráfica netedit para editar una red previamente creada con netconvert o incluso crear una desde cero con la misma aplicación.
+
+El método usado para crear la red de carreteras que utilizará la sumulación es una combinación de los dos anteriores. Se creó la red de tráfico usando un script llamado [osmWebWizard](https://sumo.dlr.de/docs/Tutorials/OSMWebWizard.html), que permite seleccionar un área geográfica real desde OpenStreetMaps y convertirla en el red con extensión .net.xml que utiliza SUMO.
+
+<!-- todo: agregar imagen de osmWebWizard -->
 
 <!-- todo: [Guía de creación de escenarios.](https://sumo.dlr.de/docs/Tutorials/ScenarioGuide.html) -->
 
-Se creó la red de tráfico usando un script llamado [osmWebWizard](https://sumo.dlr.de/docs/Tutorials/OSMWebWizard.html), que permite seleccionar un área geográfica real desde OpenStreetMaps y convertirla en el tipo de archivo que utiliza el simulador.
-<!-- 
+
+<!-- todo
  Especificar como este usa [netconvert](https://sumo.dlr.de/docs/netconvert.html) para importar datos de OpenStreetMap.
 Explicar como osmWebWizard [obtiene datos de OpenStreetMaps](https://sumo.dlr.de/docs/Tutorials/PT_from_OpenStreetMap.html) (OSM). -->
 
