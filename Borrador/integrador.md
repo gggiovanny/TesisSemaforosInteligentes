@@ -24,7 +24,7 @@ acercamientos para intentar solucionar esta problemática. Un caso célebre y
 funcional es el del semáforo, que comenzó a masificarse a partir de la explosión
 del uso del *Modelo T* en Estados Unidos. Por muchos años esta ha sido una
 solución efectiva, pero conforme las urbes crecen más y más, llegan a ser
-insuficientes para tanto volumen de tráfico. Es en tiempos más recientes cuando
+insuficientes para tal cantidad de volumen de tráfico. Es en tiempos más recientes cuando
 se han comenzado a implementar estrategias que le brindan 'inteligencia' al
 comportamiento de los mismos, a través el uso de inductores para condicionar el
 comportamiento del semáforo, o detectores de luces infrarrojas para detectar el
@@ -98,27 +98,9 @@ inteligente.
 >   este cambio se realice de acuerdo a la demanda de tráfico y a la
 >   coordinación con intersecciones adyacentes. (Trejo, 2006)
 
-La idea de un semáforo que se adapta a la demanda de tráfico no es nueva. Ya
-existen acercamientos a esta idea, desde la más básica cambiando el ciclo de las
-luces dependiendo de la hora del día, hasta las más complejas y costosas que
-usan inductores posicionados estratégicamente antes de llegar a las
-intersecciones para contabilizar cuantos vehículos están esperando en cada
-carril para que los semáforos usen esta información para, por ejemplo, no dar
-paso a un carril que no tiene ningún vehículo esperando. El problema es que
-implementar la solución anterior es costoso, y aun así tiene mucho margen de
-mejora, pues la información que puede proporcionar un inductor se limita a si un
-vehículo pasa encima de él y la hora en la que sucede, lo que complica analizar
-el flujo real de cada uno de los vehículos. Por ello pretendemos darles uso a
-las cámaras que muchas veces ya se encuentran en las intersecciones y usar sus
-imágenes para alimentar algoritmos de machine learning de reconocimiento de
-objetos, y así saber cuántos, de que tipo y dirección de los vehículos. Ya que
-esta tarea tiene su propia serie de retos y complicaciones, está siento
-realizada por otros colegas en el CIMAT. Lo que nos ocupa a nosotros es suponer
-que contamos con la información que este algoritmo nos brindará y en base a ello
-desarrollar las estrategias inteligentes de control a usar por los semáforos.
-
-<!-- # Antecedentes
-*Poner aquí otros acercamientos con redes de Petri y trabajos similares.* -->
+La idea de un semáforo que se adapta a la demanda de tráfico no es nueva. 
+<!-- todo: agregar referencias y otros acercamientos con redes de Petri y trabajos similares-->
+Ya existen acercamientos a esta idea, desde la más básica cambiando el ciclo de las luces dependiendo de la hora del día, hasta las más complejas y costosas que usan inductores posicionados estratégicamente antes de llegar a las intersecciones para contabilizar cuantos vehículos están esperando en cada carril para que los semáforos usen esta información para, por ejemplo, no dar paso a un carril que no tiene ningún vehículo esperando. El problema es que implementar la solución anterior es costoso, y aun así tiene mucho margen de mejora, pues la información que puede proporcionar un inductor se limita a si un vehículo pasa encima de él y la hora en la que sucede, lo que complica analizar el flujo real de cada uno de los vehículos. Por ello pretendemos darles uso a las cámaras que muchas veces ya se encuentran en las intersecciones y usar sus imágenes para alimentar algoritmos de machine learning de reconocimiento de objetos, y así saber cuántos, de que tipo y dirección de los vehículos. Ya que esta tarea tiene su propia serie de retos y complicaciones, está siento realizada por otros colegas en el CIMAT. Lo que nos ocupa a nosotros es suponer que contamos con la información que este algoritmo nos brindará y en base a ello desarrollar las estrategias inteligentes de control a usar por los semáforos.
 
 # Propuesta de Arquitectura
 
@@ -189,9 +171,9 @@ Se alimenta del histórico de reportes generados por el *Registrador de eventos*
 
 Ya que el proceso de hacer una predicción y su posterior optimización es un proceso intensivo, las peticiones para nuevas predicciones suceden cada hora, pero de manera escalonada. Por ejemplo: si existen 4 agentes de control, uno iniciará una petición de predicción a las 2:00 p.m., mientras que otra los hará a las 2:15 p.m., otro a las 2:30, y así sucesivamente, de tal manera que el tiempo entre cada hora se se reparta lo más igualitariamente posible. De la mano con estas peticiones escalonadas, las peticiones se realizarán de manera asíncrona usando hilos de procesamiento para lograr paralelizar el procesamiento de varias intersecciones a la vez de ser necesario. De esta manera, se aprovecha también el sistema de encolamiento de hilos nativo de los sistemas operativos, que resulta particularmente útil para no atrasar las predicciones programadas por las realizadas bajo demanda.
 
-**(Incluir aquí gráfica de encolamiento de hilos)**
+ <!-- todo: (Incluir aquí gráfica de encolamiento de hilos) -->
 
-<!-- Predice que cantidad de trafico relativo habrá en determinada hora (a definir si será de manera numérica o con expresiones relativas de lógica difusa, como *poco*, *mucho* o *normal*). -->
+<!-- todo: Predice que cantidad de trafico relativo habrá en determinada hora (a definir si será de manera numérica o con expresiones relativas de lógica difusa, como *poco*, *mucho* o *normal*). -->
 
 ## Categorizador de parámetros
 Se encarga de categorizar la influencia de los parámetro predichos entre sí mismos y como finalmente influyen sobre el comportamiento global del tráfico, para así obtener conclusiones en forma de restricciones y reglas aplicadas para al temporizado de los ciclos del semáforo.
@@ -239,7 +221,7 @@ Son la manera en la que se plasman los intervalos de luces generados y son lo qu
 ## Red de tráfico
 Para probar y desarrollar a detalle la arquitectura se usará el simulador de tráfico urbano SUMO, que incluye prácticamente todas las herramientas necesarias.
 
-<!-- [Guía de creación de escenarios.](https://sumo.dlr.de/docs/Tutorials/ScenarioGuide.html) -->
+<!-- todo: [Guía de creación de escenarios.](https://sumo.dlr.de/docs/Tutorials/ScenarioGuide.html) -->
 
 Se creó la red de tráfico usando un script llamado [osmWebWizard](https://sumo.dlr.de/docs/Tutorials/OSMWebWizard.html), que permite seleccionar un área geográfica real desde OpenStreetMaps y convertirla en el tipo de archivo que utiliza el simulador.
 <!-- 
@@ -255,7 +237,7 @@ Los datos recuperados por osmWebWizard, a excepción al numero de carriles de la
 
 Una vez montada la simulación, fue necesario prepararla para manipularse programáticamente, por lo que el semáforo a controlar se renombró a *semaforo_circuito_colonias* y se modificó el comportamiento de los semáforos para que sean estáticos y solo cambien cuando se les indique manualmente usando código.
 
-<!-- Ahora quiero saber como SUMO maneja las luces de trafico (info [aqui](https://sumo.dlr.de/docs/Simulation/Traffic_Lights.html)). Necesito saber esto para luego poder controlar las intersecciones programáticamente desde TraCI y para poder dejar lista la red para luego enfocarme solo en la programación de los módulos de la arquitectura.
+<!-- todo: Ahora quiero saber como SUMO maneja las luces de trafico (info [aqui](https://sumo.dlr.de/docs/Simulation/Traffic_Lights.html)). Necesito saber esto para luego poder controlar las intersecciones programáticamente desde TraCI y para poder dejar lista la red para luego enfocarme solo en la programación de los módulos de la arquitectura.
 
 Sumo no maneja las señales de trafico por calle, si no por conexión entre carriles (para ilustrar los derechos de paso y giros permitidos).
 En el netedit es posible agruparlos, pero decidí dejarlos sin agrupar para tener absoluto control de manera programática de cada conexión, y así me será posible agrupar las conexiones de la manera más lógica que se asemeje a la vida real.
@@ -271,7 +253,7 @@ Descubri el orden de como maneja SUMO los indices de cada enlace: en orden de la
 ## Modelado de la arquitectura
 Con la red de tráfico lista, el objetivo es programar la arquitectura previamente propuesta en Python, y para ello se utilizará una interfaz para manipular la simulación en tiempo real
 llamada TraCI. Dicha interfaz ya viene incluído en la instalación por defecto de SUMO.
-<!-- Previamente ya la había utilizado y ya tengo mi manera de consumirlo, y me guié de la [guía oficial](https://sumo.dlr.de/docs/TraCI/Interfacing_TraCI_from_Python.html). -->
+<!-- todo: Previamente ya la había utilizado y ya tengo mi manera de consumirlo, y me guié de la [guía oficial](https://sumo.dlr.de/docs/TraCI/Interfacing_TraCI_from_Python.html). -->
 
 Los primeros módulos de la arquitectura a programar son el *Observador de eventos* y el *Registrador de eventos*, y para ello se modelaron las propiedades de una intersección en clases que se relacionan entre si.
 
@@ -306,7 +288,7 @@ Siguiendo la arquitectura, los datos de cada intersección y del estado de la si
 Actualmente se está trabajando en la implementación del framework Flow, que permite manipular conectar fácilmente SUMO con librerías de Reinforcement Learning, así como incluye métodos para generar tráfico de manera más realista.
 
 
-<!-- ### Notas
+<!-- todo: ### Notas
 + Tomar inspiracion de los docs de [Edges value retrieval](https://sumo.dlr.de/docs/TraCI/Edge_Value_Retrieval.html#extended_retrieval_messages) para los calculos derivados de parametros para los reportes
   + Tambien de vehiculos -->
 
