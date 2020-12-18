@@ -7,17 +7,56 @@ geometry: margin=20mm
 
 # Introducción
 
-Los países en vías de desarrollo en innumerables ocasiones han tenido que afrontar problemas a los que otros países ya se han enfrentado antes. Las que antes eran pequeñas urbes, se están sometiendo a un proceso de imparable crecimiento que hace que día con día se asemejen cada vez más a las grandes metrópolis comunes en los países más desarrollados. 
+Los países en vías de desarrollo en innumerables ocasiones han tenido que
+afrontar problemas a los que otros países ya se han enfrentado antes. Las que
+antes eran pequeñas urbes, se están sometiendo a un proceso de imparable
+crecimiento que hace que día con día se asemejen cada vez más a las grandes
+metrópolis comunes en los países más desarrollados. 
 
-No es posible detener la rueda, pero es es una excelente oportunidad para aprovechar la gran base de conocimientos acumulados por otras ciudades y las poderosas herramientas tecnológicas de la modernidad para resolver las problemáticas emergentes de manera innovadora y óptima.
+<!-- todo: buscar datos y cita de crecimiento de paises en vias de desarrollo -->
 
-Uno de esos problemas es el tráfico urbano. 
+No es posible detener la rueda, pero es es una excelente oportunidad para
+aprovechar la gran base de conocimientos acumulados por otras ciudades y las
+poderosas herramientas tecnológicas de la modernidad para resolver las
+problemáticas emergentes de manera innovadora y óptima.
+
+Una de dichas problemáticas es el aumento del tráfico urbano, que se disparó
+enormemente desde que Henry Ford comenzara a producir en masa el Modelo T en
+1913 [@McShane1999, p. 380]. En las décadas posteriores a la Segunda Guerra
+Mundial se continuó mostrando un enorme incremento en la demanda de transporte.
+La mayor parte de este incremento se le atribuye al progreso del transporte
+personal, que tiene sus raíces en la urbanización y en el crecimiento de los
+estándares de vida [@Patriksson2012, p.3].
+
+<!-- todo: buscar datos y cita de aumento de urbanizacion y estandares de vida en paises en vias de desarrollo, o mejor aun, de México-->
+
+
+Según [@P.daCunha2009], es a partir de la década de los 50's que el proceso de
+urbanización en América Latina se aceleró, 
+
+
+En Latinoamérica el nivel creciente de urbanización y la mayor productividad
+asociada al proceso de aglomeración económica, han inducido una mayor demanda de
+vehículos por parte de los hogares y de los negocios para llevar a cabo las
+actividades económicas. [@Medina-Durango2011]
+
+
+
+El aumento de las señales de tráfico está relacionado con el rápido aumento del
+tráfico automotor.
+
 
 En las ciudades, el correcto manejo de los grandes volúmenes de tráfico siempre
-ha sido un problema. Por ello, a lo largo de la historia han existido diversos
-acercamientos para intentar solucionar esta problemática. Un caso célebre y
-funcional es el del semáforo, que comenzó a masificarse a partir de la explosión
-del uso del *Modelo T* en Estados Unidos. Por muchos años esta ha sido una
+ha sido un problema. 
+
+Por ello, a lo largo de la historia han existido diversos
+acercamientos para intentar solucionar esta problemática. 
+De acuerdo a [@McShane1999], el aumento de las señales de tráfico está ligado al rápido aumento del tráfico de automóviles.
+
+ que comenzó a masificarse a partir de la explosión
+del uso del *Modelo T* en Estados Unidos. 
+
+Por muchos años esta ha sido una
 solución efectiva, pero conforme las urbes crecen más y más, llegan a ser
 insuficientes para tal cantidad de volumen de tráfico. Es en tiempos más recientes cuando
 se han comenzado a implementar estrategias que le brindan 'inteligencia' al
