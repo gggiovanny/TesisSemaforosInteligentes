@@ -286,3 +286,7 @@ TSWLatexianTemp*
 
 /build
 /.vscode
+*.docx
+*.doc
+*.pdf
+/mendeley
