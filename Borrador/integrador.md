@@ -1,7 +1,8 @@
 ---
 title: Diseño e implementación de arquitectura para control inteligente de tráfico urbano
 bibliography: [D:/Files/Documents/source/Tesis/mendeley/tesis_tls_cimat.bib]
-csl: D:/Files/Documents/source/Tesis/mendeley/apa.csl
+csl: D:/Files/Documents/source/Tesis/apa7-spanish.csl
+lang: es
 geometry: margin=20mm
 ---
 
@@ -95,13 +96,13 @@ Ejemplo verbal: si se hacen ciclos en verde un un carril **mayores a** 45 segund
 
 Este módulo analiza constantemente los reportes almacenados en la base de datos para realizar el proceso mencionado anteriormente y todo lo inferido se guarda de manera centralizada como una base de conocimientos central como registros en la base de datos.
 
-Este módulo se inspiro en la llamada *Colección de hechos* usada en @Antonio2006a.
+Este módulo se inspiro en la llamada *Colección de hechos* usada en @JoelTrejo2006.
 
 > La colección de hechos alberga los datos correspondientes a la aplicación de
 > determinada estrategia de control cuando se presentan ciertas condiciones en el
 > tráfico observado. La colección de hechos puede desempeñar el papel de memoria
 > auxiliar en la cual se registran los razonamientos llevados a cabo.
-[@Antonio2006a, p. 47]
+[@JoelTrejo2006, p. 47]
 
 ## Motor de priorización
 Se encarga de asignar un valor numérico a cada carril, que indica su prioridad. Entre mayor el número, mayor la prioridad.
@@ -334,12 +335,12 @@ Actualmente se está trabajando en la implementación del framework Flow, que pe
 <!-- 
 # Definiciones
 + Calle
-+ Una intersección consiste de un conjunto de calles relacionadas entre sí y en el área de cruce. @Antonio2006a p.2
-+ Un Semáforo es el elemento de la intersección responsable de desplegar las estrategias de control establecidas en la intersección. @Antonio2006a p. 3
-+ El flujo se define para el caso de control de tráfico urbano, como el número de vehículos que pasan por algún punto @Antonio2006a p.3
-+ La densidad se define como el número de vehículos en un tramo de la calle dividida entre la longitud de la calle @Antonio2006a p.4
++ Una intersección consiste de un conjunto de calles relacionadas entre sí y en el área de cruce. @JoelTrejo2006 p.2
++ Un Semáforo es el elemento de la intersección responsable de desplegar las estrategias de control establecidas en la intersección. @JoelTrejo2006 p. 3
++ El flujo se define para el caso de control de tráfico urbano, como el número de vehículos que pasan por algún punto @JoelTrejo2006 p.3
++ La densidad se define como el número de vehículos en un tramo de la calle dividida entre la longitud de la calle @JoelTrejo2006 p.4
 + Ciclo de semáforo
-+ Estado: El estado del sistema de tráfico urbano índica la situación en la que se encuentra el sistema en un instante de tiempo dado @Antonio2006a p.3
++ Estado: El estado del sistema de tráfico urbano índica la situación en la que se encuentra el sistema en un instante de tiempo dado @JoelTrejo2006 p.3
 + Tráfico
 
 + TraCI:

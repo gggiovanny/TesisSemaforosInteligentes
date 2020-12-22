@@ -2,7 +2,8 @@
 title: Descripción de la arquitectura
 geometry: margin=20mm
 bibliography: [D:/Files/Documents/source/Tesis/mendeley/tesis_tls_cimat.bib]
-csl: D:/Files/Documents/source/Tesis/mendeley/apa.csl
+csl: D:/Files/Documents/source/Tesis/apa7-spanish.csl
+lang: es
 ---
 
 ![](Propuesta%20de%20arquitectura.png)
@@ -85,13 +86,13 @@ Ejemplo verbal: si se hacen ciclos en verde un un carril **mayores a** 45 segund
 
 Este módulo analiza constantemente los reportes almacenados en la base de datos para realizar el proceso mencionado anteriormente y todo lo inferido se guarda de manera centralizada como una base de conocimientos central como registros en la base de datos.
 
-Este módulo se inspiro en la llamada *Colección de hechos* usada en @Antonio2006a.
+Este módulo se inspiro en la llamada *Colección de hechos* usada en @JoelTrejo2006.
 
 > La colección de hechos alberga los datos correspondientes a la aplicación de
 > determinada estrategia de control cuando se presentan ciertas condiciones en el
 > tráfico observado. La colección de hechos puede desempeñar el papel de memoria
 > auxiliar en la cual se registran los razonamientos llevados a cabo.
-[@Antonio2006a, p. 47]
+[@JoelTrejo2006, p. 47]
 
 ## Motor de priorización
 Se encarga de asignar un valor numérico a cada carril, que indica su prioridad. Entre mayor el número, mayor la prioridad.
