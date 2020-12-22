@@ -1,0 +1,31 @@
+{
+  "cSpell.enabled": true,
+  "cSpell.words": [
+    "osm",
+    "osm web wizard",
+    "parametros",
+    "web",
+    "wizard"
+  ],
+  "actionButtons": {
+    "defaultColor": "#ff0034", // Can also use string color names.
+    "loadNpmCommands": false, // Disables automatic generation of actions for npm commands.
+    "reloadButton": "♻️", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
+    "commands": [
+      {
+        "cwd": "${fileDirname}", // Terminal initial folder ${workspaceFolder} and os user home as defaults
+        "name": "md to tex",
+        "color": "white",
+        "singleInstance": true,
+        "command": "pandoc -f markdown -t latex ${fileBasename} -o ${fileBasenameNoExtension}.tex", // This is executed in the terminal.
+      },
+      {
+        "cwd": "${workspaceFolder}", // Terminal initial folder ${workspaceFolder} and os user home as defaults
+        "name": "md to pdf",
+        "color": "white",
+        "singleInstance": true,
+        "command": "pandoc ${relativeFile} --filter=pandoc-citeproc --bibliography=.\\mendeley\\tesis_tls_cimat.bib --csl=.\\mendeley\\apa7-spanish.csl -M lang:es -o ${fileDirname}\\${fileBasenameNoExtension}.pdf", // This is executed in the terminal.
+      },
+    ]
+  }
+}

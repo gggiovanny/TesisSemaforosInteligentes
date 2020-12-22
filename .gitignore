@@ -285,7 +285,6 @@ TSWLatexianTemp*
 #*Notes.bib
 
 /build
-/.vscode
 *.docx
 *.doc
 *.pdf
