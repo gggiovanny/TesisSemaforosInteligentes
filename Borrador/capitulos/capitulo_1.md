@@ -24,14 +24,28 @@ Una de dichas problemáticas es el aumento del tráfico urbano, pues, según
 urbanización en América Latina se aceleró, lo que junto a la mayor productividad
 asociada al proceso de aglomeración económica, han inducido una mayor demanda de
 vehículos por parte de los hogares y de los negocios para llevar a cabo las
-actividades económicas. [@Medina-Durango2011, p. 1]
+actividades económicas, la cual, en casos como el colombiano, no ha sido
+acompañada de suficientes mejoras en la infraestructura e institucionalidad del
+transporte para lograr una operación económicamente eficiente de sus ciudades.
+[@Medina-Durango2011, p. 1]
 
 <!-- De acuerdo a [@McShane1999, p. 380], el aumento de las señales de tráfico está relacionado con el rápido aumento del
 tráfico automotor. -->
+Los problemas acarreados por el aumento descontrolado del tráfico no son nuevos.
+El que Henry Ford comenzara a producir en masa el *Modelo T* 1913, marcó un
+antes y un después en las calles de las grandes ciudades, pues en lugares como
+Nueva York, ya en los tempranos 1913 se experimentaban dos congestiones de
+tráfico al día. Para 1915, al menos algunos neoyorquinos habían dejado de
+conducir para ir al trabajo y habían vuelto a usar metro. [@McShane1999, p.380]
 
-Es por ello que  lo largo de la historia han existido diversos acercamientos para
-intentar solucionar esta problemática. 
- La primera de 
+A partir de entonces surgieron diversos acercamientos para intentar solucionar
+esta problemática, comenzando por poner oficiales de la policía en las
+intersecciones, pero incluso en ésta época temprana hubo reportes de que el
+control de la policía flaqueó, pues se llegaban a ver largas filas de vehículos
+motorizados que se demoraban en las intersecciones, incluso cuando los
+departamentos enviaron a dos o incluso cuatro oficiales a estas esquinas
+concurridas. Coordinar a los agentes de policía para permitir un flujo constante
+resultó imposible. [@McShane1999, p. 382]
 
 
 
@@ -54,6 +68,12 @@ urbanas. [@Patriksson2012, p. 3]
 Conforme crecen las ciudades y se arraiga cada vez más la idea de la necesidad
 de tener trasporte personal, inevitablemente crece la demanda del sistema de
 transporte. Este aumento trae consigo problemas serios, como:
+
+Los perjuicios de la congestión de tránsito urbano son evidentes para cualquier
+observador: mayores tiempos para el desplazamiento al trabajo y para la entrega
+de bienes y servicios, mayor consumo de combustible, mayor contaminación del
+aire e incrementos en la mortalidad y morbilidad asociadas.
+[@Medina-Durango2011, p. 2]
 
 -   Mayor número de accidentes
 
