@@ -1,9 +1,7 @@
 ---
-title: Introducción
-bibliography: [D:/Files/Documents/source/Tesis/mendeley/tesis_tls_cimat.bib]
-csl: D:/Files/Documents/source/Tesis/apa7-spanish.csl
-lang: es
-geometry: margin=20mm
+title: Introducción bibliography:
+[D:/Files/Documents/source/Tesis/mendeley/tesis_tls_cimat.bib] csl:
+D:/Files/Documents/source/Tesis/apa7-spanish.csl lang: es geometry: margin=20mm
 ---
 
 # Introducción
@@ -18,53 +16,32 @@ metrópolis comunes en los países más desarrollados.
 
 No es posible detener la rueda, pero es es una excelente oportunidad para
 aprovechar la gran base de conocimientos acumulados por otras ciudades y las
-poderosas herramientas tecnológicas de la modernidad para resolver las
+poderosas herramientas tecnológicas de la modernidad, para resolver las
 problemáticas emergentes de manera innovadora y óptima.
 
-Una de dichas problemáticas es el aumento del tráfico urbano, que se disparó
-enormemente desde que Henry Ford comenzara a producir en masa el Modelo T en
-1913 [@McShane1999, p. 380]. En las décadas posteriores a la Segunda Guerra
-Mundial se continuó mostrando un enorme incremento en la demanda de transporte.
-La mayor parte de este incremento se le atribuye al progreso del transporte
-personal, que tiene sus raíces en la urbanización y en el crecimiento de los
-estándares de vida [@Patriksson2012, p.3].
-
-<!-- todo: buscar datos y cita de aumento de urbanizacion y estandares de vida en paises en vias de desarrollo, o mejor aun, de México-->
-
-
-Según [@P.daCunha2009], es a partir de la década de los 50's que el proceso de
-urbanización en América Latina se aceleró, 
-
-
-En Latinoamérica el nivel creciente de urbanización y la mayor productividad
+Una de dichas problemáticas es el aumento del tráfico urbano, pues, según
+[@P.daCunha2009, p. 27], a partir de la década de los 50's el proceso de
+urbanización en América Latina se aceleró, lo que junto a la mayor productividad
 asociada al proceso de aglomeración económica, han inducido una mayor demanda de
 vehículos por parte de los hogares y de los negocios para llevar a cabo las
-actividades económicas. [@Medina-Durango2011]
+actividades económicas. [@Medina-Durango2011, p. 1]
+
+<!-- De acuerdo a [@McShane1999, p. 380], el aumento de las señales de tráfico está relacionado con el rápido aumento del
+tráfico automotor. -->
+
+Es por ello que  lo largo de la historia han existido diversos acercamientos para
+intentar solucionar esta problemática. 
+ La primera de 
 
 
 
-El aumento de las señales de tráfico está relacionado con el rápido aumento del
-tráfico automotor.
-
-
-En las ciudades, el correcto manejo de los grandes volúmenes de tráfico siempre
-ha sido un problema. 
-
-Por ello, a lo largo de la historia han existido diversos
-acercamientos para intentar solucionar esta problemática. 
-De acuerdo a [@McShane1999], el aumento de las señales de tráfico está ligado al rápido aumento del tráfico de automóviles.
-
- que comenzó a masificarse a partir de la explosión
-del uso del *Modelo T* en Estados Unidos. 
-
-Por muchos años esta ha sido una
-solución efectiva, pero conforme las urbes crecen más y más, llegan a ser
-insuficientes para tal cantidad de volumen de tráfico. Es en tiempos más recientes cuando
-se han comenzado a implementar estrategias que le brindan 'inteligencia' al
-comportamiento de los mismos, a través el uso de inductores para condicionar el
-comportamiento del semáforo, o detectores de luces infrarrojas para detectar el
-patrón de las luces de la sirena de patrullas y ambulancias y priorizar su
-circulación.
+Por muchos años esta ha sido una solución efectiva, pero conforme las urbes
+crecen más y más, llegan a ser insuficientes para tal cantidad de volumen de
+tráfico. Es en tiempos más recientes cuando se han comenzado a implementar
+estrategias que le brindan 'inteligencia' al comportamiento de los mismos, a
+través el uso de inductores para condicionar el comportamiento del semáforo, o
+detectores de luces infrarrojas para detectar el patrón de las luces de la
+sirena de patrullas y ambulancias y priorizar su circulación.
 
 # Planteamiento del problema
 
@@ -90,14 +67,14 @@ transporte. Este aumento trae consigo problemas serios, como:
 
 [@Patriksson2012]
 
-> La congestión de tráfico urbano causa considerables costos debido a pérdidas de
-> tiempo, incrementa la posibilidad de accidentes, y los problemas de
+> La congestión de tráfico urbano causa considerables costos debido a pérdidas
+> de tiempo, incrementa la posibilidad de accidentes, y los problemas de
 > contaminación en las principales ciudades por lo que tiene un impacto negativo
-> en el ambiente. También es responsable de problemas de salud tales como estrés,
-> ruido y complicaciones similares. La solución de aumentar la dimensión de la red
-> de tráfico urbano no siempre resulta ser la mejor opción además es muy difícil y
-> muy costosa, especialmente en áreas urbanas.
-[@JoelTrejo2006, Introducción]
+> en el ambiente. También es responsable de problemas de salud tales como
+> estrés, ruido y complicaciones similares. La solución de aumentar la dimensión
+> de la red de tráfico urbano no siempre resulta ser la mejor opción además es
+> muy difícil y muy costosa, especialmente en áreas urbanas. [@JoelTrejo2006,
+> Introducción]
 
 # Propuesta de solución
 
@@ -135,4 +112,20 @@ inteligente.
 
 La idea de un semáforo que se adapta a la demanda de tráfico no es nueva. 
 <!-- todo: agregar referencias y otros acercamientos con redes de Petri y trabajos similares-->
-Ya existen acercamientos a esta idea, desde la más básica cambiando el ciclo de las luces dependiendo de la hora del día, hasta las más complejas y costosas que usan inductores posicionados estratégicamente antes de llegar a las intersecciones para contabilizar cuantos vehículos están esperando en cada carril para que los semáforos usen esta información para, por ejemplo, no dar paso a un carril que no tiene ningún vehículo esperando. El problema es que implementar la solución anterior es costoso, y aun así tiene mucho margen de mejora, pues la información que puede proporcionar un inductor se limita a si un vehículo pasa encima de él y la hora en la que sucede, lo que complica analizar el flujo real de cada uno de los vehículos. Por ello pretendemos darles uso a las cámaras que muchas veces ya se encuentran en las intersecciones y usar sus imágenes para alimentar algoritmos de machine learning de reconocimiento de objetos, y así saber cuántos, de que tipo y dirección de los vehículos. Ya que esta tarea tiene su propia serie de retos y complicaciones, está siento realizada por otros colegas en el CIMAT. Lo que nos ocupa a nosotros es suponer que contamos con la información que este algoritmo nos brindará y en base a ello desarrollar las estrategias inteligentes de control a usar por los semáforos.
+Ya existen acercamientos a esta idea, desde la más básica cambiando el ciclo de
+las luces dependiendo de la hora del día, hasta las más complejas y costosas que
+usan inductores posicionados estratégicamente antes de llegar a las
+intersecciones para contabilizar cuantos vehículos están esperando en cada
+carril para que los semáforos usen esta información para, por ejemplo, no dar
+paso a un carril que no tiene ningún vehículo esperando. El problema es que
+implementar la solución anterior es costoso, y aun así tiene mucho margen de
+mejora, pues la información que puede proporcionar un inductor se limita a si un
+vehículo pasa encima de él y la hora en la que sucede, lo que complica analizar
+el flujo real de cada uno de los vehículos. Por ello pretendemos darles uso a
+las cámaras que muchas veces ya se encuentran en las intersecciones y usar sus
+imágenes para alimentar algoritmos de machine learning de reconocimiento de
+objetos, y así saber cuántos, de que tipo y dirección de los vehículos. Ya que
+esta tarea tiene su propia serie de retos y complicaciones, está siento
+realizada por otros colegas en el CIMAT. Lo que nos ocupa a nosotros es suponer
+que contamos con la información que este algoritmo nos brindará y en base a ello
+desarrollar las estrategias inteligentes de control a usar por los semáforos.
