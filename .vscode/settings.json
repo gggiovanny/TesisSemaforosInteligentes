@@ -16,9 +16,16 @@
       {
         "cwd": "${fileDirname}", // Terminal initial folder ${workspaceFolder} and os user home as defaults
         "name": "md to tex",
-        "color": "white",
+        "color": "blue",
         "singleInstance": true,
         "command": "pandoc -f markdown -t latex ${fileBasename} -o ${fileBasenameNoExtension}.tex", // This is executed in the terminal.
+      },
+      {
+        "cwd": "${fileDirname}", // Terminal initial folder ${workspaceFolder} and os user home as defaults
+        "name": "md to tex template",
+        "color": "red",
+        "singleInstance": true,
+        "command": "pandoc -f markdown -t latex --out ${fileBasenameNoExtension}.tex --template cap_template.tex --pdf-engine xelatex ${fileBasename}", // This is executed in the terminal.
       },
       {
         "cwd": "${workspaceFolder}", // Terminal initial folder ${workspaceFolder} and os user home as defaults

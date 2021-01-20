@@ -1,7 +1,12 @@
 ---
-title: Introducción bibliography:
-[D:/Files/Documents/source/Tesis/mendeley/tesis_tls_cimat.bib] csl:
-D:/Files/Documents/source/Tesis/apa7-spanish.csl lang: es geometry: margin=20mm
+title: Introducción 
+bibliography: [D:/Files/Documents/source/Tesis/mendeley/tesis_tls_cimat.bib] 
+csl: D:/Files/Documents/source/Tesis/apa7-spanish.csl 
+lang: es 
+geometry: margin=20mm
+header-includes:
+  - \graphicspath{./imagenes}
+  - \linespread{1.3}
 ---
 
 # Introducción
@@ -35,8 +40,9 @@ Los problemas acarreados por el aumento descontrolado del tráfico no son nuevos
 El que Henry Ford comenzara a producir en masa el *Modelo T* 1913, marcó un
 antes y un después en las calles de las grandes ciudades, pues en lugares como
 Nueva York, ya en los tempranos 1913 se experimentaban dos congestiones de
-tráfico al día. Para 1915, al menos algunos neoyorquinos habían dejado de
-conducir para ir al trabajo y habían vuelto a usar metro. [@McShane1999, p.380]
+tráfico al día [@McShane1999, p.380]. En la primavera de 1914, varias ciudades
+reportaron sus primeras congestiones de tráfico diurnas.Para 1915, al menos algunos neoyorquinos habían dejado de conducir para ir al
+trabajo y habían vuelto a usar metro. [@McShane1999, p.380]
 
 A partir de entonces surgieron diversos acercamientos para intentar solucionar
 esta problemática, comenzando por poner oficiales de la policía en las
@@ -46,6 +52,7 @@ motorizados que se demoraban en las intersecciones, incluso cuando los
 departamentos enviaron a dos o incluso cuatro oficiales a estas esquinas
 concurridas. Coordinar a los agentes de policía para permitir un flujo constante
 resultó imposible. [@McShane1999, p. 382]
+
 
 
 
