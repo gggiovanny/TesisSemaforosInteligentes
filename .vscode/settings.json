@@ -25,7 +25,7 @@
         "name": "md to tex template",
         "color": "red",
         "singleInstance": true,
-        "command": "pandoc -f markdown -t latex --out ${fileBasenameNoExtension}.tex --template cap_template.tex --pdf-engine xelatex ${fileBasename}", // This is executed in the terminal.
+        "command": "pandoc -f markdown -t latex --out ${fileBasenameNoExtension}.tex --template cap_template.tex ${fileBasename}", // This is executed in the terminal.
       },
       {
         "cwd": "${workspaceFolder}", // Terminal initial folder ${workspaceFolder} and os user home as defaults
