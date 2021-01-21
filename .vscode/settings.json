@@ -20,13 +20,13 @@
       //   "singleInstance": true,
       //   "command": "pandoc -f markdown -t latex ${fileBasename} -o ${fileBasenameNoExtension}.tex", // This is executed in the terminal.
       // },
-      // {
-      //   "cwd": "${fileDirname}", // Terminal initial folder ${workspaceFolder} and os user home as defaults
-      //   "name": "md to tex template",
-      //   "color": "red",
-      //   "singleInstance": true,
-      //   "command": "pandoc -f markdown -t latex --out ${fileBasenameNoExtension}.tex --template cap_template.tex ${fileBasename}", // This is executed in the terminal.
-      // },
+      {
+        "cwd": "${fileDirname}", // Terminal initial folder ${workspaceFolder} and os user home as defaults
+        "name": "md to tex template",
+        "color": "white",
+        "singleInstance": true,
+        "command": "pandoc -f markdown -t latex --out ${fileBasenameNoExtension}.tex --template cap_template.tex ${fileBasename}", // This is executed in the terminal.
+      },
       {
         "cwd": "${workspaceFolder}", // Terminal initial folder ${workspaceFolder} and os user home as defaults
         "name": "md to pdf",
@@ -44,12 +44,12 @@
         "useShortcut": false,
         "silent": true
       },
-      {
-        "match": "\\.md$",
-        "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex ${fileBasename} -o ${fileBasenameNoExt}.tex",
-        "useShortcut": false,
-        "silent": true
-      },
+      // {
+      //   "match": "\\.md$",
+      //   "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex ${fileBasename} -o ${fileBasenameNoExt}.tex",
+      //   "useShortcut": false,
+      //   "silent": true
+      // },
       {
         "match": "\\.*Nomenclatura.*.md$",
         "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex --out ${fileBasenameNoExt}.tex --template Nomenclatura_plantilla.tex ${fileBasename}",
