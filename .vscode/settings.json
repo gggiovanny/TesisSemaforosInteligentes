@@ -39,11 +39,23 @@
   "saveAndRun": {
     "commands": [
       {
-        "match": "\\.md$",
+        "match": "\\.*cap_.*.md$",
         "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex --out ${fileBasenameNoExt}.tex --template cap_template.tex ${fileBasename}",
         "useShortcut": false,
         "silent": true
-      }
+      },
+      {
+        "match": "\\.md$",
+        "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex ${fileBasename} -o ${fileBasenameNoExt}.tex",
+        "useShortcut": false,
+        "silent": true
+      },
+      {
+        "match": "\\.*Nomenclatura.*.md$",
+        "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex --out ${fileBasenameNoExt}.tex --template Nomenclatura_plantilla.tex ${fileBasename}",
+        "useShortcut": false,
+        "silent": true
+      },
     ]
   }
 }
