@@ -17,6 +17,8 @@
 %----------------------------------------------------------
 %                D A T O S   P O R T A D A
 %----------------------------------------------------------
+\DeclareLanguageMapping{spanish}{spanish-apa}
+\addbibresource{bibliografia.bib}
 \author{Br. Giovanny González Baltazar}%EDITAR
 \title{Arquitectura para control inteligente de tráfico urbano}%EDITAR
 \institucion{instituto tecnológico de mérida}%NO EDITAR
@@ -75,8 +77,7 @@
 %-----------------------------------------------------------------------------------------------------------------
 %         B I B L I O G R A F I A   Y   A P E N D I C E S
 %-----------------------------------------------------------------------------------------------------------------
-\bibliographystyle{IEEEtran-spanish} % Tipo de bibliografía
-\bibliography{bibliografia} % Incluye la bibliografía
+\printbibliography[title={Referencias},heading=bibintoc]
 \clearpage 
 \input{Capitulos/portada_apen}
 \input{Adjuntos/apendice.tex} % Incluye el apéndice

@@ -22,24 +22,24 @@ poderosas herramientas tecnológicas de la modernidad, para resolver las
 problemáticas emergentes de manera innovadora y óptima.
 
 Una de dichas problemáticas es el aumento del tráfico urbano, pues, según
-\cite[p. 27]{PdaCunha2009}, a partir de la década de los 50's el proceso de
+\textcite[p.~27]{PdaCunha2009}, a partir de la década de los 50's el proceso de
 urbanización en América Latina se aceleró, lo que junto a la mayor productividad
 asociada al proceso de aglomeración económica, han inducido una mayor demanda de
 vehículos por parte de los hogares y de los negocios para llevar a cabo las
 actividades económicas, la cual, en casos como el colombiano, no ha sido
 acompañada de suficientes mejoras en la infraestructura e institucionalidad del
 transporte para lograr una operación económicamente eficiente de sus ciudades.
-\cite{Medina-Durango2011}, p. 1
+\textcite{Medina-Durango2011}, p. 1
 
-<!-- De acuerdo a \cite[p. 380]{McShane1999}, el aumento de las señales de tráfico está relacionado con el rápido aumento del
+<!-- De acuerdo a \textcite[p. 380]{McShane1999}, el aumento de las señales de tráfico está relacionado con el rápido aumento del
 tráfico automotor. -->
 Los problemas acarreados por el aumento descontrolado del tráfico no son nuevos.
 El que Henry Ford comenzara a producir en masa el *Modelo T* 1913, marcó un
 antes y un después en las calles de las grandes ciudades, pues en lugares como
 Nueva York, ya en los tempranos 1913 se experimentaban dos congestiones de
-tráfico al día \cite[p.380]{McShane1999}. En la primavera de 1914, varias ciudades
+tráfico al día \textcite[p.380]{McShane1999}. En la primavera de 1914, varias ciudades
 reportaron sus primeras congestiones de tráfico diurnas.Para 1915, al menos algunos neoyorquinos habían dejado de conducir para ir al
-trabajo y habían vuelto a usar metro. \cite[p.380]{McShane1999}
+trabajo y habían vuelto a usar metro. \textcite[p.380]{McShane1999}
 
 A partir de entonces surgieron diversos acercamientos para intentar solucionar
 esta problemática, comenzando por poner oficiales de la policía en las
@@ -48,7 +48,7 @@ control de la policía flaqueó, pues se llegaban a ver largas filas de vehícul
 motorizados que se demoraban en las intersecciones, incluso cuando los
 departamentos enviaron a dos o incluso cuatro oficiales a estas esquinas
 concurridas. Coordinar a los agentes de policía para permitir un flujo constante
-resultó imposible. \cite[p. 382]{McShane1999}
+resultó imposible. \textcite[p. 382]{McShane1999}
 
 
 
@@ -67,7 +67,7 @@ Una cantidad significativa de la actividad en un área urbana tiene que ver con
 el movimiento de personas y bienes entre diferentes lugares usando la
 infraestructura de transporte, y un eficiente y fluido sistema de transporte es
 esencial para la salud económica y la calidad de vida dentro de las regiones
-urbanas. \cite[p. 3]{Patriksson2012}
+urbanas. \textcite[p. 3]{Patriksson2012}
 
 Conforme crecen las ciudades y se arraiga cada vez más la idea de la necesidad
 de tener trasporte personal, inevitablemente crece la demanda del sistema de
@@ -77,7 +77,7 @@ Los perjuicios de la congestión de tránsito urbano son evidentes para cualquie
 observador: mayores tiempos para el desplazamiento al trabajo y para la entrega
 de bienes y servicios, mayor consumo de combustible, mayor contaminación del
 aire e incrementos en la mortalidad y morbilidad asociadas.
-\cite[p. 2]{Medina-Durango2011}
+\textcite[p. 2]{Medina-Durango2011}
 
 -   Mayor número de accidentes
 
@@ -89,7 +89,7 @@ aire e incrementos en la mortalidad y morbilidad asociadas.
 
 -   Contaminación sonora
 
-\cite{Patriksson2012}
+\textcite{Patriksson2012}
 
 > La congestión de tráfico urbano causa considerables costos debido a pérdidas
 > de tiempo, incrementa la posibilidad de accidentes, y los problemas de
@@ -97,7 +97,7 @@ aire e incrementos en la mortalidad y morbilidad asociadas.
 > en el ambiente. También es responsable de problemas de salud tales como
 > estrés, ruido y complicaciones similares. La solución de aumentar la dimensión
 > de la red de tráfico urbano no siempre resulta ser la mejor opción además es
-> muy difícil y muy costosa, especialmente en áreas urbanas. \cite{JoelTrejo2006},
+> muy difícil y muy costosa, especialmente en áreas urbanas. \textcite{JoelTrejo2006},
 > Introducción]
 
 # Propuesta de solución
