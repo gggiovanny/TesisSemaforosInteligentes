@@ -22,7 +22,7 @@ poderosas herramientas tecnológicas de la modernidad, para resolver las
 problemáticas emergentes de manera innovadora y óptima.
 
 Una de dichas problemáticas es el aumento del tráfico urbano, pues, según
-[@PdaCunha2009, p. 27], a partir de la década de los 50's el proceso de
+\cite[p. 27]{PdaCunha2009}, a partir de la década de los 50's el proceso de
 urbanización en América Latina se aceleró, lo que junto a la mayor productividad
 asociada al proceso de aglomeración económica, han inducido una mayor demanda de
 vehículos por parte de los hogares y de los negocios para llevar a cabo las
