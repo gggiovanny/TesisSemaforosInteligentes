@@ -39,7 +39,7 @@
   "saveAndRun": {
     "commands": [
       {
-        "match": "\\.*cap_.*.md$",
+        "match": "\\.*cap_.*.*.md$",
         "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex --out ${fileBasenameNoExt}.tex --template cap_template.tex ${fileBasename}",
         "useShortcut": false,
         "silent": true
@@ -60,5 +60,24 @@
   },
   "latex-workshop.latex.search.rootFiles.include": [
     "**/ITMtesis.tex"
-  ]
+  ],
+  "latex-workshop.latex.watch.files.ignore": [
+    "**/*.bbx",
+    "**/*.cbx",
+    "**/*.cfg",
+    "**/*.clo",
+    "**/*.cnf",
+    "**/*.def",
+    "**/*.fmt",
+    "**/*.lbx",
+    "**/*.map",
+    "**/*.pfb",
+    "**/*.tfm",
+    "**/texmf-{dist,var}/**",
+    "C:/**texmf/**",
+    "/usr/local/share/miktex-texmf/**",
+    "/Library/Application Support/MiKTeX/texmfs/**",
+    "**/*borrador*.*",
+  ],
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
 }
