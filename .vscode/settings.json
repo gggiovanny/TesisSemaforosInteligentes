@@ -57,5 +57,8 @@
         "silent": true
       },
     ]
-  }
+  },
+  "latex-workshop.latex.search.rootFiles.include": [
+    "**/ITMtesis.tex"
+  ]
 }
