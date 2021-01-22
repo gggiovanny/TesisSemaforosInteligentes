@@ -27,35 +27,35 @@
         "singleInstance": true,
         "command": "pandoc -f markdown -t latex --out ${fileBasenameNoExtension}.tex --template cap_template.tex ${fileBasename}", // This is executed in the terminal.
       },
-      {
-        "cwd": "${workspaceFolder}", // Terminal initial folder ${workspaceFolder} and os user home as defaults
-        "name": "md to pdf",
-        "color": "white",
-        "singleInstance": true,
-        "command": "pandoc ${relativeFile} --filter=pandoc-citeproc --bibliography=.\\mendeley\\tesis_tls_cimat.bib --csl=.\\mendeley\\apa7-spanish.csl -M lang:es -o ${fileDirname}\\${fileBasenameNoExtension}.pdf", // This is executed in the terminal.
-      },
+      // {
+      //   "cwd": "${workspaceFolder}", // Terminal initial folder ${workspaceFolder} and os user home as defaults
+      //   "name": "md to pdf",
+      //   "color": "white",
+      //   "singleInstance": true,
+      //   "command": "pandoc ${relativeFile} --filter=pandoc-citeproc --bibliography=.\\mendeley\\tesis_tls_cimat.bib --csl=.\\mendeley\\apa7-spanish.csl -M lang:es -o ${fileDirname}\\${fileBasenameNoExtension}.pdf", // This is executed in the terminal.
+      // },
     ]
   },
   "saveAndRun": {
     "commands": [
-      {
-        "match": "\\.*cap_.*.*.md$",
-        "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex --out ${fileBasenameNoExt}.tex --template cap_template.tex ${fileBasename}",
-        "useShortcut": false,
-        "silent": true
-      },
+      // {
+      //   "match": "\\.*cap_.*.*.md$",
+      //   "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex --out ${fileBasenameNoExt}.tex --template cap_template.tex ${fileBasename}",
+      //   "useShortcut": false,
+      //   "silent": true
+      // },
       // {
       //   "match": "\\.md$",
       //   "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex ${fileBasename} -o ${fileBasenameNoExt}.tex",
       //   "useShortcut": false,
       //   "silent": true
       // },
-      {
-        "match": "\\.*Nomenclatura.*.md$",
-        "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex --out ${fileBasenameNoExt}.tex --template Nomenclatura_plantilla.tex ${fileBasename}",
-        "useShortcut": false,
-        "silent": true
-      },
+      // {
+      //   "match": "\\.*Nomenclatura.*.md$",
+      //   "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex --out ${fileBasenameNoExt}.tex --template Nomenclatura_plantilla.tex ${fileBasename}",
+      //   "useShortcut": false,
+      //   "silent": true
+      // },
     ]
   },
   "latex-workshop.latex.search.rootFiles.include": [
