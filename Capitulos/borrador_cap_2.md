@@ -182,8 +182,8 @@ control.
 Se puede cargar nuevas definiciones para semáforos como parte de un archivo
 adicional. La definición de un programa de semáforo dentro de un archivo
 adicional se ve así:
-<!-- 
-```xml
+
+\begin{lstlisting}[language=XML]
 <additional>
     <tlLogic id="semaforo_principal" type="static" programID="principal" offset="0">
         <phase duration="40" state="GrGr"/>
@@ -192,7 +192,8 @@ adicional se ve así:
         <phase duration="6" state="ryry"/>
     </tlLogic>
 </additional>
-``` -->
+\end{lstlisting}
+
 Cada programa está compuesto de varias fases de cierta duración. En cada una, el atributo *state* define con una cadena de caracteres los colores de todos los semáforos en esa fase. El significado de los caracteres principales se puede ver en la siguiente tabla:
 
 <!-- | Caracter | Color    | Descripción                                                                                          |
@@ -229,7 +230,7 @@ horizontal, pero cuando un vehículo ingresa al circuito del detector, cambiamos
 la señal de inmediato para que el vehículo pueda cruzar la intersección sin
 detenerse.
 
-<!-- ```python
+\begin{lstlisting}[language=Python]
 step = 0
 traci.trafficlight.setPhase("0", 2)
 while traci.simulation.getMinExpectedNumber() > 0:
@@ -241,8 +242,7 @@ while traci.simulation.getMinExpectedNumber() > 0:
             traci.trafficlight.setPhase("0", 2)
     step += 1
 traci.close()
-``` -->
-
+\end{lstlisting}
 
 # Creación de simulación
 Para probar y desarrollar a detalle la arquitectura se usará el simulador de tráfico urbano SUMO, que incluye prácticamente todas las herramientas necesarias.

@@ -1,6 +1,6 @@
 \ProvidesPackage{example}
 %-----------------------------------------------------------------------------------------------------------
-%                                               L I B R A R I E S
+%                                   L I B R A R I E S
 %-----------------------------------------------------------------------------------------------------------
 \usepackage{helvet} % Tipografía sans serif
 \renewcommand{\familydefault}{\sfdefault} % para cambiar el tipo de fuente por defecto
@@ -24,10 +24,13 @@
 \usepackage{amsmath}
 \usepackage{comment}
 \usepackage{xfrac}
+%---------------------------------------------------------------------------------------------------------------
+%                             B I B L I O G R A F I A  E N  A P A      
+%--------------------------------------------------------------------------------------------------------------
 \usepackage[babel]{csquotes}
 \usepackage[backend=biber,style=apa]{biblatex}
 %------------------------------------------------------------------------------------------------------------
-%                                                         T I K Z
+%                                       T I K Z
 %-----------------------------------------------------------------------------------------------------------
 \usepackage{tikz}
 \usepackage{standalone}
@@ -60,7 +63,7 @@ node distance=3cm,
 \hyphenpenalty=10000
 \hbadness=10000
 %------------------------------------------------------------------------------------------------------------
-%                                                S U B S E C T I O N S
+%                                      S U B S E C T I O N S
 %------------------------------------------------------------------------------------------------------------
 %--------------------------------------------------------------------------------------------------------------
 \usepackage{titlesec}
@@ -94,7 +97,7 @@ node distance=3cm,
 
 \setcounter{tocdepth}{2}
 %------------------------------------------------------------------------------------------------------------
-%                                                 T A B L E S
+%                                      T A B L E S
 %------------------------------------------------------------------------------------------------------------
 \usepackage{float}
 \floatstyle{plaintop}
@@ -140,21 +143,21 @@ node distance=3cm,
 \fancyhead[RO]{\rightmark}
 \marginsize{3cm}{2.5cm}{2.5cm}{2.5cm} % Márgenes
 %--------------------------------------------------------------------------------------------------------------
-%                                                 S P A C I N G
+%                                        S P A C I N G
 %-------------------------------------------------------------------------------------------------------------- 
 %Para f = 1 => espaciado normal. 
 %Para f = 1.3 => 1.5 espacios. 
 %Para f = 1.6 => doble espacio.
 \linespread{1.3}
 %--------------------------------------------------------------------------------------------------------------
-%                                                  L I S T S 
+%                                         L I S T S 
 %--------------------------------------------------------------------------------------------------------------
 \newsavebox\ltmcbox
 \newglossary[sg]{symgr}{sg1}{sg2}{Símbolos griegos}
 \newglossary[om]{opma}{om1}{om2}{Operadores matemáticos} 
 \newglossary[ss]{sisi}{ss1}{ss2}{Subíndices y superíndices}
 %--------------------------------------------------------------------------------------------------------------
-%                                      G E N E R A T E  G L O S S A R I E S 
+%                               G E N E R A T E  G L O S S A R I E S 
 %--------------------------------------------------------------------------------------------------------------
 \makeglossaries
 \renewcommand{\contentsname}{Índice}
@@ -174,12 +177,40 @@ node distance=3cm,
     \addtocounter{page}{-1}%
     \newpage}
 %---------------------------------------------------------------------------------------------------------------
-%                                                         E C U A C I O N E S
+%                                    E C U A C I O N E S
 %--------------------------------------------------------------------------------------------------------------
 \newcommand{\highlight}[1]{%
-  \colorbox{red!20}{$\displaystyle#1$}}
-
+\colorbox{red!20}{$\displaystyle#1$}}
 %---------------------------------------------------------------------------------------------------------------
-%                                                        WORKAROUNDS MARKDOWN
+%                                    C O D E  S T Y L E
+%--------------------------------------------------------------------------------------------------------------
+\usepackage{listings}
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+%---------------------------------------------------------------------------------------------------------------
+%                          W O R K A R O U N D S  M A R K D O W N 
 %--------------------------------------------------------------------------------------------------------------
 \def\tightlist{}

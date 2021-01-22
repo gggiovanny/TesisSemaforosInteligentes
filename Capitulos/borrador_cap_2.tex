@@ -370,11 +370,23 @@ TLS}\label{definiciuxf3n-de-nuevos-programas-tls}}
 
 Se puede cargar nuevas definiciones para semáforos como parte de un
 archivo adicional. La definición de un programa de semáforo dentro de un
-archivo adicional se ve así: Cada programa está compuesto de varias
-fases de cierta duración. En cada una, el atributo \emph{state} define
-con una cadena de caracteres los colores de todos los semáforos en esa
-fase. El significado de los caracteres principales se puede ver en la
-siguiente tabla:
+archivo adicional se ve así:
+
+\begin{lstlisting}[language=XML]
+<additional>
+    <tlLogic id="semaforo_principal" type="static" programID="principal" offset="0">
+        <phase duration="40" state="GrGr"/>
+        <phase duration="6" state="yryr"/>
+        <phase duration="40" state="rGrG"/>
+        <phase duration="6" state="ryry"/>
+    </tlLogic>
+</additional>
+\end{lstlisting}
+
+Cada programa está compuesto de varias fases de cierta duración. En cada
+una, el atributo \emph{state} define con una cadena de caracteres los
+colores de todos los semáforos en esa fase. El significado de los
+caracteres principales se puede ver en la siguiente tabla:
 
 La posiciónde cada caracter en la cadena se corresponde con las
 conexiones de la insercción controlada empezando desde arriba en el
@@ -413,6 +425,20 @@ desde el norte, siempre damos color verde en el eje horizontal, pero
 cuando un vehículo ingresa al circuito del detector, cambiamos la señal
 de inmediato para que el vehículo pueda cruzar la intersección sin
 detenerse.
+
+\begin{lstlisting}[language=Python]
+step = 0
+traci.trafficlight.setPhase("0", 2)
+while traci.simulation.getMinExpectedNumber() > 0:
+    traci.simulationStep()
+    if traci.trafficlight.getPhase("0") == 2:
+        if traci.inductionloop.getLastStepVehicleNumber("0") > 0:
+            traci.trafficlight.setPhase("0", 3)
+        else:
+            traci.trafficlight.setPhase("0", 2)
+    step += 1
+traci.close()
+\end{lstlisting}
 
 \hypertarget{creaciuxf3n-de-simulaciuxf3n}{%
 \section{Creación de simulación}\label{creaciuxf3n-de-simulaciuxf3n}}
