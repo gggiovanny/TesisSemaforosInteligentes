@@ -6,7 +6,7 @@ csl: D:/Files/Documents/source/Tesis/apa7-spanish.csl
 lang: es 
 ---
 
-# Propuesta de Arquitectura
+# Arquitectura
 <!-- ![width=\textwidth](./../imagenes/arquitectura.png) -->
 \includegraphics[width=\textwidth]{arquitectura.png}
 Fig. 1: Arquitectura de un agente de control.
@@ -119,3 +119,114 @@ Tiene las funciones para necesarias para leer la red de Petri temporizada que re
 
 ## Luces de semáforo
 Son la manera en la que se plasman los intervalos de luces generados y son lo que físicamente indica a los conductores cuando deben circular o detenerse.
+
+# Creación de simulación
+
+## Red de tráfico
+
+Para probar y desarrollar a detalle la arquitectura se usará el simulador de
+tráfico urbano SUMO, que incluye prácticamente todas las herramientas
+necesarias.
+
+Se creó la red de tráfico usando un script llamado
+[osmWebWizard](https://sumo.dlr.de/docs/Tutorials/OSMWebWizard.html), que
+permite seleccionar un área geográfica real desde OpenStreetMaps y convertirla
+en el tipo de archivo que utiliza el simulador.
+
+Para motivos de prueba, se usó una intersección de Mérida conocida, para poder
+simular flujos a partir de lugares familiares, y en dado caso de ser necesario
+recolectar datos reales. La intersección en cuestión está ubicada en el sur de
+la ciudad, donde Circuito Colonias se cruza con la calle 50.
+
+Para corroborar que los datos generados por el script sean certeros, se comparó
+la generación de la intersección con imágenes reales de Google Maps, y hubo que
+ajustar el ancho del carril que corresponde a la calle 50 de uno a dos carriles
+(realmente tiene como 4, pero siempre hay coches estacionados a ambos costados,
+al final se pueden aprovechar solo 2). Desconozco si las calles adyacentes
+tienen el ancho correcto, pero considero que solo ésta afectan al objetivo de la
+simulación.
+
+Los datos recuperados por osmWebWizard, a excepción al numero de carriles de la
+calle 50, fueron bastante certeros, y la intersección de interés tiene
+correctamente los derechos de paso del semáforo.
+
+Una vez montada la simulación, fue necesario prepararla para manipularse
+programáticamente, por lo que el semáforo a controlar se renombró a
+*semaforo_circuito_colonias* y se modificó el comportamiento de los semáforos
+para que sean estáticos y solo cambien cuando se les indique manualmente usando
+código.
+
+## Modelado de la arquitectura
+
+Con la red de tráfico lista, el objetivo es programar la arquitectura
+previamente propuesta en Python, y para ello se utilizará una interfaz para
+manipular la simulación en tiempo real llamada TraCI. Dicha interfaz ya viene
+incluído en la instalación por defecto de SUMO.
+
+<!-- Previamente ya la había utilizado y ya tengo mi manera de consumirlo, y me guié de la [guía oficial](https://sumo.dlr.de/docs/TraCI/Interfacing_TraCI_from_Python.html). -->
+
+Los primeros módulos de la arquitectura a programar son el *Observador de
+eventos* y el *Registrador de eventos*, y para ello se modelaron las propiedades
+de una intersección en clases que se relacionan entre si.
+
+La más básica es Edge, que es lo equivalente a una calle y contiene sus
+propiedades asociadas:
+
+-   conection_uses_from: relaciona el Edge con una Conection.
+
+-   conection_uses_to: relaciona el Edge con una Conection.
+
+-   name: nombre o apodo para la calle.
+
+-   num_lanes: numero de carriles.
+
+-   is_traffic_input: indica si el trafico entra por esta calle.
+
+-   associated_detector_name: nombre del detector de trafico asociado a esta
+    calle.
+
+-   street_name: nombre real de la calle.
+
+-   aprox_length: largo aproximado de la calle.
+
+-   aprox_total_width: ancho aproximado de la calle completa que incluye a todos
+    los carriles.
+
+Las calles están conectadas entre si, y esta relación se representa a través de
+la clase Conection, que indica una conexión simple entre Edges (calles):
+
+-   intersection: relaciona que una Intersection puede tener varias Conections.
+
+-   from_edge: desde que calle viene el trafico.
+
+-   to_edge: hacia que calle viene el trafico.
+
+-   validate: si se deben validar que los parámetros recibidos representen una conexión válida. Por defecto es False, para evitar realizar esta operación cuando no sea necesario para ahorrar procesamiento.
+
+Las calles se agrupan en intersecciones que tienen conexiones entre ellas y
+posiblemente un semáforo. Esto se representa en la clase Intersection:
+
+-   name: nombre o apodo para la intersección.
+
+-   associated_traffic_light_name: el nombre del semáforo asociado a la
+    intersección.
+
+-   conections: lista de todas las conexiones entre calles.
+
+Siguiendo la arquitectura, los datos de cada intersección y del estado de la
+simulación deben almacenarse en algún lugar para posteriormente realizar un
+reporte que se guardará para su análisis. Se escogió medio de almacenamiento
+temporal una base de datos en sqlite, y se utilizó la librería Pony ORM para
+convertir el modelado en clases a tablas de una base de datos.
+
+Ahora lo que sigue es modelar el EventObserver
+
+
+<!-- Actualmente se está trabajando en la implementación del framework Flow, que
+permite manipular conectar fácilmente SUMO con librerías de Reinforcement
+Learning, así como incluye métodos para generar tráfico de manera más realista. -->
+
+<!-- # Notas
++ Tomar inspiracion de los docs de [Edges value retrieval](https://sumo.dlr.de/docs/TraCI/Edge_Value_Retrieval.html#extended_retrieval_messages) para los calculos derivados de parametros para los reportes
+  + Tambien de vehiculos
++  -->
