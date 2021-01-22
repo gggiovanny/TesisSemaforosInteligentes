@@ -1,10 +1,3 @@
-# Glosario
-Sacar definiciones de [aqui](https://sumo.dlr.de/docs/Other/Glossary.html). Investigar como citarlo.
-
-+ TraCI:
-+ Edge(arista/calle): A single-directed street connection between two points (junctions/nodes). An edge contains at least one lane.
-+ Lane (carril):
-
 Ahora voy a proceder a controlar la simulación previamente construida usando una interfaz para controlar SUMO
 llamada TraCI.
 TraCI viene incluída en la instalación por defecto de SUMO.
