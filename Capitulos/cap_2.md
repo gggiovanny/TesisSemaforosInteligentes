@@ -5,6 +5,13 @@ bibliography: [D:/Files/Documents/source/Tesis/mendeley/tesis_tls_cimat.bib]
 csl: D:/Files/Documents/source/Tesis/apa7-spanish.csl 
 lang: es 
 ---
+
+<!-- # Cosas que agregar:
++ ¿Qué es SUMO?
++ ¿Qué es TraCI?
++ ¿Qué es OpenStreetMaps? Usar citas como las vistas [aquí](https://sumo.dlr.de/docs/Networks/Import/OpenStreetMapDownload.html).
++ ¿Qué es Python? (preguntar al doc si vale la pena) -->
+
 # Recursos: SUMO
 Para probar y desarrollar a detalle la arquitectura, es necesario contar con un entorno de simulación versátil y altamente configurable donde probar los algoritmos creados en base a nuestras hipótesis. 
 El primer acercamiento para resolver reste problema fue desarrollar desde cero un simulador de tráfico, pero ya que esto tiene su propia complejidad y no el objetivo final al que pretendemos llegar, buscamos otras alternativas. De entre todas, la que parece ser la solución definitiva es el simulador de tráfico urbano SUMO.

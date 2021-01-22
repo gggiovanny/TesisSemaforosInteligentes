@@ -156,6 +156,18 @@ programáticamente, por lo que el semáforo a controlar se renombró a
 para que sean estáticos y solo cambien cuando se les indique manualmente usando
 código.
 
+
+SUMO no maneja las señales de trafico por calle, si no por conexión entre
+carriles (para ilustrar los derechos de paso y giros permitidos). En el netedit
+es posible agruparlos, pero decidí dejarlos sin agrupar para tener absoluto
+control de manera programática de cada conexión, y así me será posible agrupar
+las conexiones de la manera más lógica que se asemeje a la vida real. Descubrí
+el orden de como maneja SUMO los indices de cada enlace: en orden de las
+manecillas del reloj, en teoría empezando por arriba, pero en este caso empieza
+por la derecha. Toma en cuenta para numerar los carriles que tienen tráfico
+entrando, los que solo reciben tráfico no se numeran (tiene sentido que sea
+así).
+
 ## Modelado de la arquitectura
 
 Con la red de tráfico lista, el objetivo es programar la arquitectura
@@ -201,7 +213,9 @@ la clase Conection, que indica una conexión simple entre Edges (calles):
 
 -   to_edge: hacia que calle viene el trafico.
 
--   validate: si se deben validar que los parámetros recibidos representen una conexión válida. Por defecto es False, para evitar realizar esta operación cuando no sea necesario para ahorrar procesamiento.
+-   validate: si se deben validar que los parámetros recibidos representen una
+    conexión válida. Por defecto es False, para evitar realizar esta operación
+    cuando no sea necesario para ahorrar procesamiento.
 
 Las calles se agrupan en intersecciones que tienen conexiones entre ellas y
 posiblemente un semáforo. Esto se representa en la clase Intersection:

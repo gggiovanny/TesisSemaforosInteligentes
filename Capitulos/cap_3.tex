@@ -307,6 +307,17 @@ programáticamente, por lo que el semáforo a controlar se renombró a
 los semáforos para que sean estáticos y solo cambien cuando se les
 indique manualmente usando código.
 
+SUMO no maneja las señales de trafico por calle, si no por conexión
+entre carriles (para ilustrar los derechos de paso y giros permitidos).
+En el netedit es posible agruparlos, pero decidí dejarlos sin agrupar
+para tener absoluto control de manera programática de cada conexión, y
+así me será posible agrupar las conexiones de la manera más lógica que
+se asemeje a la vida real. Descubrí el orden de como maneja SUMO los
+indices de cada enlace: en orden de las manecillas del reloj, en teoría
+empezando por arriba, pero en este caso empieza por la derecha. Toma en
+cuenta para numerar los carriles que tienen tráfico entrando, los que
+solo reciben tráfico no se numeran (tiene sentido que sea así).
+
 \hypertarget{modelado-de-la-arquitectura}{%
 \subsection{Modelado de la
 arquitectura}\label{modelado-de-la-arquitectura}}
