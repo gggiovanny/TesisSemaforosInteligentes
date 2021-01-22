@@ -100,6 +100,8 @@ aire e incrementos en la mortalidad y morbilidad asociadas.
 > muy difícil y muy costosa, especialmente en áreas urbanas. \textcite{JoelTrejo2006},
 > Introducción]
 
+# Hipótesis
+
 # Propuesta de solución
 
 El problema que se afrontará es el de las congestiones usando sistemas
@@ -153,3 +155,8 @@ esta tarea tiene su propia serie de retos y complicaciones, está siento
 realizada por otros colegas en el CIMAT. Lo que nos ocupa a nosotros es suponer
 que contamos con la información que este algoritmo nos brindará y en base a ello
 desarrollar las estrategias inteligentes de control a usar por los semáforos.
+
+# Objetivos
+## Objetivo general
+## Objetivos específicos
+# Justificación
