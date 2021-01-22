@@ -96,13 +96,13 @@ Ejemplo verbal: si se hacen ciclos en verde un un carril **mayores a** 45 segund
 
 Este módulo analiza constantemente los reportes almacenados en la base de datos para realizar el proceso mencionado anteriormente y todo lo inferido se guarda de manera centralizada como una base de conocimientos central como registros en la base de datos.
 
-Este módulo se inspiro en la llamada *Colección de hechos* usada en @JoelTrejo2006.
+Este módulo se inspiro en la llamada *Colección de hechos* usada en \textcite{JoelTrejo2006}.
 
 > La colección de hechos alberga los datos correspondientes a la aplicación de
 > determinada estrategia de control cuando se presentan ciertas condiciones en el
 > tráfico observado. La colección de hechos puede desempeñar el papel de memoria
 > auxiliar en la cual se registran los razonamientos llevados a cabo.
-[@JoelTrejo2006, p. 47]
+\textcite[p. 47]{JoelTrejo2006}
 
 ## Motor de priorización
 Se encarga de asignar un valor numérico a cada carril, que indica su prioridad. Entre mayor el número, mayor la prioridad.
@@ -131,7 +131,7 @@ Son la manera en la que se plasman los intervalos de luces generados y son lo qu
 # Recursos: SUMO
 Para probar y desarrollar a detalle la arquitectura, es necesario contar con un entorno de simulación versátil y altamente configurable donde probar los algoritmos creados en base a nuestras hipótesis. 
 El primer acercamiento para resolver reste problema fue desarrollar desde cero un simulador de tráfico, pero ya que esto tiene su propia complejidad y no el objetivo final al que pretendemos llegar, buscamos otras alternativas. De entre todas, la que parece ser la solución definitiva es el simulador de tráfico urbano SUMO.
-"**S**imulation of **U**rban **MO**bility" (Eclipse SUMO) es un paquete de simulación de tráfico vial de código abierto, altamente portátil, microscópico y continúo diseñado para manejar grandes redes viales [@SUMO2018]. Permite simular cómo una determinada demanda de tráfico que consiste en vehículos individuales se mueve a través de una red de carreteras determinada. La simulación permite abordar un amplio conjunto de temas de gestión del tráfico. Es puramente microscópico: cada vehículo está modelado explícitamente, tiene una ruta propia y se mueve individualmente a través de la red. Las simulaciones son deterministas por defecto, pero hay varias opciones para introducir la aleatoriedad.
+"**S**imulation of **U**rban **MO**bility" (Eclipse SUMO) es un paquete de simulación de tráfico vial de código abierto, altamente portátil, microscópico y continúo diseñado para manejar grandes redes viales \textcite{SUMO2018}. Permite simular cómo una determinada demanda de tráfico que consiste en vehículos individuales se mueve a través de una red de carreteras determinada. La simulación permite abordar un amplio conjunto de temas de gestión del tráfico. Es puramente microscópico: cada vehículo está modelado explícitamente, tiene una ruta propia y se mueve individualmente a través de la red. Las simulaciones son deterministas por defecto, pero hay varias opciones para introducir la aleatoriedad.
 
 Al tratarse de un paquete, la instalación por defecto incluye varias aplicaciones, scripts e interfaces aparte de SUMO. Estas aplicaciones se utilizan para importar y preparar redes de carreteras, así como para procesar datos para su uso en SUMO.
 
@@ -335,12 +335,12 @@ Actualmente se está trabajando en la implementación del framework Flow, que pe
 <!-- 
 # Definiciones
 + Calle
-+ Una intersección consiste de un conjunto de calles relacionadas entre sí y en el área de cruce. @JoelTrejo2006 p.2
-+ Un Semáforo es el elemento de la intersección responsable de desplegar las estrategias de control establecidas en la intersección. @JoelTrejo2006 p. 3
-+ El flujo se define para el caso de control de tráfico urbano, como el número de vehículos que pasan por algún punto @JoelTrejo2006 p.3
-+ La densidad se define como el número de vehículos en un tramo de la calle dividida entre la longitud de la calle @JoelTrejo2006 p.4
++ Una intersección consiste de un conjunto de calles relacionadas entre sí y en el área de cruce. \textcite{JoelTrejo2006}JoelTrejo2006 p.2
++ Un Semáforo es el elemento de la intersección responsable de desplegar las estrategias de control establecidas en la intersección. \textcite{JoelTrejo2006}JoelTrejo2006 p. 3
++ El flujo se define para el caso de control de tráfico urbano, como el número de vehículos que pasan por algún punto \textcite{JoelTrejo2006}JoelTrejo2006 p.3
++ La densidad se define como el número de vehículos en un tramo de la calle dividida entre la longitud de la calle \textcite{JoelTrejo2006}JoelTrejo2006 p.4
 + Ciclo de semáforo
-+ Estado: El estado del sistema de tráfico urbano índica la situación en la que se encuentra el sistema en un instante de tiempo dado @JoelTrejo2006 p.3
++ Estado: El estado del sistema de tráfico urbano índica la situación en la que se encuentra el sistema en un instante de tiempo dado \textcite{JoelTrejo2006}JoelTrejo2006 p.3
 + Tráfico
 
 + TraCI:
