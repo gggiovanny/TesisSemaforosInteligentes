@@ -384,9 +384,46 @@ archivo adicional se ve así:
 \end{lstlisting}
 
 Cada programa está compuesto de varias fases de cierta duración. En cada
-una, el atributo \emph{state} define con una cadena de caracteres los
-colores de todos los semáforos en esa fase. El significado de los
-caracteres principales se puede ver en la siguiente tabla:
+una, el atributo \emph{state} define con una cadena de códigos que se
+corresponden con los colores de todos los semáforos en esa fase. El
+significado de los códigos principales se puede ver en la siguiente
+tabla:
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+\begin{minipage}[b]{0.09\columnwidth}\raggedright
+Código\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright
+Color\strut
+\end{minipage} & \begin{minipage}[b]{0.73\columnwidth}\raggedright
+Descripción\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.09\columnwidth}\raggedright
+r\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+rojo\strut
+\end{minipage} & \begin{minipage}[t]{0.73\columnwidth}\raggedright
+Luz roja: los vehículos deben detenerse.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.09\columnwidth}\raggedright
+y\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+amarillo\strut
+\end{minipage} & \begin{minipage}[t]{0.73\columnwidth}\raggedright
+Luz amarilla:los vehículos desacelerarán si están lejos de la
+insersección, de lo contrario pasarán.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.09\columnwidth}\raggedright
+G\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+verde\strut
+\end{minipage} & \begin{minipage}[t]{0.73\columnwidth}\raggedright
+Luz verde de prioridad: los vehículos pasarán.\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
 La posiciónde cada caracter en la cadena se corresponde con las
 conexiones de la insercción controlada empezando desde arriba en el

@@ -194,13 +194,13 @@ adicional se ve así:
 </additional>
 \end{lstlisting}
 
-Cada programa está compuesto de varias fases de cierta duración. En cada una, el atributo *state* define con una cadena de caracteres los colores de todos los semáforos en esa fase. El significado de los caracteres principales se puede ver en la siguiente tabla:
+Cada programa está compuesto de varias fases de cierta duración. En cada una, el atributo *state* define con una cadena de códigos que se corresponden con los colores de todos los semáforos en esa fase. El significado de los códigos principales se puede ver en la siguiente tabla:
 
-<!-- | Caracter | Color    | Descripción                                                                                          |
-|----------|----------|------------------------------------------------------------------------------------------------------|
-| r        | rojo     | Luz roja: los vehículos deben detenerse.                                                             |
-| y        | amarillo | Luz amarilla:los vehículos desacelerarán si están lejos de la insersección, de lo contrario pasarán. |
-| G        | verde    | Luz verde de prioridad: los vehículos pasarán. -->
+| Código      | Color        | Descripción                                                                                          |
+|------------ |------------- |------------------------------------------------------------------------------------------------------|
+| r           | rojo         | Luz roja: los vehículos deben detenerse.                                                             |
+| y           | amarillo     | Luz amarilla:los vehículos desacelerarán si están lejos de la insersección, de lo contrario pasarán. |
+| G           | verde        | Luz verde de prioridad: los vehículos pasarán.                                                       |
 
 La posiciónde cada caracter en la cadena se corresponde con las conexiones de la insercción controlada empezando desde arriba en el orden de las manecillas del reloj. Por ejemplo, la siguiente imagen se corresponde con la cadena `state = "GrGr"`.
 \includegraphics[width=\textwidth]{sumo/tls_light_order.png}
