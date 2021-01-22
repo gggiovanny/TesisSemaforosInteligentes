@@ -38,24 +38,24 @@
   },
   "saveAndRun": {
     "commands": [
-      // {
-      //   "match": "\\.*cap_.*.*.md$",
-      //   "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex --out ${fileBasenameNoExt}.tex --template cap_template.tex ${fileBasename}",
-      //   "useShortcut": false,
-      //   "silent": true
-      // },
+      {
+        "match": "\\.*cap_.*.*.md$",
+        "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex --out ${fileBasenameNoExt}.tex --template cap_template.tex ${fileBasename}",
+        "useShortcut": false,
+        "silent": true
+      },
       // {
       //   "match": "\\.md$",
       //   "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex ${fileBasename} -o ${fileBasenameNoExt}.tex",
       //   "useShortcut": false,
       //   "silent": true
       // },
-      // {
-      //   "match": "\\.*Nomenclatura.*.md$",
-      //   "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex --out ${fileBasenameNoExt}.tex --template Nomenclatura_plantilla.tex ${fileBasename}",
-      //   "useShortcut": false,
-      //   "silent": true
-      // },
+      {
+        "match": "\\.*Nomenclatura.*.md$",
+        "cmd": "cd ${fileDirname} ; pandoc -f markdown -t latex --out ${fileBasenameNoExt}.tex --template Nomenclatura_plantilla.tex ${fileBasename}",
+        "useShortcut": false,
+        "silent": true
+      },
     ]
   },
   "latex-workshop.latex.search.rootFiles.include": [
@@ -79,5 +79,5 @@
     "/Library/Application Support/MiKTeX/texmfs/**",
     "**/*borrador*.*",
   ],
-  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "latex-workshop.latex.autoBuild.run": "never",
 }
