@@ -28,8 +28,27 @@
 %                             B I B L I O G R A F I A  E N  A P A      
 %--------------------------------------------------------------------------------------------------------------
 \usepackage[babel]{csquotes}
-\usepackage[backend=biber,style=apa,language=spanish-apa]{biblatex}
+\usepackage[backend=biber,style=apa,language=spanish-apa, hyperref]{biblatex}
 \DeclareLanguageMapping{spanish}{spanish-apa}
+% Corrección para cambiar '&' por 'y' en parencites
+\DeclareDelimFormat*{finalnamedelim}
+  {\ifnum\value{liststop}>2 \finalandcomma\fi\addspace\bibstring{and}\space}
+
+% the bibliography also needs another conditional, so we can't wrap
+% everything up with just the two lines above
+\DeclareDelimFormat[bib,biblist]{finalnamedelim}{%
+  \ifthenelse{\value{listcount}>\maxprtauth}
+    {}
+    {\ifthenelse{\value{liststop}>2}
+       {\finalandcomma\addspace\bibstring{and}\space}
+       {\addspace\bibstring{and}\space}}}
+
+% this is a special delimiter to solve the bugs reported in
+% https://tex.stackexchange.com/q/417648/35864
+\DeclareDelimFormat*{finalnamedelim:apa:family-given}{%
+  \ifthenelse{\value{listcount}>\maxprtauth}
+    {}
+    {\finalandcomma\addspace\bibstring{and}\space}}
 %------------------------------------------------------------------------------------------------------------
 %                                       T I K Z
 %-----------------------------------------------------------------------------------------------------------
