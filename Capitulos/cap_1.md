@@ -6,8 +6,6 @@ csl: D:/Files/Documents/source/Tesis/apa7-spanish.csl
 lang: es 
 ---
 
-# Introducción
-
 Los países en vías de desarrollo en innumerables ocasiones han tenido que
 afrontar problemas a los que otros países ya se han enfrentado antes. Las que
 antes eran pequeñas urbes, se están sometiendo a un proceso de imparable
@@ -21,25 +19,37 @@ aprovechar la gran base de conocimientos acumulados por otras ciudades y las
 poderosas herramientas tecnológicas de la modernidad, para resolver las
 problemáticas emergentes de manera innovadora y óptima.
 
-Una de dichas problemáticas es el aumento del tráfico urbano, pues, según
-\textcite[p.~27]{PdaCunha2009}, a partir de la década de los 50's el proceso de
-urbanización en América Latina se aceleró, lo que junto a la mayor productividad
-asociada al proceso de aglomeración económica, han inducido una mayor demanda de
-vehículos por parte de los hogares y de los negocios para llevar a cabo las
-actividades económicas, la cual, en casos como el colombiano, no ha sido
-acompañada de suficientes mejoras en la infraestructura e institucionalidad del
-transporte para lograr una operación económicamente eficiente de sus ciudades.
-\textcite{Medina-Durango2011}, p. 1
+En América Latina, una de dichas problemáticas es el aumento del tráfico urbano.
+<!-- Gracias al aumento de las urbes, el tráfico también ha aumentado y esto no ha sido bien manejado por latinoamerica -->
+Gracias al crecimiento de las urbes y la mayor productividad en las mismas
+asociadas a la concentración de actividades económicas, se incrementó la demanda
+de vehículos por parte de hogares y negocios para llevar a cabos sus actividades
+económicas. En algunos casos, tal incremento no ha sido acompañado con las
+respectivas mejoras de infraestructura para lograr una operación eficiente.
+\parencite[1]{Medina-Durango2011}. Y ya que el proceso el proceso de
+urbanización en América Latina está en constante aumento desde los años 50's
+\parencite[27]{PdaCunha2009}, es posible que esto sea una situación generalizada
+en Latinoamérica.
+
+<!-- > En Latinoamérica el nivel creciente de urbanización y la mayor productividad
+> asociada al proceso de aglomeración económica, han inducido una mayor demanda de
+> vehículos por parte de los hogares y de los negocios para llevar a cabo las
+> actividades económicas, la cual, en casos como el colombiano, no ha sido
+> acompañada de suficientes mejoras en la infraestructura e institucionalidad del
+> transporte para lograr una operación económicamente eficiente de sus ciudades. 
+\textcite[p.~1]{Medina-Durango2011} -->
 
 <!-- De acuerdo a \textcite[p. 380]{McShane1999}, el aumento de las señales de tráfico está relacionado con el rápido aumento del
 tráfico automotor. -->
+
 Los problemas acarreados por el aumento descontrolado del tráfico no son nuevos.
 El que Henry Ford comenzara a producir en masa el *Modelo T* 1913, marcó un
 antes y un después en las calles de las grandes ciudades, pues en lugares como
 Nueva York, ya en los tempranos 1913 se experimentaban dos congestiones de
-tráfico al día \textcite[p.380]{McShane1999}. En la primavera de 1914, varias ciudades
-reportaron sus primeras congestiones de tráfico diurnas.Para 1915, al menos algunos neoyorquinos habían dejado de conducir para ir al
-trabajo y habían vuelto a usar metro. \textcite[p.380]{McShane1999}
+tráfico al día \textcite[p.380]{McShane1999}. En la primavera de 1914, varias
+ciudades reportaron sus primeras congestiones de tráfico diurnas.Para 1915, al
+menos algunos neoyorquinos habían dejado de conducir para ir al trabajo y habían
+vuelto a usar metro. \textcite[p.380]{McShane1999}
 
 A partir de entonces surgieron diversos acercamientos para intentar solucionar
 esta problemática, comenzando por poner oficiales de la policía en las
