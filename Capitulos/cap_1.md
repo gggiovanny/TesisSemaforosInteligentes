@@ -5,6 +5,7 @@ bibliography: [D:/Files/Documents/source/Tesis/mendeley/tesis_tls_cimat.bib]
 csl: D:/Files/Documents/source/Tesis/apa7-spanish.csl 
 lang: es 
 ---
+# Antecedentes
 
 Los países en vías de desarrollo en innumerables ocasiones han tenido que
 afrontar problemas a los que otros países ya se han enfrentado antes. Las que
@@ -12,7 +13,7 @@ antes eran pequeñas urbes, se están sometiendo a un proceso de imparable
 crecimiento que hace que día con día se asemejen cada vez más a las grandes
 metrópolis comunes en los países más desarrollados. 
 
-<!-- todo: buscar datos y cita de crecimiento de paises en vias de desarrollo -->
+<!-- TODO: buscar datos y cita de crecimiento de paises en vias de desarrollo -->
 
 No es posible detener la rueda, pero es es una excelente oportunidad para
 aprovechar la gran base de conocimientos acumulados por otras ciudades y las
@@ -96,10 +97,6 @@ aire e incrementos en la mortalidad y morbilidad asociadas.
 > muy difícil y muy costosa, especialmente en áreas urbanas.
 \textcite[Introducción]{JoelTrejo2006}
 
-# Hipótesis
-Sistemas de control inteligente de tráfico aumentan la eficiencia
-del flujo vehicular.
-
 # Propuesta de solución
 
 El problema que se afrontará es el de las congestiones usando sistemas
@@ -153,6 +150,10 @@ esta tarea tiene su propia serie de retos y complicaciones, está siento
 realizada por otros colegas en el CIMAT. Lo que nos ocupa a nosotros es suponer
 que contamos con la información que este algoritmo nos brindará y en base a ello
 desarrollar las estrategias inteligentes de control a usar por los semáforos.
+
+# Hipótesis
+Sistemas de control inteligente de tráfico aumentan la eficiencia
+del flujo vehicular.
 
 # Objetivos
 ## Objetivo general
