@@ -23,12 +23,12 @@ En América Latina, una de dichas problemáticas es el aumento del tráfico urba
 <!-- Gracias al aumento de las urbes, el tráfico también ha aumentado y esto no ha sido bien manejado por latinoamerica -->
 Gracias al crecimiento de las urbes y la mayor productividad en las mismas
 asociadas a la concentración de actividades económicas, se incrementó la demanda
-de vehículos por parte de hogares y negocios para llevar a cabos sus actividades
+de vehículos por parte de hogares y negocios para llevar a cabo sus actividades
 económicas. En algunos casos, tal incremento no ha sido acompañado con las
-respectivas mejoras de infraestructura para lograr una operación eficiente.
+respectivas mejoras en infraestructura para lograr una operación eficiente.
 \parencite[1]{Medina-Durango2011}. Y ya que el proceso el proceso de
 urbanización en América Latina está en constante aumento desde los años 50's
-\parencite[27]{PdaCunha2009}, es posible que esto sea una situación generalizada
+\parencite[27]{PdaCunha2009}, es posible que esto ya sea una situación generalizada
 en Latinoamérica.
 
 <!-- > En Latinoamérica el nivel creciente de urbanización y la mayor productividad
@@ -43,25 +43,21 @@ en Latinoamérica.
 tráfico automotor. -->
 
 Los problemas acarreados por el aumento descontrolado del tráfico no son nuevos.
-El que Henry Ford comenzara a producir en masa el *Modelo T* 1913, marcó un
-antes y un después en las calles de las grandes ciudades, pues en lugares como
-Nueva York, ya en los tempranos 1913 se experimentaban dos congestiones de
-tráfico al día \textcite[p.380]{McShane1999}. En la primavera de 1914, varias
-ciudades reportaron sus primeras congestiones de tráfico diurnas.Para 1915, al
-menos algunos neoyorquinos habían dejado de conducir para ir al trabajo y habían
-vuelto a usar metro. \textcite[p.380]{McShane1999}
-
-A partir de entonces surgieron diversos acercamientos para intentar solucionar
+Como \textcite{McShane1999} hace notar, el que Henry Ford comenzara a
+producir en masa el *Modelo T* en 1913, marcó un antes y un después en las
+calles de las grandes ciudades, pues en lugares como Nueva York, ya en los
+tempranos 1913 se experimentaban dos congestiones de tráfico al día. Según
+relata, en la primavera de 1914, varias ciudades reportaron sus primeras
+congestiones de tráfico diurnas. Para 1915, al menos algunos neoyorquinos habían
+dejado de conducir para ir al trabajo y habían vuelto a usar metro. A partir de
+entonces, menciona que surgieron diversos acercamientos para intentar solucionar
 esta problemática, comenzando por poner oficiales de la policía en las
 intersecciones, pero incluso en ésta época temprana hubo reportes de que el
 control de la policía flaqueó, pues se llegaban a ver largas filas de vehículos
 motorizados que se demoraban en las intersecciones, incluso cuando los
 departamentos enviaron a dos o incluso cuatro oficiales a estas esquinas
-concurridas. Coordinar a los agentes de policía para permitir un flujo constante
-resultó imposible. \textcite[p. 382]{McShane1999}
-
-
-
+concurridas. Hace notar que coordinar a los agentes de policía para permitir un flujo constante
+resultó imposible (pp. 380, 382).
 
 Por muchos años esta ha sido una solución efectiva, pero conforme las urbes
 crecen más y más, llegan a ser insuficientes para tal cantidad de volumen de
