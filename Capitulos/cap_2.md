@@ -40,20 +40,33 @@ Al tratarse de un paquete, la instalación por defecto incluye varias aplicacion
 -   Código abierto (EPL)
 
 ## Vista general
-Editor gráfico NETEDIT mostrando una inserción y el menú de edición de semáforos.
-\includegraphics[width=\textwidth]{sumo/1cb8aa292f0be15b402ccd4f098f53e0.png}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{sumo/1cb8aa292f0be15b402ccd4f098f53e0.png}
+    \caption{Editor gráfico NETEDIT mostrando una intersección y el menú de edición de semáforos.}
+    \label{fig:netedit1}
+\end{figure}
 
-
-Simulando la intersección anterior de manera gráfica en SumoGui.
+\begin{figure}[h]
+    \centering
 \includegraphics[width=\textwidth]{sumo/f06ad63e2235a639007f9748f2326f91.png}
+    \caption{Simulando la intersección anterior de manera gráfica en SumoGui.}
+    \label{fig:sumogui1}
+\end{figure}
 
-
-Controlando los semáforos desde Python con TraCI (Traffic Control Interface).
+\begin{figure}[h]
+    \centering
 \includegraphics[width=\textwidth]{sumo/8a185a540ef5e98b250d7c70216cddfc.png}
+    \caption{Controlando los semáforos desde Python con TraCI (Traffic Control Interface).}
+    \label{fig:traci1}
+\end{figure}
 
-
-Los diversos tipos de vehículos disponibles.
+\begin{figure}[h]
+    \centering
 \includegraphics[width=\textwidth]{sumo/d600ef6ce1de01e90d10a436d7b6bb75.png}
+    \caption{Los diversos tipos de vehículos disponibles.}
+    \label{fig:sumogui2}
+\end{figure}
 
 
 ## Simulación de semáforos
@@ -62,10 +75,23 @@ Los semáforos (llamados en el simulador TLS - *Traffic Light System*) se pueden
 crear de manera gráfica en NETDIT y automáticamente generan un programa de
 control.
 
+\begin{figure}[h]
+    \centering
 \includegraphics[width=\textwidth]{sumo/d53e12f08f94d08fd7e31f214786b43e.png}
+    \caption{Creando gráficamente un programa de control de semáforo en NETDIT.}
+    \label{fig:netedit2}
+\end{figure}
 
-
+\begin{figure}[h]
+    \centering
 \includegraphics[width=\textwidth]{sumo/e760085ba60c72e71c15ed1d0d5ab9aa.png}
+    \caption{Vista gráfica de reglas de paso de un programa de control de
+    tráfico en NETEDIT.}
+    \label{fig:netedit3}
+\end{figure}
+
+
+
 
 
 
@@ -88,11 +114,11 @@ adicional se ve así:
 
 Cada programa está compuesto de varias fases de cierta duración. En cada una, el atributo *state* define con una cadena de códigos que se corresponden con los colores de todos los semáforos en esa fase. El significado de los códigos principales se puede ver en la siguiente tabla:
 
-| Código      | Color        | Descripción                                                                                          |
-|------------ |------------- |------------------------------------------------------------------------------------------------------|
-| r           | rojo         | Luz roja: los vehículos deben detenerse.                                                             |
-| y           | amarillo     | Luz amarilla:los vehículos desacelerarán si están lejos de la insersección, de lo contrario pasarán. |
-| G           | verde        | Luz verde de prioridad: los vehículos pasarán.                                                       |
+| Código | Color    | Descripción                                                                                          |
+| ------ | -------- | ---------------------------------------------------------------------------------------------------- |
+| r      | rojo     | Luz roja: los vehículos deben detenerse.                                                             |
+| y      | amarillo | Luz amarilla:los vehículos desacelerarán si están lejos de la insersección, de lo contrario pasarán. |
+| G      | verde    | Luz verde de prioridad: los vehículos pasarán.                                                       |
 
 La posiciónde cada caracter en la cadena se corresponde con las conexiones de la insercción controlada empezando desde arriba en el orden de las manecillas del reloj. Por ejemplo, la siguiente imagen se corresponde con la cadena `state = "GrGr"`.
 \includegraphics[width=\textwidth]{sumo/tls_light_order.png}

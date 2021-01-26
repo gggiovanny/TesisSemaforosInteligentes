@@ -72,19 +72,33 @@ semáforos.}\label{caracteruxedsticas-relevantes-de-sumo-para-la-investigaciuxf3
 \hypertarget{vista-general}{%
 \subsection{Vista general}\label{vista-general}}
 
-Editor gráfico NETEDIT mostrando una inserción y el menú de edición de
-semáforos.
-\includegraphics[width=\textwidth]{sumo/1cb8aa292f0be15b402ccd4f098f53e0.png}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{sumo/1cb8aa292f0be15b402ccd4f098f53e0.png}
+    \caption{Editor gráfico NETEDIT mostrando una intersección y el menú de edición de semáforos.}
+    \label{fig:netedit1}
+\end{figure}
 
-Simulando la intersección anterior de manera gráfica en SumoGui.
+\begin{figure}[h]
+    \centering
 \includegraphics[width=\textwidth]{sumo/f06ad63e2235a639007f9748f2326f91.png}
+    \caption{Simulando la intersección anterior de manera gráfica en SumoGui.}
+    \label{fig:sumogui1}
+\end{figure}
 
-Controlando los semáforos desde Python con TraCI (Traffic Control
-Interface).
+\begin{figure}[h]
+    \centering
 \includegraphics[width=\textwidth]{sumo/8a185a540ef5e98b250d7c70216cddfc.png}
+    \caption{Controlando los semáforos desde Python con TraCI (Traffic Control Interface).}
+    \label{fig:traci1}
+\end{figure}
 
-Los diversos tipos de vehículos disponibles.
+\begin{figure}[h]
+    \centering
 \includegraphics[width=\textwidth]{sumo/d600ef6ce1de01e90d10a436d7b6bb75.png}
+    \caption{Los diversos tipos de vehículos disponibles.}
+    \label{fig:sumogui2}
+\end{figure}
 
 \hypertarget{simulaciuxf3n-de-semuxe1foros}{%
 \subsection{Simulación de
@@ -94,9 +108,20 @@ Los semáforos (llamados en el simulador TLS - \emph{Traffic Light
 System}) se pueden crear de manera gráfica en NETDIT y automáticamente
 generan un programa de control.
 
+\begin{figure}[h]
+    \centering
 \includegraphics[width=\textwidth]{sumo/d53e12f08f94d08fd7e31f214786b43e.png}
+    \caption{Creando gráficamente un programa de control de semáforo en NETDIT.}
+    \label{fig:netedit2}
+\end{figure}
 
+\begin{figure}[h]
+    \centering
 \includegraphics[width=\textwidth]{sumo/e760085ba60c72e71c15ed1d0d5ab9aa.png}
+    \caption{Vista gráfica de reglas de paso de un programa de control de
+    tráfico en NETEDIT.}
+    \label{fig:netedit3}
+\end{figure}
 
 \hypertarget{definiciuxf3n-de-nuevos-programas-tls}{%
 \subsection{Definición de nuevos programas
@@ -125,35 +150,35 @@ tabla:
 
 \begin{longtable}[]{@{}lll@{}}
 \toprule
-\begin{minipage}[b]{0.09\columnwidth}\raggedright
+\begin{minipage}[b]{0.05\columnwidth}\raggedright
 Código\strut
-\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.06\columnwidth}\raggedright
 Color\strut
-\end{minipage} & \begin{minipage}[b]{0.73\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.80\columnwidth}\raggedright
 Descripción\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
-\begin{minipage}[t]{0.09\columnwidth}\raggedright
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
 r\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
 rojo\strut
-\end{minipage} & \begin{minipage}[t]{0.73\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.80\columnwidth}\raggedright
 Luz roja: los vehículos deben detenerse.\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.09\columnwidth}\raggedright
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
 y\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
 amarillo\strut
-\end{minipage} & \begin{minipage}[t]{0.73\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.80\columnwidth}\raggedright
 Luz amarilla:los vehículos desacelerarán si están lejos de la
 insersección, de lo contrario pasarán.\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.09\columnwidth}\raggedright
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
 G\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
 verde\strut
-\end{minipage} & \begin{minipage}[t]{0.73\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.80\columnwidth}\raggedright
 Luz verde de prioridad: los vehículos pasarán.\strut
 \end{minipage}\tabularnewline
 \bottomrule
