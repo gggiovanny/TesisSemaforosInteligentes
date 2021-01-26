@@ -60,33 +60,38 @@ sirena de patrullas y ambulancias y priorizar su circulación.
 
 # Planteamiento del problema
 
-Una cantidad significativa de la actividad en un área urbana tiene que ver con
-el movimiento de personas y bienes entre diferentes lugares usando la
-infraestructura de transporte, y un eficiente y fluido sistema de transporte es
-esencial para la salud económica y la calidad de vida dentro de las regiones
-urbanas. \textcite[p. 3]{Patriksson2012}
+<!-- El tráfico es un nucleo de la vida urbana -->
+El flujo vehicular es una parte nuclear del funcionamiento de una ciudad.
+\parencite[3]{Patriksson2012} afirma que una cantidad significativa de la
+actividad en un área urbana tiene que ver con el movimiento de personas y bienes
+entre diferentes lugares usando la infraestructura de transporte, y un eficiente
+y fluido sistema de transporte es esencial para la salud económica y la calidad
+de vida dentro de las regiones urbanas (p. 3).
+<!-- Cuando aumenta, historicamente trae problemas -->
+Ya es conocido que el aumento de la demanda de tráfico trae consigo problemas de
+circulación vehicular. Es también el mismo autor que relata que cuando en las décadas
+que le siguieron a la Segunda Guerra Mundial creció la demanda de transporte, el
+aumento de la movilidad trajo consigo problemas serios, como:
 
-Conforme crecen las ciudades y se arraiga cada vez más la idea de la necesidad
-de tener trasporte personal, inevitablemente crece la demanda del sistema de
-transporte. Este aumento trae consigo problemas serios, como:
+-   Contaminación.
 
-Los perjuicios de la congestión de tránsito urbano son evidentes para cualquier
-observador: mayores tiempos para el desplazamiento al trabajo y para la entrega
-de bienes y servicios, mayor consumo de combustible, mayor contaminación del
-aire e incrementos en la mortalidad y morbilidad asociadas.
-\textcite[p. 2]{Medina-Durango2011}
+-   Mayor ratio de accidentes.
 
--   Mayor número de accidentes
+-   Efectos sociales indeseados en la vida urbana debido a la expansión de
+    carreteras.
 
 -   Uso ineficiente del sistema de transporte debido a grandes congestiones.
 
--   Deterioro de la calidad de vida de las zonas adyacentes
+Y también afirma \parencite{Medina-Durango2011}:
 
--   Polución
+> Los perjuicios de la congestión de tránsito urbano son evidentes para
+> cualquier observador: mayores tiempos para el desplazamiento al trabajo y para
+> la entrega de bienes y servicios, mayor consumo de combustible, mayor
+> contaminación del aire e incrementos en la mortalidad y morbilidad asociadas.
+> (p. 2)
 
--   Contaminación sonora
-
-\textcite{Patriksson2012}
+Y finalmente, \parencite{JoelTrejo2006} añade más prejuicios provocados por la
+congestión de tráfico:
 
 > La congestión de tráfico urbano causa considerables costos debido a pérdidas
 > de tiempo, incrementa la posibilidad de accidentes, y los problemas de
@@ -94,8 +99,19 @@ aire e incrementos en la mortalidad y morbilidad asociadas.
 > en el ambiente. También es responsable de problemas de salud tales como
 > estrés, ruido y complicaciones similares. La solución de aumentar la dimensión
 > de la red de tráfico urbano no siempre resulta ser la mejor opción además es
-> muy difícil y muy costosa, especialmente en áreas urbanas.
-\textcite[Introducción]{JoelTrejo2006}
+> muy difícil y muy costosa, especialmente en áreas urbanas. (Introducción, párr. 2)
+
+<!--  Latinoamérica va repitiendo la historia -->
+Las ciudades en Latinoamérica está en crecimiento y siguiendo
+patrones de desarrollo similares a otros ya vistos a lo largo de la historia en
+otros lugares. Es necesaria una investigación profunda para saber a que atribuir
+el desarrollo del transporte en los países latinoamericanos, pero según
+\parencite{Patriksson2012}, luego de la Segunda Guerra Mundial, una gran parte
+del incremento en la demanda de transporte se le atribuye al desarrollo del transporte
+urbano, que tiene sus raíces en la urbanización y en los crecientes estándares
+de vida (p. 3).
+
+<!-- Ya hay problemas en Latinoamérica -->
 
 # Propuesta de solución
 
