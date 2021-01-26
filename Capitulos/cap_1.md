@@ -31,41 +31,31 @@ urbanización en América Latina está en constante aumento desde los años 50's
 \parencite[27]{PdaCunha2009}, es posible que esto ya sea una situación generalizada
 en Latinoamérica.
 
-<!-- > En Latinoamérica el nivel creciente de urbanización y la mayor productividad
-> asociada al proceso de aglomeración económica, han inducido una mayor demanda de
-> vehículos por parte de los hogares y de los negocios para llevar a cabo las
-> actividades económicas, la cual, en casos como el colombiano, no ha sido
-> acompañada de suficientes mejoras en la infraestructura e institucionalidad del
-> transporte para lograr una operación económicamente eficiente de sus ciudades. 
-\textcite[p.~1]{Medina-Durango2011} -->
-
-<!-- De acuerdo a \textcite[p. 380]{McShane1999}, el aumento de las señales de tráfico está relacionado con el rápido aumento del
-tráfico automotor. -->
-
 Los problemas acarreados por el aumento descontrolado del tráfico no son nuevos.
-Como \textcite{McShane1999} hace notar, el que Henry Ford comenzara a
-producir en masa el *Modelo T* en 1913, marcó un antes y un después en las
-calles de las grandes ciudades, pues en lugares como Nueva York, ya en los
-tempranos 1913 se experimentaban dos congestiones de tráfico al día. Según
-relata, en la primavera de 1914, varias ciudades reportaron sus primeras
-congestiones de tráfico diurnas. Para 1915, al menos algunos neoyorquinos habían
-dejado de conducir para ir al trabajo y habían vuelto a usar metro. A partir de
-entonces, menciona que surgieron diversos acercamientos para intentar solucionar
-esta problemática, comenzando por poner oficiales de la policía en las
-intersecciones, pero incluso en ésta época temprana hubo reportes de que el
-control de la policía flaqueó, pues se llegaban a ver largas filas de vehículos
-motorizados que se demoraban en las intersecciones, incluso cuando los
-departamentos enviaron a dos o incluso cuatro oficiales a estas esquinas
-concurridas. Hace notar que coordinar a los agentes de policía para permitir un flujo constante
-resultó imposible (pp. 380, 382).
+Como \textcite{McShane1999} hace notar, el que Henry Ford comenzara a producir
+en masa el *Modelo T* en 1913, marcó un antes y un después en las calles de las
+grandes ciudades, pues en lugares como Nueva York, ya en los tempranos 1913 se
+experimentaban dos congestiones de tráfico al día. Según relata, en la primavera
+de 1914, varias ciudades reportaron sus primeras congestiones de tráfico
+diurnas. Para 1915, al menos algunos neoyorquinos habían dejado de conducir para
+ir al trabajo y habían vuelto a usar metro. A partir de entonces, menciona que
+surgieron diversos acercamientos para intentar solucionar esta problemática,
+comenzando por poner oficiales de policía en las intersecciones, pero incluso
+en ésta época temprana hubo reportes de que el control de la policía flaqueó,
+pues se llegaban a ver largas filas de vehículos motorizados que se demoraban en
+las intersecciones, incluso cuando los departamentos enviaron a dos o incluso
+cuatro oficiales a estas esquinas concurridas. Hace notar que coordinar a los
+agentes de policía para permitir un flujo constante resultó imposible (pp. 380,
+382).
 
-Por muchos años esta ha sido una solución efectiva, pero conforme las urbes
-crecen más y más, llegan a ser insuficientes para tal cantidad de volumen de
-tráfico. Es en tiempos más recientes cuando se han comenzado a implementar
+Se comenzó usando semáforos normales y ahora se usan semáforos cada vez más
+dinámicos en los países con alto tráfico .
+Es en tiempos más recientes cuando se han comenzado a implementar
 estrategias que le brindan 'inteligencia' al comportamiento de los mismos, a
 través el uso de inductores para condicionar el comportamiento del semáforo, o
 detectores de luces infrarrojas para detectar el patrón de las luces de la
 sirena de patrullas y ambulancias y priorizar su circulación.
+<!-- TODO: fundamentar y citar -->
 
 # Planteamiento del problema
 
@@ -103,10 +93,12 @@ aire e incrementos en la mortalidad y morbilidad asociadas.
 > en el ambiente. También es responsable de problemas de salud tales como
 > estrés, ruido y complicaciones similares. La solución de aumentar la dimensión
 > de la red de tráfico urbano no siempre resulta ser la mejor opción además es
-> muy difícil y muy costosa, especialmente en áreas urbanas. \textcite{JoelTrejo2006},
-> Introducción]
+> muy difícil y muy costosa, especialmente en áreas urbanas.
+\textcite[Introducción]{JoelTrejo2006}
 
 # Hipótesis
+Sistemas de control inteligente de tráfico aumentan la eficiencia
+del flujo vehicular.
 
 # Propuesta de solución
 
@@ -166,3 +158,16 @@ desarrollar las estrategias inteligentes de control a usar por los semáforos.
 ## Objetivo general
 ## Objetivos específicos
 # Justificación
+
+Dado a que se sabe que está aumentando el tráfico y que va a llegar a ser como
+el de las grandes ciudades, es necesario tomar medidas y usar los datos de ellas
+para adelantarnos y satisfacer la demanda de tráfico futura de manera
+inteligente antes de que se vuelva un problema serio.
+Ya existes casos de ciudades grandes (como la  Ciudad de México, Guadalajara y
+Bogotá) en las que se tienen que tomar medidas extremas y aún así no se da a
+basto.
+
+Por muchos años los semáforos normales han sido una solución efectiva, pero conforme las urbes
+crecen más y más, llegan a ser insuficientes para tal cantidad de volumen de
+tráfico. 
+
