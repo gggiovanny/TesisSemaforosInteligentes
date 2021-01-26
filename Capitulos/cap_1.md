@@ -123,32 +123,33 @@ El objetivo es que los semáforos actúen similar a los típicos oficiales de
 tránsito que a veces se encuentran posicionados estratégicamente en las
 intersecciones más concurridas, pero con esteroides. Dichos policías observan la
 demanda de tráfico que ocurre en cada carril y en base a ello toman la decisión
-de a cuál dar el paso para mantener en todo momento un flujo de tráfico óptimo y
+de a cuál dar el paso para mantener en TODO momento un flujo de tráfico óptimo y
 acortar los tiempos de espera. El problema de usar personas para esta tarea;
 aparte del costo y la inviabilidad de hacerlo en cada inserción de una ciudad;
 es mantener el flujo constante, pues ¿de qué sirve que en una intersección un
 vehículo tenga la vía libre si al llegar a la siguiente no tendrá paso? Entonces
-el flujo se rompe y se genera una congestión que afecta todos los vehículos que
+el flujo se rompe y se genera una congestión que afecta TODOs los vehículos que
 lo suceden. Para solucionar este problema, pensamos que la clave es la
 coordinación entre los "oficiales de tránsito" y que estos formen una red en
-todos las intersecciones clave y tengan mentalidad de enjambre para que en todo
+TODOs las intersecciones clave y tengan mentalidad de enjambre para que en TODO
 momento cualquier oficial sepa cuál es la cantidad y dirección del flujo de
 tráfico en cada una de las intersecciones de la red (o incluso en otras redes
-adyacentes) y en base a ello tome de decisiones en tiempo real que permitan un
+adyacentes) y en base a ello tome decisiones en tiempo real que permitan un
 flujo de tráfico lo más eficiente posible, y que dé pie a cosas tan útiles como
 dar paso completamente libre a ambulancias, patrullas y camiones de bomberos.
 Evidentemente esto no es tarea para un ser humano, pero si para un semáforo
-inteligente.
+inteligente. \textcite{JoelTrejo2006} hace notar esta posibilidad:
 
 >   Una de las principales respuestas al problema del control de tráfico urbano
 >   es reducir el tiempo de espera de los usuarios en la red de tráfico. Se
 >   puede reducir el tiempo de espera de los usuarios en la red de tráfico por
 >   medio del cambio dinámico de las señales desplegadas en los semáforos, y que
 >   este cambio se realice de acuerdo a la demanda de tráfico y a la
->   coordinación con intersecciones adyacentes. (Trejo, 2006)
+>   coordinación con intersecciones adyacentes.
+(Introducción, párr. 3)
 
 La idea de un semáforo que se adapta a la demanda de tráfico no es nueva. 
-<!-- todo: agregar referencias y otros acercamientos con redes de Petri y trabajos similares-->
+<!-- TODO: mover esto a la introducción y agregar referencias y otros acercamientos con redes de Petri y trabajos similares-->
 Ya existen acercamientos a esta idea, desde la más básica cambiando el ciclo de
 las luces dependiendo de la hora del día, hasta las más complejas y costosas que
 usan inductores posicionados estratégicamente antes de llegar a las
@@ -160,12 +161,16 @@ mejora, pues la información que puede proporcionar un inductor se limita a si u
 vehículo pasa encima de él y la hora en la que sucede, lo que complica analizar
 el flujo real de cada uno de los vehículos. Por ello pretendemos darles uso a
 las cámaras que muchas veces ya se encuentran en las intersecciones y usar sus
-imágenes para alimentar algoritmos de machine learning de reconocimiento de
+imágenes para alimentar algoritmos de Machine Learning de reconocimiento de
 objetos, y así saber cuántos, de que tipo y dirección de los vehículos. Ya que
 esta tarea tiene su propia serie de retos y complicaciones, está siento
-realizada por otros colegas en el CIMAT. Lo que nos ocupa a nosotros es suponer
-que contamos con la información que este algoritmo nos brindará y en base a ello
-desarrollar las estrategias inteligentes de control a usar por los semáforos.
+realizada por otros estudiantes y colegas en el CIMAT. Durante este trabajo se
+dará por hecho que es posible obtener información de este tipo, pues ya se ha
+logrado en casos similares en el pasado. Lo que se hará es suponer que se cuenta
+con la información que este algoritmo de reconocimiendo nos brindaría y en base
+a ello desarrollar las estrategias inteligentes de control a usar por los
+semáforos.
+<!-- TODO: buscar casos de reconocimiento de imagenes con ML, preguntarle al Dr. Mauricio -->
 
 # Hipótesis
 Sistemas de control inteligente de tráfico aumentan la eficiencia
