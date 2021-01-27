@@ -117,11 +117,27 @@ atributo *state* define con una cadena de códigos que se corresponden con los
 colores de todos los semáforos en esa fase. El significado de los códigos
 principales se puede ver en la siguiente tabla:
 
+<!-- 
 | Código       | Color          | Descripción                                                                                          |
 | ------------ | -------------- | ---------------------------------------------------------------------------------------------------- |
 | r            | rojo           | Luz roja: los vehículos deben detenerse.                                                             |
 | y            | amarillo       | Luz amarilla:los vehículos desacelerarán si están lejos de la insersección, de lo contrario pasarán. |
-| G            | verde          | Luz verde de prioridad: los vehículos pasarán.                                                       |
+| G            | verde          | Luz verde de prioridad: los vehículos pasarán.                                                       | -->
+
+\begin{table}[h!]
+\centering
+\begin{tabular}[t]{c l m{11cm}}
+    \toprule
+    Código  & Color        & Descripción                                                                                         \\
+    \midrule
+    r       & rojo         & Luz roja: los vehículos deben detenerse.                                                            \\ 
+    y       & amarillo     & Luz amarilla:los vehículos desacelerarán si están lejos de la insersección, de lo contrario pasarán.\\
+    G       & verde        & Luz verde de prioridad: los vehículos pasarán.                                                      \\
+    \bottomrule
+\end{tabular}
+\caption{}
+\label{table:tab1}
+\end{table}
 
 La posiciónde cada caracter en la cadena se corresponde con las conexiones de la
 insercción controlada empezando desde arriba en el orden de las manecillas del
