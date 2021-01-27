@@ -79,5 +79,6 @@
     "/Library/Application Support/MiKTeX/texmfs/**",
     "**/*borrador*.*",
   ],
-  "latex-workshop.latex.autoBuild.run": "never",
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  // "latex-workshop.latex.autoBuild.run": "never",
 }
