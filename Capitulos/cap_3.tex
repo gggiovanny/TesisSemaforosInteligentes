@@ -5,8 +5,12 @@
 \hypertarget{arquitectura}{%
 \section{Arquitectura}\label{arquitectura}}
 
-\includegraphics[width=\textwidth]{arquitectura.png} Fig. 1:
-Arquitectura de un agente de control.
+\begin{figure}[H]
+    \centering
+\includegraphics[width=\textwidth]{arquitectura.png}
+    \caption{Arquitectura de un agente de control.}
+    \label{fig:arq1}
+\end{figure}
 
 \hypertarget{truxe1fico}{%
 \subsection{Tráfico}\label{truxe1fico}}
@@ -23,7 +27,6 @@ Son las propiedades intrínsecas de la intersección que no suelen cambiar
 con el paso del tiempo:
 
 \begin{itemize}
-\tightlist
 \item
   Número de calles.
 \item
@@ -74,7 +77,6 @@ como:
 Y también notifica eventos emergentes y sus propiedades, como:
 
 \begin{itemize}
-\tightlist
 \item
   Aparición de un vehículos de prioridad (de que tipo y en que carril).
 \item
@@ -94,7 +96,6 @@ reporte generado agrupa los datos por ciclo de semáforo, siendo éstos
 los siguientes:
 
 \begin{itemize}
-\tightlist
 \item
   Flujo por carril, es decir, el número de vehículos que pasan por cada
   carril cada determinado tiempo.
@@ -125,7 +126,6 @@ Permite enviar y recibir reportes de otros agentes de control, así como
 notificaciones de eventos externos que pueden alterar el tráfico, como:
 
 \begin{itemize}
-\tightlist
 \item
   Alertas de desastre natural.
 \item
@@ -152,10 +152,6 @@ comportamiento de una intersección durante la siguiente hora. Los datos
 que genera son los mismos que figuran el los reportes creados por el
 \emph{Registrador de eventos}. También hace predicciones bajo demanda
 cuando el \emph{Comparador} lo solicita.
-
-\textbf{(Incluir aquí gráfica que represente el rango de tiempo en el
-que son válidas las predicciones, la estimación de pérdida de tiempo
-efectivo por el tiempo de generación, etc.)}
 
 Ya que el proceso de hacer una predicción y su posterior optimización es
 un proceso intensivo, las peticiones para nuevas predicciones suceden
@@ -203,15 +199,15 @@ de datos para realizar el proceso mencionado anteriormente y todo lo
 inferido se guarda de manera centralizada como una base de conocimientos
 central como registros en la base de datos.
 
-Este módulo se inspiro en la llamada \emph{Colección de hechos} usada en
-\textcite{JoelTrejo2006}.
+Este módulo se inspiro en la llamada \emph{Colección de hechos} usada
+por \textcite{JoelTrejo2006}.
 
 \begin{quote}
 La colección de hechos alberga los datos correspondientes a la
 aplicación de determinada estrategia de control cuando se presentan
 ciertas condiciones en el tráfico observado. La colección de hechos
 puede desempeñar el papel de memoria auxiliar en la cual se registran
-los razonamientos llevados a cabo. \textcite[p. 47]{JoelTrejo2006}
+los razonamientos llevados a cabo. (p.~47)
 \end{quote}
 
 \hypertarget{motor-de-priorizaciuxf3n}{%
