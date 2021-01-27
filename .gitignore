@@ -289,5 +289,5 @@ TSWLatexianTemp*
 *.doc
 *.pdf
 /mendeley
-*temp*
+*_temp.*
 __*
