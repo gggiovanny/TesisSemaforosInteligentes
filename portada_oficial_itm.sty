@@ -1,5 +1,6 @@
 \ProvidesPackage{portadaposgradoMCM}
 \RequirePackage{graphicx}
+\definecolor{barscolor}{RGB}{139, 31, 33}
 \@ifpackageloaded{geometry}{}{\RequirePackage[pass]{geometry}}
 \newcommand*{\institucion}[1]{\gdef\@institucion{#1}}
 \newcommand*{\@institucion}{\texttt{\string\institucion} Faculty or Institute. Please fix this.}%Texto por defecto.
@@ -23,14 +24,19 @@
 \newcommand{\thismonth}{\monthname\ \the\year}
 \renewcommand\maketitle{%
 \begin{titlepage}
-\fontfamily{helvet}\selectfont  		\newgeometry{left=2.5cm,right=3cm,bottom=2.5cm,top=2cm}
+\fontfamily{helvet}\selectfont 
+\newgeometry{left=2.5cm,right=3cm,bottom=2.5cm,top=2cm}
 \noindent
   \begin{minipage}[c][0.99\textheight][c]{0.05\textwidth}%
 	\begin{minipage}[c][0.66\textheight][c]{\textwidth}
 		\begin{center}
-		\hbox{\vrule depth550pt width3pt \quad
-		      \vrule depth530pt width3pt \quad
-		      \vrule depth510pt width3pt}
+		\hbox{
+      \textcolor{barscolor} {
+        \vrule depth550pt width3pt \quad
+        \vrule depth530pt width3pt \quad
+        \vrule depth510pt width3pt
+      }
+    }
 		\end{center}
 	\end{minipage}%
   \end{minipage}
@@ -38,7 +44,7 @@
   \begin{minipage}[c][0.99\textheight][t]{0.850\textwidth}
     \hfill\vspace{.1\textwidth}    
     \begin{center}
-    \hrule height3pt
+    \textcolor{barscolor}{\hrule height3pt}
     \ThisCenterWallPaper{1}{Adjuntos/logos_superiores_portada.pdf}
       \vspace{5mm}\textbf{\Large \href{https://www.itmerida.mx}{\MakeUppercase{\textsf{\@institucion}}}} \\
       \vspace{1mm}\textsf{\normalsize \MakeUppercase{\@departamento}} \\
@@ -53,7 +59,7 @@
       \vspace{1mm}\textbf{\textsf{\normalsize \MakeUppercase{\@asesor}}}\\    
       \vspace*{5mm}\textsf{CO-ASESOR:}\\    
       \vspace{1mm}\textbf{\textsf{\normalsize \MakeUppercase{\@coasesor}}}\\
-      \vspace{12mm}\vfill\textsf{\@direccion}. \hfill \textsf{\fecha}
+      \vspace{12mm}\vfill\textsf{\MakeUppercase{\@direccion}}. \hfill \textsf{\fecha}
 	\end{center}
 	  \end{minipage}
   \end{titlepage} 
