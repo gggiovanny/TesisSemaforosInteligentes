@@ -29,8 +29,8 @@ económicas. En algunos casos, tal incremento no ha sido acompañado con las
 respectivas mejoras en infraestructura para lograr una operación eficiente.
 \parencite[1]{Medina-Durango2011}. Y ya que el proceso el proceso de
 urbanización en América Latina está en constante aumento desde los años 50's
-\parencite[27]{PdaCunha2009}, es posible que esto ya sea una situación generalizada
-en Latinoamérica.
+\parencite[27]{PdaCunha2009}, es posible que esto ya sea una situación
+generalizada en Latinoamérica.
 
 Los problemas acarreados por el aumento descontrolado del tráfico no son nuevos.
 Como \textcite{McShane1999} hace notar, el que Henry Ford comenzara a producir
@@ -41,21 +41,20 @@ de 1914, varias ciudades reportaron sus primeras congestiones de tráfico
 diurnas. Para 1915, al menos algunos neoyorquinos habían dejado de conducir para
 ir al trabajo y habían vuelto a usar metro. A partir de entonces, menciona que
 surgieron diversos acercamientos para intentar solucionar esta problemática,
-comenzando por poner oficiales de policía en las intersecciones, pero incluso
-en ésta época temprana hubo reportes de que el control de la policía flaqueó,
-pues se llegaban a ver largas filas de vehículos motorizados que se demoraban en
-las intersecciones, incluso cuando los departamentos enviaron a dos o incluso
-cuatro oficiales a estas esquinas concurridas. Hace notar que coordinar a los
-agentes de policía para permitir un flujo constante resultó imposible (pp. 380,
-382).
+comenzando por poner oficiales de policía en las intersecciones, pero incluso en
+ésta época temprana hubo reportes de que el control de la policía flaqueó, pues
+se llegaban a ver largas filas de vehículos motorizados que se demoraban en las
+intersecciones, incluso cuando los departamentos enviaron a dos o incluso cuatro
+oficiales a estas esquinas concurridas. Hace notar que coordinar a los agentes
+de policía para permitir un flujo constante resultó imposible (pp. 380, 382).
 
 Se comenzó usando semáforos normales y ahora se usan semáforos cada vez más
-dinámicos en los países con alto tráfico .
-Es en tiempos más recientes cuando se han comenzado a implementar
-estrategias que le brindan 'inteligencia' al comportamiento de los mismos, a
-través el uso de inductores para condicionar el comportamiento del semáforo, o
-detectores de luces infrarrojas para detectar el patrón de las luces de la
-sirena de patrullas y ambulancias y priorizar su circulación.
+dinámicos en los países con alto tráfico . Es en tiempos más recientes cuando se
+han comenzado a implementar estrategias que le brindan 'inteligencia' al
+comportamiento de los mismos, a través el uso de inductores para condicionar el
+comportamiento del semáforo, o detectores de luces infrarrojas para detectar el
+patrón de las luces de la sirena de patrullas y ambulancias y priorizar su
+circulación.
 <!-- TODO: fundamentar y citar -->
 
 # Planteamiento del problema
@@ -64,14 +63,14 @@ sirena de patrullas y ambulancias y priorizar su circulación.
 El flujo vehicular es una parte nuclear del funcionamiento de una ciudad.
 \parencite[3]{Patriksson2012} afirma que una cantidad significativa de la
 actividad en un área urbana tiene que ver con el movimiento de personas y bienes
-entre diferentes lugares usando la infraestructura de transporte, y un eficiente
-y fluido sistema de transporte es esencial para la salud económica y la calidad
-de vida dentro de las regiones urbanas (p. 3).
+entre diferentes lugares usando la infraestructura de transporte, y que un
+eficiente y fluido sistema de transporte es esencial para la salud económica y
+la calidad de vida dentro de las regiones urbanas (p. 3).
 <!-- Cuando aumenta, historicamente trae problemas -->
 Ya es conocido que el aumento de la demanda de tráfico trae consigo problemas de
-circulación vehicular. Es también el mismo autor que relata que cuando en las décadas
-que le siguieron a la Segunda Guerra Mundial creció la demanda de transporte, el
-aumento de la movilidad trajo consigo problemas serios, como:
+circulación vehicular. Es también el mismo autor que relata que, cuando en las
+décadas que le siguieron a la Segunda Guerra Mundial creció la demanda de
+transporte, el aumento de la movilidad trajo consigo problemas serios, como:
 
 -   Contaminación.
 
@@ -82,7 +81,7 @@ aumento de la movilidad trajo consigo problemas serios, como:
 
 -   Uso ineficiente del sistema de transporte debido a grandes congestiones.
 
-Y también afirma \parencite{Medina-Durango2011}:
+El aumento del tráfico comúnmente está asociado a la congestión vehicular, sobre la que \parencite{Medina-Durango2011} hace algunas observaciones:
 
 > Los perjuicios de la congestión de tránsito urbano son evidentes para
 > cualquier observador: mayores tiempos para el desplazamiento al trabajo y para
@@ -90,28 +89,27 @@ Y también afirma \parencite{Medina-Durango2011}:
 > contaminación del aire e incrementos en la mortalidad y morbilidad asociadas.
 > (p. 2)
 
-Y finalmente, \parencite{JoelTrejo2006} añade más prejuicios provocados por la
-congestión de tráfico:
+<!--  Latinoamérica va repitiendo la historia -->
+Como se afirma anteriormente, las ciudades en Latinoamérica está en crecimiento
+y siguiendo patrones de desarrollo similares a otros ya vistos en otros lugares
+a lo largo de la historia. Es necesaria una investigación profunda para saber a
+que atribuir el desarrollo del transporte en los países latinoamericanos, pero
+según \parencite{Patriksson2012}, luego de la Segunda Guerra Mundial, una gran
+parte del incremento en la demanda de transporte se le atribuye al desarrollo
+del transporte urbano, que tiene sus raíces en la urbanización y en los
+crecientes estándares de vida (p. 3).
 
-> La congestión de tráfico urbano causa considerables costos debido a pérdidas
-> de tiempo, incrementa la posibilidad de accidentes, y los problemas de
-> contaminación en las principales ciudades por lo que tiene un impacto negativo
-> en el ambiente. También es responsable de problemas de salud tales como
-> estrés, ruido y complicaciones similares. La solución de aumentar la dimensión
+<!-- Ya hay problemas en Latinoamérica -->
+Los problemas de tráfico ya son una realidad y un tema de fuerte preocupación en
+las zonas urbanas de México, y aumentar la infraestructura vial no
+necesariamente es la solución y podría incluso contribuir al problema
+\parencite[124-126]{Galindo2006}. \parencite{JoelTrejo2006} hace algunos
+comentarios al respecto:
+
+> La solución de aumentar la dimensión
 > de la red de tráfico urbano no siempre resulta ser la mejor opción además es
 > muy difícil y muy costosa, especialmente en áreas urbanas. (Introducción, párr. 2)
 
-<!--  Latinoamérica va repitiendo la historia -->
-Las ciudades en Latinoamérica está en crecimiento y siguiendo
-patrones de desarrollo similares a otros ya vistos a lo largo de la historia en
-otros lugares. Es necesaria una investigación profunda para saber a que atribuir
-el desarrollo del transporte en los países latinoamericanos, pero según
-\parencite{Patriksson2012}, luego de la Segunda Guerra Mundial, una gran parte
-del incremento en la demanda de transporte se le atribuye al desarrollo del transporte
-urbano, que tiene sus raíces en la urbanización y en los crecientes estándares
-de vida (p. 3).
-
-<!-- Ya hay problemas en Latinoamérica -->
 
 # Propuesta de solución
 
@@ -121,24 +119,24 @@ inteligentes*.
 
 El objetivo es que los semáforos actúen similar a los típicos oficiales de
 tránsito que a veces se encuentran posicionados estratégicamente en las
-intersecciones más concurridas, pero con esteroides. Dichos policías observan la
-demanda de tráfico que ocurre en cada carril y en base a ello toman la decisión
-de a cuál dar el paso para mantener en TODO momento un flujo de tráfico óptimo y
-acortar los tiempos de espera. El problema de usar personas para esta tarea;
-aparte del costo y la inviabilidad de hacerlo en cada inserción de una ciudad;
-es mantener el flujo constante, pues ¿de qué sirve que en una intersección un
-vehículo tenga la vía libre si al llegar a la siguiente no tendrá paso? Entonces
-el flujo se rompe y se genera una congestión que afecta TODOs los vehículos que
-lo suceden. Para solucionar este problema, pensamos que la clave es la
-coordinación entre los "oficiales de tránsito" y que estos formen una red en
-TODOs las intersecciones clave y tengan mentalidad de enjambre para que en TODO
-momento cualquier oficial sepa cuál es la cantidad y dirección del flujo de
-tráfico en cada una de las intersecciones de la red (o incluso en otras redes
-adyacentes) y en base a ello tome decisiones en tiempo real que permitan un
-flujo de tráfico lo más eficiente posible, y que dé pie a cosas tan útiles como
-dar paso completamente libre a ambulancias, patrullas y camiones de bomberos.
-Evidentemente esto no es tarea para un ser humano, pero si para un semáforo
-inteligente. \textcite{JoelTrejo2006} hace notar esta posibilidad:
+intersecciones más concurridas, pero con habilidades superiores. Dichos policías
+observan la demanda de tráfico que ocurre en cada carril y en base a ello toman
+la decisión de a cuál dar el paso para mantener en todo momento un flujo de
+tráfico óptimo y acortar los tiempos de espera. El problema de usar personas
+para esta tarea; aparte del costo y la inviabilidad de hacerlo en cada intersección
+de una ciudad; es mantener el flujo constante, pues ¿de qué sirve que en una
+intersección un vehículo tenga la vía libre si al llegar a la siguiente no
+tendrá paso? Entonces el flujo se rompe y se genera una congestión que afecta
+todos los vehículos que lo suceden. Para solucionar este problema, pensamos que
+la clave es la coordinación entre los "oficiales de tránsito" y que estos formen
+una red en todos las intersecciones clave y tengan mentalidad de enjambre para
+que en todo momento cualquier oficial sepa cuál es la cantidad y dirección del
+flujo de tráfico en cada una de las intersecciones de la red (o incluso en otras
+redes adyacentes) y en base a ello tome de decisiones en tiempo real que
+permitan un flujo de tráfico lo más eficiente posible, y que dé pie a cosas tan
+útiles como dar paso completamente libre a ambulancias, patrullas y camiones de
+bomberos. Evidentemente esto no es tarea para un ser humano, pero si para un
+semáforo inteligente.
 
 >   Una de las principales respuestas al problema del control de tráfico urbano
 >   es reducir el tiempo de espera de los usuarios en la red de tráfico. Se
@@ -155,21 +153,22 @@ las luces dependiendo de la hora del día, hasta las más complejas y costosas q
 usan inductores posicionados estratégicamente antes de llegar a las
 intersecciones para contabilizar cuantos vehículos están esperando en cada
 carril para que los semáforos usen esta información para, por ejemplo, no dar
-paso a un carril que no tiene ningún vehículo esperando. El problema es que
-implementar la solución anterior es costoso, y aun así tiene mucho margen de
-mejora, pues la información que puede proporcionar un inductor se limita a si un
-vehículo pasa encima de él y la hora en la que sucede, lo que complica analizar
-el flujo real de cada uno de los vehículos. Por ello pretendemos darles uso a
-las cámaras que muchas veces ya se encuentran en las intersecciones y usar sus
-imágenes para alimentar algoritmos de Machine Learning de reconocimiento de
-objetos, y así saber cuántos, de que tipo y dirección de los vehículos. Ya que
-esta tarea tiene su propia serie de retos y complicaciones, está siento
-realizada por otros estudiantes y colegas en el CIMAT. Durante este trabajo se
-dará por hecho que es posible obtener información de este tipo, pues ya se ha
-logrado en casos similares en el pasado. Lo que se hará es suponer que se cuenta
-con la información que este algoritmo de reconocimiendo nos brindaría y en base
-a ello desarrollar las estrategias inteligentes de control a usar por los
-semáforos.
+paso a un carril que no tiene ningún vehículo esperando. 
+
+El problema es que implementar la solución anterior es costoso, y aun así tiene
+mucho margen de mejora, pues la información que puede proporcionar un inductor
+se limita a si un vehículo pasa encima de él y la hora en la que sucede, lo que
+complica analizar el flujo real de cada uno de los vehículos. Por ello se
+pretende pretendemos darle uso a las cámaras que muchas veces ya se encuentran
+en las intersecciones y usar sus imágenes para alimentar algoritmos de Machine
+Learning de reconocimiento de objetos, y así saber la cantidad, tipo y dirección
+de los vehículos. Ya que esta tarea tiene su propia serie de retos y
+complicaciones, está siento realizada por otros estudiantes y colegas en el
+CIMAT. Durante este trabajo se dará por hecho que es posible obtener información
+de este tipo, pues ya se ha logrado en casos similares en el pasado. Lo que se
+hará es suponer que se cuenta con la información que este algoritmo de
+reconocimiendo nos brindaría y en base a ello desarrollar las estrategias
+inteligentes de control a usar por los semáforos.
 <!-- TODO: buscar casos de reconocimiento de imagenes con ML, preguntarle al Dr. Mauricio -->
 
 # Hipótesis
