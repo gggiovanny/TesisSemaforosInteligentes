@@ -13,7 +13,8 @@
 \newcommand*{\@asesor}{\texttt{\string\asesor} supervisor currently not set. Please fix this.}%Texto por defecto.
 \newcommand*{\coasesor}[1]{\gdef\@coasesor{#1}}
 \newcommand*{\@coasesor}{\texttt{\string\coasesor} supervisor currently not set. Please fix this.}%Texto por defecto.
-\newcommand{\direccion}[1] {MÉRIDA, YUCATÁN, MÉXICO}%Lugar donde se realiza el documento
+\newcommand*{\direccion}[1]{\gdef\@direccion{#1}}
+\newcommand*{\@direccion}{\texttt{\string\direccion}direccion currently not set. Please fix this.}%Texto por defecto
 \newcommand{\fecha} {\thismonth}%Fecha
 \newcommand{\monthname}{%
 \ifcase \month \or ENERO\or FEBRERO\or MARZO\or ABRIL\or MAYO\or JUNIO\or JULIO\or AGOSTO\or SEPTIEMBRE\or OCTUBRE\or NOVIEMBRE\or DICIEMBRE
@@ -52,7 +53,7 @@
       \vspace{1mm}\textbf{\textsf{\normalsize \MakeUppercase{\@asesor}}}\\    
       \vspace*{5mm}\textsf{CO-ASESOR:}\\    
       \vspace{1mm}\textbf{\textsf{\normalsize \MakeUppercase{\@coasesor}}}\\
-      \vspace{12mm}\vfill\textsf{\direccion}. \hfill \textsf{\fecha}
+      \vspace{12mm}\vfill\textsf{\@direccion}. \hfill \textsf{\fecha}
 	\end{center}
 	  \end{minipage}
   \end{titlepage} 
