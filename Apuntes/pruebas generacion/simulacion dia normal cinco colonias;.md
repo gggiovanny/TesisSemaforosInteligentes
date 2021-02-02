@@ -1,4 +1,5 @@
 Situación: un día normal en la intersección de Cinco Colonias
+![](./../../graficas/circuito_colonias_cruce.png)
 
 Hora 0: 0 horas (en formato de 24 horas).
 
