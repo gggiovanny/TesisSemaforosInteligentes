@@ -1,3 +1,26 @@
+## 10 Mar 2021
++ Hacer el reporte por dia
++ Pensar que tecnica meter para determinar los picos de tráfico
++ En base a los picos detectados, cambiar las estrategias de acuerdo a criterios
+  de ingenieria de trafico, descritos a continuacion.
+
+### Criterios para cambio de estrategias
+Se ajustarán los tiempos en verde de cada calle en base a la proporción de
+tráfico que entre por ella respecto al tráfico total en un tiempo determinado.
+
+Yo creo que ni siquiera es necesario identificar horas pico, porque ya
+respetando dinámicamente esta proporción, no tengo que activamente saber cuando
+es una hora pico, pues mis tiempos van a estar constantemente ajustándose de
+acuerdo a la demanda.
+
+Se me ocurre hacer una clase que controle que se respete que cuando se le quite
+tiempo a una calle, se le aumente a otra. Pero creo que mejor aun, que esa clase
+convierta proporciones de tráfico a proporciones de tiempo.
+
+
+
+
+
 ## 12 Feb 2021
 Se modificaron las funciones de generacion y se agregó manera de obtener datos
 para grafica sobre el tiempo.
@@ -46,7 +69,7 @@ divide en otras intersecciones según probabilidades iguales o personalizadas.
 Si le aplico Reinforment Learning, puedo tratar de optimizar cosas, como
 maximizar el flujo y minimizar la densidad de tráfico.
 
-
+### Proceso propuesto
 1. Identificar horas pico.
 2. En dichas horas, identificar de que intersecciones viene el tráfico.
 3. Sabiendo de que intersecciones viene, aplicar RL para optimizar la
@@ -55,14 +78,22 @@ maximizar el flujo y minimizar la densidad de tráfico.
 5. Cuando halla tráfico disperso, optimizar de manera genérica para todas las
    intersecciones o tener una política estática fija.
 
-+ Para horas pico: clustering.
+### Que usar para cada parte
++ Para horas pico: clustering o identificar pendientes de crecimiento a partir de cierta inclinación.
   + Se organizará la información por día, y se hallarán los intervalos de tiempo
     de dichas horas de acuerdo a los datos de los reportes.
 + Para saber de donde viene la mayor cantidad de tráfico, simplemente ordenar
   por densidad las calles.
-+ Para optimizar, Reinforment Learning
++ Para optimizar, Reinforcement Learning
 
-
+### Pasos a realizar en el marco de la tesis
+1. Aprender que es el RL y redactarlo como marco teórico.
+3. Como usar RL en SUMO: aquí entra Flow y explicar su uso en el marco teórico
+4. Crear un modelo de RL en Flow que optimice el flujo de tráfico controlando semáforos.
+5. Aplicar un método para identificar horas pico y documentarlo en la tesis.
+6. Aplicar un método para identificar de que intersecciones viene el grueso del trafico.
+7. Usando lo anterior, aplicar el modelo de RL para optimizar dinámicamente: en
+   las horas picos, optimizar el flujo priorizando las intersecciones de donde viene el  grueso del tráfico.
 
 
 
