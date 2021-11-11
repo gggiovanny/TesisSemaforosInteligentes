@@ -1,31 +1,22 @@
 {
-  "cSpell.enabled": true,
-  "cSpell.words": [
-    "institucionalidad",
-    "osm",
-    "osm web wizard",
-    "parametros",
-    "web",
-    "wizard"
-  ],
   "actionButtons": {
     "defaultColor": "#ff0034", // Can also use string color names.
     "loadNpmCommands": false, // Disables automatic generation of actions for npm commands.
     "reloadButton": "♻️", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
     "commands": [
       {
-        "cwd": "${fileDirname}", 
+        "cwd": "${fileDirname}",
         "name": "md to tex cap_template",
         "color": "white",
         "singleInstance": true,
-        "command": "pandoc -f markdown -t latex --out ${fileBasenameNoExtension}.tex --template cap_template.tex ${fileBasename}", 
+        "command": "pandoc -f markdown -t latex --out ${fileBasenameNoExtension}.tex --template cap_template.tex ${fileBasename}",
       },
-      { 
+      {
         "cwd": "${fileDirname}",
         "name": "md to tex template", //? Comando genérico que intenta aplicar una plantilla con el mismo nombre que el archivo  pero con _template al final
         "color": "white",
         "singleInstance": true,
-        "command": "pandoc -f markdown -t latex ${fileBasename} --template ${fileBasenameNoExtension}_template.tex --out ${fileBasenameNoExtension}.tex", 
+        "command": "pandoc -f markdown -t latex ${fileBasename} --template ${fileBasenameNoExtension}_template.tex --out ${fileBasenameNoExtension}.tex",
       },
       // {
       //   "cwd": "${workspaceFolder}", // Terminal initial folder ${workspaceFolder} and os user home as defaults
@@ -68,22 +59,7 @@
     "**/*borrador*.*",
   ],
   "latex-workshop.latex.autoBuild.run": "onFileChange",
-  "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#1f6fd0",
-    "activityBar.activeBorder": "#ee90bb",
-    "activityBar.background": "#1f6fd0",
-    "activityBar.foreground": "#e7e7e7",
-    "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#ee90bb",
-    "activityBarBadge.foreground": "#15202b",
-    "statusBar.background": "#1857a4",
-    "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#1f6fd0",
-    "titleBar.activeBackground": "#1857a4",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveBackground": "#1857a499",
-    "titleBar.inactiveForeground": "#e7e7e799"
-  },
   "peacock.color": "#1857a4",
+  "languageTool.language": "es",
   // "latex-workshop.latex.autoBuild.run": "never",
 }
