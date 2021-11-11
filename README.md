@@ -1,6 +1,6 @@
 # Tesis semáforos inteligentes
 
-## Table of Contents
+## Tabla de contenido
 
 - [Acerca de](#acerca_de)
 - [Instalacion](#instalacion)
