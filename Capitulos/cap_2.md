@@ -1,8 +1,6 @@
 ---
 chapter: Marco teórico
-graphicspath: ./../imagenes/
-bibliography: [D:/Files/Documents/source/Tesis/mendeley/tesis_tls_cimat.bib] 
-csl: D:/Files/Documents/source/Tesis/apa7-spanish.csl 
+graphicspath: ./imagenes/
 lang: es 
 ---
 
@@ -118,11 +116,11 @@ colores de todos los semáforos en esa fase. El significado de los códigos
 principales se puede ver en la siguiente tabla:
 
 <!-- 
-| Código       | Color          | Descripción                                                                                          |
-| ------------ | -------------- | ---------------------------------------------------------------------------------------------------- |
-| r            | rojo           | Luz roja: los vehículos deben detenerse.                                                             |
-| y            | amarillo       | Luz amarilla:los vehículos desacelerarán si están lejos de la insersección, de lo contrario pasarán. |
-| G            | verde          | Luz verde de prioridad: los vehículos pasarán.                                                       | -->
+| Código | Color    | Descripción                                                                                          |
+| ------ | -------- | ---------------------------------------------------------------------------------------------------- |
+| r      | rojo     | Luz roja: los vehículos deben detenerse.                                                             |
+| y      | amarillo | Luz amarilla:los vehículos desacelerarán si están lejos de la insersección, de lo contrario pasarán. |
+| G      | verde    | Luz verde de prioridad: los vehículos pasarán.                                                       | --> |
 
 \begin{table}[h!]
 \centering
