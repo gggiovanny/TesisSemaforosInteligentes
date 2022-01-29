@@ -61,5 +61,6 @@
   "latex-workshop.latex.autoBuild.run": "onFileChange",
   "peacock.color": "#1857a4",
   "languageTool.language": "es",
+  "ltex.language": "es",
   // "latex-workshop.latex.autoBuild.run": "never",
 }

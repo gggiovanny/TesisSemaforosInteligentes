@@ -1,0 +1,1 @@
+{"rule":"SUBJUNTIVO_PASADO","sentence":"^\\QEl proceso anterior desencadenará en la extensión LaTeX Workshop compile nuevamente el proyecto, y el resultado se puede visualizar\\E$"}

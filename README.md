@@ -37,21 +37,28 @@ code .
 
 2. Aceptar instalar las extensiones recomendadas para el entorno de trabajo cuando el editor lo pregunte. Si por alguna razón no se aceptaron, se pueden encontrar en la [tabla adjunta](#extensiones) o el ID de los paquetes en el archivo `.vscode/extensions.json`, y se pueden instalar manualmente buscándolas en el menú de extensiones de VS Code.
 
-Continuará...
-
 ## Uso <a name = "uso"></a>
 
-Continuará...
+1. Abrir `ITMtesis.tex` para que se inicialice la extensión LaTeX Workshop.
+2. Abrir la extensión LaTeX Workshop (que se encuentra en la barra lateral de VS Code) y dar clic en _Build LaTeX project_. Esto usará la receta por defecto. Yo he tenido buenos resultados con latexmk (la primera opción).
+3. Un indicador se verá en la barra inferior, y si no ocurre ningún error de compilación, ésta se actualizará a una ✅. Si esto ocurre, ¡todo está listo para trabajar!
+4. Para ver una versión en PDF del proyecto, basta con dar clic en _View LaTeX PDF_ en la pestaña de la extensión LaTeX Workshop.
+5. El flujo de trabajo es el siguiente: editar los capítulos (cap_X.md) usando Markdown. Estos automáticamente se traspilan a LaTeX al guardar con la ayuda de la extensión Save And Run. (para más detalles, analizar el contenido de `.vscode/settings.json`).
+6. El proceso anterior desencadenará en la extensión LaTeX Workshop compile nuevamente el proyecto, y el resultado se puede visualizar en el PDF generado.
 
+# Solucionar comunes <a name = "errores"></a>
+Para ver los errores de compilación, bastará con dar clic en el botón "Open compiler log" en la notificación que la extensión LaTeX Workshop muestra. En su defecto, también se puede abrir el archivo `build/ITMtesis.log` y buscar la palabra _error_ dentro.
+
+- Al cambiar entre sistemas operativos, pueden ocurrir errores de compilación por inconsistencias en el formato de las rutas. Actualmente el proyecto está configurado para Linux, pero si se cambia de entorno, basta con cambiar la ruta en `graphicspath` en el inicio de todos los archivos Markdown.
 
 ## Extensiones recomendadas <a name = "extensiones"></a>
 
-| Nombre                                     |                                Uso                                 |
-| ------------------------------------------ | :----------------------------------------------------------------: |
-| LaTeX Workshop                             |                  Integración de LaTeX en VS Code                   |
-| Markdown All In One                        |                   Soporte y atajos para Markdown                   |
-| Action Buttons                             |             Ejecutar comandos desde la barra inferior              |
-| Save And Run                               |              Ejecutar comandos al guardar un archivo               |
-| LTeX – LanguageTool grammar/spell checking |                Verificación de ortografía y estilo                 |
-| vscode-drawio                              |                  Herramienta para hacer diagramas                  |
-| change-case                                | Utilidad para cambiar palabras  entre mayúsculas, minúsculas, etc. |
+| Nombre                                      |                                Uso                                |
+| ------------------------------------------- | :---------------------------------------------------------------: |
+| LaTeX Workshop                              |                  Integración de LaTeX en VS Code                  |
+| Markdown All In One                         |                  Soporte y atajos para Markdown                   |
+| Action Buttons                              |             Ejecutar comandos desde la barra inferior             |
+| Save And Run                                |              Ejecutar comandos al guardar un archivo              |
+| LaTeX – LanguageTool grammar/spell checking |                Verificación de ortografía y estilo                |
+| vscode-drawio                               |                 Herramienta para hacer diagramas                  |
+| change-case                                 | Utilidad para cambiar palabras entre mayúsculas, minúsculas, etc. |
