@@ -13,7 +13,7 @@ metrópolis comunes en los países más desarrollados.
 
 <!-- TODO: buscar datos y cita de crecimiento de paises en vias de desarrollo -->
 
-No es posible detener la rueda, pero es es una excelente oportunidad para
+No es posible detener la rueda, pero es una excelente oportunidad para
 aprovechar la gran base de conocimientos acumulados por otras ciudades y las
 poderosas herramientas tecnológicas de la modernidad, para resolver las
 problemáticas emergentes de manera innovadora y óptima.
@@ -25,8 +25,8 @@ asociadas a la concentración de actividades económicas, se incrementó la dema
 de vehículos por parte de hogares y negocios para llevar a cabo sus actividades
 económicas. En algunos casos, tal incremento no ha sido acompañado con las
 respectivas mejoras en infraestructura para lograr una operación eficiente.
-\parencite[1]{Medina-Durango2011}. Y ya que el proceso el proceso de
-urbanización en América Latina está en constante aumento desde los años 50's
+\parencite[1]{Medina-Durango2011}. Y ya que el proceso de
+urbanización en América Latina está en constante aumento desde los años 50
 \parencite[27]{PdaCunha2009}, es posible que esto ya sea una situación
 generalizada en Latinoamérica.
 
@@ -40,14 +40,14 @@ diurnas. Para 1915, al menos algunos neoyorquinos habían dejado de conducir par
 ir al trabajo y habían vuelto a usar metro. A partir de entonces, menciona que
 surgieron diversos acercamientos para intentar solucionar esta problemática,
 comenzando por poner oficiales de policía en las intersecciones, pero incluso en
-ésta época temprana hubo reportes de que el control de la policía flaqueó, pues
+esta época temprana hubo reportes de que el control de la policía flaqueó, pues
 se llegaban a ver largas filas de vehículos motorizados que se demoraban en las
 intersecciones, incluso cuando los departamentos enviaron a dos o incluso cuatro
 oficiales a estas esquinas concurridas. Hace notar que coordinar a los agentes
 de policía para permitir un flujo constante resultó imposible (pp. 380, 382).
 
 Se comenzó usando semáforos normales y ahora se usan semáforos cada vez más
-dinámicos en los países con alto tráfico . Es en tiempos más recientes cuando se
+dinámicos en los países con alto tráfico. Es en tiempos más recientes cuando se
 han comenzado a implementar estrategias que le brindan 'inteligencia' al
 comportamiento de los mismos, a través el uso de inductores para condicionar el
 comportamiento del semáforo, o detectores de luces infrarrojas para detectar el
@@ -93,7 +93,7 @@ observaciones:
 Como se afirma anteriormente, las ciudades en Latinoamérica está en crecimiento
 y siguiendo patrones de desarrollo similares a otros ya vistos en otros lugares
 a lo largo de la historia. Es necesaria una investigación profunda para saber a
-que atribuir el desarrollo del transporte en los países latinoamericanos, pero
+qué atribuir el desarrollo del transporte en los países latinoamericanos, pero
 según \textcite{Patriksson2012}, luego de la Segunda Guerra Mundial, una gran
 parte del incremento en la demanda de transporte se le atribuye al desarrollo
 del transporte urbano, que tiene sus raíces en la urbanización y en los
@@ -118,12 +118,12 @@ inteligentes de control de tráfico, o dicho de otra manera: *semáforos
 inteligentes*. El objetivo es que los semáforos actúen similar a los típicos
 oficiales de tránsito que a veces se encuentran posicionados estratégicamente en
 las intersecciones más concurridas, pero con habilidades superiores. Dichos
-policías observan la demanda de tráfico que ocurre en cada carril y en base a
-ello toman la decisión de a cuál dar el paso para mantener en todo momento un
-flujo de tráfico óptimo y acortar los tiempos de espera. El problema de usar
-personas para esta tarea; aparte del costo y la inviabilidad de hacerlo en cada
-intersección de una ciudad; es mantener el flujo constante, pues ¿de qué sirve
-que en una intersección un vehículo tenga la vía libre si al llegar a la
+policías observan la demanda de tráfico que ocurre en cada carril y usando esa
+información toman la decisión de a cuál dar el paso para mantener en todo
+momento un flujo de tráfico óptimo y acortar los tiempos de espera. El problema
+de usar personas para esta tarea; aparte del costo y la inviabilidad de hacerlo
+en cada intersección de una ciudad; es mantener el flujo constante, pues ¿de qué
+sirve que en una intersección un vehículo tenga la vía libre si al llegar a la
 siguiente no tendrá paso? Entonces el flujo se rompe y se genera una congestión
 que afecta todos los vehículos que lo suceden. 
 
@@ -132,9 +132,9 @@ los "oficiales de tránsito" y que estos formen una red en todos las
 intersecciones clave y tengan mentalidad de enjambre para que en todo momento
 cualquier oficial sepa cuál es la cantidad y dirección del flujo de tráfico en
 cada una de las intersecciones de la red (o incluso en otras redes adyacentes) y
-en base a ello tome de decisiones en tiempo real que permitan un flujo de
-tráfico lo más eficiente posible, y que dé pie a cosas tan útiles como dar paso
-completamente libre a ambulancias, patrullas y camiones de bomberos.
+usando ese conocimiento tome de decisiones en tiempo real que permitan un flujo
+de tráfico lo más eficiente posible, y que dé pie a cosas tan útiles como dar
+paso completamente libre a ambulancias, patrullas y camiones de bomberos.
 Evidentemente esto no es tarea para un ser humano, pero si para un semáforo
 inteligente.
 
@@ -166,8 +166,8 @@ tipo, velocidad y dirección de los vehículos. Ya que esta tarea tiene su propi
 serie de retos y complicaciones, está siento realizada por otros estudiantes y
 colegas en el CIMAT. Durante este trabajo se dará por hecho que es posible
 obtener información de este tipo, pues ya se ha logrado en casos similares en el
-pasado. Lo que se hará es suponer que se cuenta con la información que éste tipo
-de algoritmo de reconocimiendo brindaría y en base a ello desarrollar las
+pasado. Lo que se hará es suponer que se cuenta con la información que este tipo
+de algoritmo de reconocimiento brindaría y desarrollar las
 estrategias inteligentes de control a usar por los semáforos.
 <!-- TODO: buscar casos de reconocimiento de imagenes con ML, preguntarle al Dr. Mauricio -->
 
@@ -183,13 +183,13 @@ del flujo vehicular.
 
 # Justificación
 
-Dado a que se sabe que está aumentando el tráfico y que va a llegar a ser como
-el de las grandes ciudades, es necesario tomar medidas y usar el conocimiento
-generado previamente para adelantarse y satisfacer la demanda de tráfico futura
-de las urbes en crecimiento de manera inteligente antes de que se vuelva un
-problema más generalizado. Ya existes casos de ciudades grandes (como la  Ciudad
-de México, Guadalajara y Bogotá) en las que se tienen que tomar medidas extremas
-y ni siquiera con eso es suficiente para evitar los efectos perjudiciales del
+Ya que sabe que está aumentando el tráfico y que va a llegar a ser como el de
+las grandes ciudades, es necesario tomar medidas y usar el conocimiento generado
+previamente para adelantarse y satisfacer la demanda de tráfico futura de las
+urbes en crecimiento de manera inteligente antes de que se vuelva un problema
+más generalizado. Ya existes casos de ciudades grandes (como la  Ciudad de
+México, Guadalajara y Bogotá) en las que se tienen que tomar medidas extremas y
+ni siquiera con eso es suficiente para evitar los efectos perjudiciales del
 congestionamiento vehicular.
 <!-- TODO: bucar cita de trafico excesivo en grandes ciudades de latinooamerica -->
 

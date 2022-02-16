@@ -62,5 +62,6 @@
   "peacock.color": "#1857a4",
   "languageTool.language": "es",
   "ltex.language": "es",
+  "rewrap.autoWrap.enabled": true,
   // "latex-workshop.latex.autoBuild.run": "never",
 }
