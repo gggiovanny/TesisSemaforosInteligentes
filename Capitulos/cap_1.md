@@ -1,8 +1,3 @@
----
-chapter: Introducción
-graphicspath: ../imagenes/
-lang: es 
----
 # Antecedentes
 
 Los países en vías de desarrollo en innumerables ocasiones han tenido que
@@ -39,20 +34,18 @@ de 1914, varias ciudades reportaron sus primeras congestiones de tráfico
 diurnas. Para 1915, al menos algunos neoyorquinos habían dejado de conducir para
 ir al trabajo y habían vuelto a usar metro. A partir de entonces, menciona que
 surgieron diversos acercamientos para intentar solucionar esta problemática,
-comenzando por poner oficiales de policía en las intersecciones, pero incluso en
+comenzando por poner oficiales de policía en las intersecciones. Pero incluso en
 esta época temprana hubo reportes de que el control de la policía flaqueó, pues
 se llegaban a ver largas filas de vehículos motorizados que se demoraban en las
 intersecciones, incluso cuando los departamentos enviaron a dos o incluso cuatro
 oficiales a estas esquinas concurridas. Hace notar que coordinar a los agentes
 de policía para permitir un flujo constante resultó imposible (pp. 380, 382).
 
-Se comenzó usando semáforos normales y ahora se usan semáforos cada vez más
-dinámicos en los países con alto tráfico. Es en tiempos más recientes cuando se
-han comenzado a implementar estrategias que le brindan 'inteligencia' al
-comportamiento de los mismos, a través el uso de inductores para condicionar el
-comportamiento del semáforo, o detectores de luces infrarrojas para detectar el
-patrón de las luces de la sirena de patrullas y ambulancias y priorizar su
-circulación.
+Es a partir de entonces que surgieron implementaciones de rudimentarios
+semáforos, que culminan en los cada vez más dinámicos usados en los países
+desarrollados que presentan grandes volúmenes de tráfico. Es esta última idea el
+punto de partida para las propuestas que se desarrollarán más adelante en el
+presente documento.
 <!-- TODO: fundamentar y citar -->
 
 # Planteamiento del problema
@@ -117,15 +110,16 @@ El problema que se afrontará es el de las congestiones usando sistemas
 inteligentes de control de tráfico, o dicho de otra manera: *semáforos
 inteligentes*. El objetivo es que los semáforos actúen similar a los típicos
 oficiales de tránsito que a veces se encuentran posicionados estratégicamente en
-las intersecciones más concurridas, pero con habilidades superiores. Dichos
-policías observan la demanda de tráfico que ocurre en cada carril y usando esa
-información toman la decisión de a cuál dar el paso para mantener en todo
-momento un flujo de tráfico óptimo y acortar los tiempos de espera. El problema
-de usar personas para esta tarea; aparte del costo y la inviabilidad de hacerlo
-en cada intersección de una ciudad; es mantener el flujo constante, pues ¿de qué
-sirve que en una intersección un vehículo tenga la vía libre si al llegar a la
-siguiente no tendrá paso? Entonces el flujo se rompe y se genera una congestión
-que afecta todos los vehículos que lo suceden. 
+las intersecciones más concurridas de México, pero con capacidades extra propias
+de la informática. Dichos policías observan la demanda de tráfico que ocurre en
+cada carril y usando esa información toman la decisión de a cuál flujo de
+vehículos dar el paso para mantener en todo momento una circulación óptima y
+acortar los tiempos de espera. El problema de usar personas para esta tarea;
+además del costo y la inviabilidad de hacerlo en cada intersección de una
+ciudad; es mantener el flujo constante, pues ¿de qué sirve que en una
+intersección un vehículo tenga la vía libre si al llegar a la siguiente no
+tendrá paso? Entonces el flujo se rompe y se genera una congestión que afecta
+todos los vehículos que lo suceden. 
 
 Para solucionar este problema, considero que la clave es la coordinación entre
 los "oficiales de tránsito" y que estos formen una red en todos las
@@ -138,6 +132,9 @@ paso completamente libre a ambulancias, patrullas y camiones de bomberos.
 Evidentemente esto no es tarea para un ser humano, pero si para un semáforo
 inteligente.
 
+La idea de un semáforo que se adapta a la demanda de tráfico no es nueva.
+\textcite{JoelTrejo2006} comenta al respecto:
+
 >   Una de las principales respuestas al problema del control de tráfico urbano
 >   es reducir el tiempo de espera de los usuarios en la red de tráfico. Se
 >   puede reducir el tiempo de espera de los usuarios en la red de tráfico por
@@ -146,14 +143,16 @@ inteligente.
 >   coordinación con intersecciones adyacentes.
 (Introducción, párr. 3)
 
-La idea de un semáforo que se adapta a la demanda de tráfico no es nueva. 
 <!-- TODO: mover esto a la introducción y agregar referencias y otros acercamientos con redes de Petri y trabajos similares-->
-Ya existen acercamientos a esta idea, desde la más básica cambiando el ciclo de
-las luces dependiendo de la hora del día, hasta las más complejas y costosas que
-usan inductores posicionados estratégicamente antes de llegar a las
-intersecciones para contabilizar cuantos vehículos están esperando en cada
-carril para que los semáforos usen esta información para, por ejemplo, no dar
-paso a un carril que no tiene ningún vehículo esperando. 
+Ya existen acercamientos que brindan cierta 'inteligencia' al comportamiento de
+los semáforos, desde la más básica cambiando el ciclo de las luces dependiendo
+de la hora del día, hasta otra más compleja y costosa que usa inductores
+posicionados estratégicamente antes de llegar a las intersecciones para
+contabilizar cuantos vehículos están esperando en cada carril para que los
+semáforos usen esta información para, por ejemplo, no dar paso a un carril que
+no tiene ningún vehículo esperando. Otras soluciones usan detectores de luces
+infrarrojas para detectar el patrón de las luces de la sirena de patrullas y
+ambulancias, y así priorizar su circulación por sobre la del tráfico regular. 
 
 El problema es que implementar la solución anterior es costoso, y aun así tiene
 mucho margen de mejora, pues la información que puede proporcionar un inductor
@@ -197,3 +196,8 @@ Por muchos años los semáforos tradicionales han sido una solución efectiva, p
 conforme las urbes crecen más y más, llegan a ser insuficientes para tal volumen
 de tráfico. 
 
+---
+chapter: Introducción
+graphicspath: ../imagenes/
+lang: es 
+---

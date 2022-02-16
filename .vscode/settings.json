@@ -63,5 +63,9 @@
   "languageTool.language": "es",
   "ltex.language": "es",
   "rewrap.autoWrap.enabled": true,
+  "ltex.latex.commands": {
+    "\\parencite[]{}": "dummy",
+    "\\textcite{}": "dummy"
+  },
   // "latex-workshop.latex.autoBuild.run": "never",
 }
