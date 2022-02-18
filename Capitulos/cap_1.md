@@ -82,20 +82,26 @@ observaciones:
 > contaminación del aire e incrementos en la mortalidad y morbilidad asociadas.
 > (p. 2)
 
-<!--  Latinoamérica va repitiendo la historia -->
-Como se afirma anteriormente, las ciudades en Latinoamérica está en crecimiento
-y siguiendo patrones de desarrollo similares a otros ya vistos en otros lugares
-a lo largo de la historia. Es necesaria una investigación profunda para saber a
-qué atribuir el desarrollo del transporte en los países latinoamericanos, pero
-según \textcite{Patriksson2012}, luego de la Segunda Guerra Mundial, una gran
-parte del incremento en la demanda de transporte se le atribuye al desarrollo
-del transporte urbano, que tiene sus raíces en la urbanización y en los
-crecientes estándares de vida (p. 3).
+Y conforme las urbes crecen más y más, también lo hacen las congestiones de
+tráfico vehicular, creando un problema cada vez más complejo de resolver.
 
-<!-- Ya hay problemas en Latinoamérica -->
-Los problemas de tráfico ya son una realidad y un tema de fuerte preocupación en
-las zonas urbanas de México, y aumentar la infraestructura vial no
-necesariamente es la solución y podría incluso contribuir al problema
+# Justificación
+
+<!--  Latinoamérica va repitiendo la historia -->
+El aumento de la demanda de transporte vehicular en Latinoamérica crece junto
+con sus ciudades, siguiendo patrones ya vistos en otros lugares a lo largo de la
+historia. Esto tiene sentido, pues según \textcite{Patriksson2012}, luego de la
+Segunda Guerra Mundial, una gran parte del incremento en la demanda de
+transporte se le atribuye al desarrollo del transporte urbano, que tiene sus
+raíces en la urbanización y en los crecientes estándares de vida (p. 3). 
+<!-- TODO: Ya hay problemas en Latinoamérica -->
+Estas observaciones corresponden a hechos que fueron una realidad en algunos
+lugares de Europa hace décadas atrás, y que actualmente son una realidad también
+en Latinoamérica. Ya existes casos de ciudades grandes (como la Ciudad de
+México, Guadalajara y Bogotá) en las que se tienen que tomar medidas extremas y
+ni siquiera con eso es suficiente para evitar los efectos perjudiciales del
+congestionamiento vehicular. Incluso aumentar la infraestructura vial no
+necesariamente es la solución definitiva, y podría contribuir al problema
 \parencite[124-126]{Galindo2006}. \textcite{JoelTrejo2006} hace algunos
 comentarios al respecto:
 
@@ -103,6 +109,19 @@ comentarios al respecto:
 > de la red de tráfico urbano no siempre resulta ser la mejor opción además es
 > muy difícil y muy costosa, especialmente en áreas urbanas. (Introducción, párr. 2)
 
+
+ <!-- Es necesario tomar medidas y aprovechar la tecnologia que no habia antes -->
+Otro factor de importancia para un adecuado flujo de un sistema vial; además de
+su infraestructura; lo es la adecuada coordinación de los agentes que la
+circulan. Durante muchos años, los semáforos tradicionales de fases fijas han
+sido una solución efectiva para este problema, pero conforme las urbes crecen
+más y más, llegan a ser insuficientes para volúmenes de tráfico tan elevados.
+Para dar una solución a problemas modernos, más vale usar tecnología moderna,
+que a través de las capacidades informáticas, sea capaz de adaptarse
+dinámicamente a las cambiantes dinámicas de tráfico que son el pan de cada día
+de las grandes urbes.
+ 
+<!-- TODO: bucar cita de trafico excesivo en grandes ciudades de latinooamerica -->
 
 # Propuesta de solución
 
@@ -156,8 +175,8 @@ ambulancias, y así priorizar su circulación por sobre la del tráfico regular.
 
 El problema es que implementar la solución anterior es costoso, y aun así tiene
 mucho margen de mejora, pues la información que puede proporcionar un inductor
-se limita a si un vehículo pasa encima de él y la hora en la que sucede, lo que
-complica analizar el flujo real de cada uno de los vehículos. Por ello se
+se limita a si un vehículo pasa encima de él y a la hora en la que sucede, lo
+que complica analizar el flujo real de cada uno de los vehículos. Por ello, se
 pretende darle uso a las cámaras que muchas veces ya se encuentran en las
 intersecciones y usar sus imágenes para alimentar algoritmos que usen Machine
 Learning para reconocer vehículos y sus parámetros asociados, como la cantidad,
@@ -165,9 +184,10 @@ tipo, velocidad y dirección de los vehículos. Ya que esta tarea tiene su propi
 serie de retos y complicaciones, está siento realizada por otros estudiantes y
 colegas en el CIMAT. Durante este trabajo se dará por hecho que es posible
 obtener información de este tipo, pues ya se ha logrado en casos similares en el
-pasado. Lo que se hará es suponer que se cuenta con la información que este tipo
-de algoritmo de reconocimiento brindaría y desarrollar las
-estrategias inteligentes de control a usar por los semáforos.
+pasado. Durante este trabajo, se trabajará bajo el supuesto de que se cuenta con
+la información que este tipo de algoritmos de reconocimiento puede ser capaz
+brindar, y bajo esa premisa, desarrollar posibles estrategias inteligentes de
+control que exploten estos datos.
 <!-- TODO: buscar casos de reconocimiento de imagenes con ML, preguntarle al Dr. Mauricio -->
 
 # Hipótesis
@@ -180,21 +200,7 @@ del flujo vehicular.
 
 ## Objetivos específicos
 
-# Justificación
 
-Ya que sabe que está aumentando el tráfico y que va a llegar a ser como el de
-las grandes ciudades, es necesario tomar medidas y usar el conocimiento generado
-previamente para adelantarse y satisfacer la demanda de tráfico futura de las
-urbes en crecimiento de manera inteligente antes de que se vuelva un problema
-más generalizado. Ya existes casos de ciudades grandes (como la  Ciudad de
-México, Guadalajara y Bogotá) en las que se tienen que tomar medidas extremas y
-ni siquiera con eso es suficiente para evitar los efectos perjudiciales del
-congestionamiento vehicular.
-<!-- TODO: bucar cita de trafico excesivo en grandes ciudades de latinooamerica -->
-
-Por muchos años los semáforos tradicionales han sido una solución efectiva, pero
-conforme las urbes crecen más y más, llegan a ser insuficientes para tal volumen
-de tráfico. 
 
 ---
 chapter: Introducción
