@@ -10,6 +10,9 @@
 ## Acerca de <a name = "acerca_de"></a>
 Este documento es mi tesis de licenciatura en Ingeniería en Sistemas Computacionales. Está conformada por sencillos archivos en [markdown](https://www.markdownguide.org/getting-started/) que se traspilan a [LaTeX](https://www.latex-project.org/) al guardar usando [Pandoc](https://pandoc.org/). Luego esos archivos son leídos por una plantilla que implementa el formato requerido por el Instituto Tecnológico de Mérida (hecha usando como base [esta plantilla](https://www.overleaf.com/latex/templates/tesis-de-licenciatura-instituto-tecnologico-de-morelia/cxgbymjjxrvy)) y finalmente se pueden compilar a un archivo PDF usando cualquier compilador de LaTeX.
 
+## Proyecto relacionado
+Los experimentos detallados en esta tésis se encuentran en el siguiente repositorio: [https://github.com/gggiovanny/simulacion_circuito_colonias](https://github.com/gggiovanny/simulacion_circuito_colonias).
+
 
 ## Instalación <a name = "instalacion"></a>
 
